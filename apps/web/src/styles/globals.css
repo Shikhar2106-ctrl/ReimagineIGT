@@ -1,0 +1,64 @@
+
+@import "./tokens.css";
+@import "./typography.css";
+@import "tailwindcss";
+
+/* -------------------- */
+/* CSS Reset */
+/* -------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    system-ui,
+    sans-serif;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@theme {
+  --color-brand: var(--brand);
+
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-card: var(--surface-card);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-border: var(--border);
+
+  --radius-card: var(--radius-md);
+  --radius-panel: var(--radius-lg);
+}
