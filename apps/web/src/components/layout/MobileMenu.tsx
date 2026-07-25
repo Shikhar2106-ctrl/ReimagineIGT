@@ -16,10 +16,11 @@ export default function MobileMenu({
     <AnimatePresence>
       {open && (
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="absolute left-0 top-full w-full border-t border-slate-200 bg-white shadow-xl md:hidden"
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+          className="absolute left-0 top-full w-full border-t border-border bg-surface/95 shadow-xl backdrop-blur-xl lg:hidden"
         >
           <div className="flex flex-col gap-6 p-6">
             {navigation.map((item) => (
@@ -31,9 +32,7 @@ export default function MobileMenu({
               />
             ))}
 
-            <Button className="w-full">
-              Book Consultation
-            </Button>
+            <Button className="w-full">Book Consultation</Button>
           </div>
         </motion.div>
       )}

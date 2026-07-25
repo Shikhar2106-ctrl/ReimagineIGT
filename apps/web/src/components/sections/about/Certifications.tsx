@@ -1,3 +1,5 @@
+import FadeIn from "@/components/motion/FadeIn";
+import StaggerContainer, { StaggerItem } from "@/components/motion/StaggerContainer";
 import SectionHeader from "@/components/common/SectionHeader";
 
 import CertificationCard from "./CertificationCard";
@@ -10,49 +12,39 @@ import Section from "@/components/ui/Section";
 
 export default function Certifications() {
   return (
-    <Section className="bg-surface-muted">
-
+    <Section size="spacious" className="bg-surface-muted">
       <Container>
+        <FadeIn>
+          <SectionHeader
+            badge={certificationsContent.badge}
+            title={certificationsContent.title}
+            description={certificationsContent.description}
+            align="center"
+          />
+        </FadeIn>
 
-        <SectionHeader
-          badge={certificationsContent.badge}
-          title={certificationsContent.title}
-          description={certificationsContent.description}
-          align="center"
-        />
-
-        {/* Certifications */}
-
-        <div className="mt-20 grid gap-8 md:grid-cols-3">
-
+        <StaggerContainer className="mt-16 grid gap-8 md:grid-cols-3 lg:mt-20">
           {certificationsContent.certifications.map((item) => (
-            <CertificationCard
-              key={item.title}
-              {...item}
-            />
+            <StaggerItem key={item.title}>
+              <CertificationCard {...item} />
+            </StaggerItem>
           ))}
+        </StaggerContainer>
 
-        </div>
+        <FadeIn className="mt-20 lg:mt-28">
+          <h2 className="text-center text-2xl font-bold text-text-primary sm:text-3xl">
+            Technology Partners
+          </h2>
+        </FadeIn>
 
-        {/* Partners */}
-
-        <h2 className="mt-24 text-center text-3xl font-bold text-text-primary">
-          Technology Partners
-        </h2>
-
-        <div className="mt-12 grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-
+        <StaggerContainer className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-6">
           {certificationsContent.partners.map((partner) => (
-            <PartnerCard
-              key={partner.name}
-              {...partner}
-            />
+            <StaggerItem key={partner.name}>
+              <PartnerCard {...partner} />
+            </StaggerItem>
           ))}
-
-        </div>
-
+        </StaggerContainer>
       </Container>
-
     </Section>
   );
 }

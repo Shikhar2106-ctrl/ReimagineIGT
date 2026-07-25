@@ -18,19 +18,60 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
 
 body {
   font-family:
     Inter,
-    system-ui,
-    sans-serif;
-  background: #ffffff;
-  color: #0f172a;
+    articulat-cf, sans-serif !important;
+  background: var(--surface);
+  color: var(--text-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: normal;
+  line-height: 1.6;
 }
 
-img {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Inter, system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+p,
+li,
+button,
+a,
+input,
+textarea {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+img,
+video {
   display: block;
   max-width: 100%;
 }
@@ -46,19 +87,255 @@ a {
   color: inherit;
 }
 
+::selection {
+  background: rgb(0 229 255 / 0.25);
+  color: var(--text-primary);
+}
+
 @theme {
   --color-brand: var(--brand);
+  --color-brand-light: var(--brand-light);
+  --color-brand-dark: var(--brand-dark);
+  --color-accent: var(--accent);
+  --color-accent-muted: var(--accent-muted);
 
   --color-surface: var(--surface);
   --color-surface-muted: var(--surface-muted);
   --color-surface-card: var(--surface-card);
+  --color-surface-elevated: var(--surface-elevated);
 
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-muted: var(--text-muted);
 
   --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
 
   --radius-card: var(--radius-md);
   --radius-panel: var(--radius-lg);
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility glow-accent {
+  box-shadow: var(--glow-accent);
+}
+
+@utility reveal-fade {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+@utility reveal-fade-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes partner-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.partner-marquee {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.partner-marquee__track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  animation: partner-marquee 28s linear infinite;
+}
+
+.partner-marquee:hover .partner-marquee__track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partner-marquee__track {
+    animation: none;
+  }
+}
+
+/* Parallax section styles */
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  display: block;
+}
+
+.parallax-bg {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(120deg, rgba(6,95,70,0.9), rgba(3,105,161,0.85)), url('/media/parallax-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parallax-bg {
+    transform: none !important;
+  }
+}
+
+/* ==========================================================
+   SHOWCASE INFINITE SCROLL
+========================================================== */
+
+@keyframes scroll-up {
+  from {
+    transform: translate3d(0, 0%, 0);
+  }
+
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+@keyframes scroll-down {
+  from {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+.scroll-up {
+  animation-name: scroll-up;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.scroll-down {
+  animation-name: scroll-down;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Pause animation while hovering */
+
+.pause-on-hover:hover {
+  animation-play-state: paused;
+}
+
+/* Better image rendering */
+
+.showcase-image {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Smoother hover */
+
+.showcase-card {
+  transition:
+    transform 400ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Optional smoother scrolling */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===========================
+   CLIENTS SECTION
+=========================== */
+
+@keyframes marquee-left {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+
+@keyframes marquee-right {
+
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+
+}
+
+.clients-row-left {
+
+  width: max-content;
+
+  animation: marquee-left 28s linear infinite;
+
+}
+
+.clients-row-right {
+
+  width: max-content;
+
+  animation: marquee-right 28s linear infinite;
+
+}
+
+.clients-row-left:hover,
+.clients-row-right:hover {
+
+  animation-play-state: paused;
+
+}
+
+.clients-mask {
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+
+}
+
+@media (max-width:768px){
+
+  .clients-row-left,
+  .clients-row-right{
+
+      animation-duration:18s;
+
+  }
+
 }

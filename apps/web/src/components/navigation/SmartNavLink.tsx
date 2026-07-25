@@ -1,25 +1,58 @@
 import { NavLink } from "react-router-dom";
+import type { MouseEvent } from "react";
+
+import { cn } from "@/lib/utils";
 
 interface SmartNavLinkProps {
   label: string;
   href: string;
+  external?: boolean;
   onClick?: () => void;
+  className?: string;
 }
 
 export default function SmartNavLink({
   label,
   href,
+  external = false,
   onClick,
+  className,
 }: SmartNavLinkProps) {
   const isSectionLink = href.startsWith("#");
 
-  if (isSectionLink) {
+  const linkClass = cn(
+    "text-sm font-medium text-text-secondary transition-colors hover:text-accent",
+    className
+  );
+
+  if (external) {
     return (
       <a
         href={href}
+        // target="_blank"
+        rel="noopener noreferrer"
         onClick={onClick}
-        className="text-sm font-medium text-slate-700 transition-colors hover:text-teal-700"
+        className={linkClass}
       >
+        {label}
+      </a>
+    );
+  }
+
+  if (isSectionLink) {
+    const handleSectionClick = (event: MouseEvent<HTMLAnchorElement>) => {
+      const target = document.querySelector(href);
+
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      onClick?.();
+    };
+
+    return (
+      <a href={href} onClick={handleSectionClick} className={linkClass}>
         {label}
       </a>
     );
@@ -30,11 +63,10 @@ export default function SmartNavLink({
       to={href}
       onClick={onClick}
       className={({ isActive }) =>
-        `text-sm font-medium transition-colors ${
-          isActive
-            ? "text-teal-700"
-            : "text-slate-700 hover:text-teal-700"
-        }`
+        cn(
+          linkClass,
+          isActive && "text-accent"
+        )
       }
     >
       {label}

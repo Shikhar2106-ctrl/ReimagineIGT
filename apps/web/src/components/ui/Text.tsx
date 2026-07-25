@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 
+import { cn } from "@/lib/utils";
+
 interface TextProps {
   children: ReactNode;
   className?: string;
@@ -11,7 +13,10 @@ export default function Text({
 }: TextProps) {
   return (
     <p
-      className={`text-lg leading-8 text-slate-600 ${className}`}
+      className={cn(
+        "text-lg leading-8 text-text-secondary",
+        className
+      )}
     >
       {children}
     </p>

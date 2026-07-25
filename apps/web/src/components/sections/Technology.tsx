@@ -1,3 +1,4 @@
+import FadeIn from "@/components/motion/FadeIn";
 import TimelineItem from "@/components/common/TimelineItem";
 import SectionHeader from "@/components/common/SectionHeader";
 import TechnologyIllustration from "@/components/illustrations/TechnologyIllustration";
@@ -9,21 +10,19 @@ import { technologyContent } from "@/content/technology";
 
 export default function Technology() {
   return (
-    <Section className="bg-slate-50 dark:bg-slate-950/40">
-
+    <Section size="spacious">
       <Container>
+        <FadeIn>
+          <SectionHeader
+            badge={technologyContent.badge}
+            title={technologyContent.title}
+            description={technologyContent.description}
+            align="center"
+          />
+        </FadeIn>
 
-        <SectionHeader
-          badge={technologyContent.badge}
-          title={technologyContent.title}
-          description={technologyContent.description}
-          align="center"
-        />
-
-        <div className="mt-20 grid gap-20 lg:grid-cols-2">
-
-          <div>
-
+        <div className="mt-16 grid gap-16 lg:mt-24 lg:grid-cols-2 lg:gap-20">
+          <FadeIn>
             {technologyContent.steps.map((step, index) => (
               <TimelineItem
                 key={step.title}
@@ -33,15 +32,13 @@ export default function Technology() {
                 isLast={index === technologyContent.steps.length - 1}
               />
             ))}
+          </FadeIn>
 
-          </div>
-
-          <TechnologyIllustration />
-
+          <FadeIn delay={0.1} direction="left">
+            <TechnologyIllustration />
+          </FadeIn>
         </div>
-
       </Container>
-
     </Section>
   );
 }

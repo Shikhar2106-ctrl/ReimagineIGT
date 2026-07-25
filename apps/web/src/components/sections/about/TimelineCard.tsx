@@ -18,17 +18,17 @@ export default function TimelineCard({
   return (
     <Card
       hover
-      className="relative ml-10"
+      className="relative ml-8 p-6 sm:ml-10 sm:p-8"
     >
-      <div className="absolute -left-16 top-10 flex h-12 w-12 items-center justify-center rounded-full bg-brand text-white shadow-lg">
-        <Icon size={22} />
+      <div className="absolute -left-12 top-7 flex h-10 w-10 items-center justify-center rounded-full bg-brand text-white shadow-lg sm:-left-16 sm:top-10 sm:h-12 sm:w-12">
+        <Icon className="h-5 w-5 sm:h-[22px] sm:w-[22px]" />
       </div>
 
       <span className="inline-block rounded-full bg-brand/10 px-4 py-1 text-sm font-semibold text-brand">
         {year}
       </span>
 
-      <h3 className="mt-5 text-2xl font-bold text-text-primary">
+      <h3 className="mt-4 text-xl font-bold text-text-primary sm:text-2xl">
         {title}
       </h3>
 

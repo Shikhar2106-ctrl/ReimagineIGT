@@ -217,7 +217,7 @@ export const leadershipContent = {
       name: "Aarav Sharma",
       designation: "Chief Executive Officer",
       bio: "Driving IntelliGreen's vision through innovation and sustainable technology.",
-      image: "/images/team/team-1.jpg",
+      image: "/images/team/ourTeam- (1).webp",
       socials: {
         linkedin: "#",
         email: "aarav@intelligreen.com",
@@ -228,7 +228,7 @@ export const leadershipContent = {
       name: "Priya Verma",
       designation: "Chief Technology Officer",
       bio: "Leading AI, IoT, and cloud platform development.",
-      image: "/images/team/team-2.jpg",
+      image: "/images/team/ourTeam- (2).webp",
       socials: {
         linkedin: "#",
         email: "priya@intelligreen.com",
@@ -239,7 +239,7 @@ export const leadershipContent = {
       name: "Rohan Gupta",
       designation: "Head of Engineering",
       bio: "Building scalable environmental monitoring systems.",
-      image: "/images/team/team-3.jpg",
+      image: "/images/team/ourTeam- (3).webp",
       socials: {
         linkedin: "#",
         email: "rohan@intelligreen.com",
@@ -250,7 +250,51 @@ export const leadershipContent = {
       name: "Neha Kapoor",
       designation: "Operations Director",
       bio: "Ensuring successful deployment and customer satisfaction.",
-      image: "/images/team/team-4.jpg",
+      image: "/images/team/ourTeam- (4).webp",
+      socials: {
+        linkedin: "#",
+        email: "neha@intelligreen.com",
+      },
+    },
+
+    {
+      name: "Neha Kapoor",
+      designation: "Operations Director",
+      bio: "Ensuring successful deployment and customer satisfaction.",
+      image: "/images/team/ourTeam- (5).webp",
+      socials: {
+        linkedin: "#",
+        email: "neha@intelligreen.com",
+      },
+    },
+
+    {
+      name: "Neha Kapoor",
+      designation: "Operations Director",
+      bio: "Ensuring successful deployment and customer satisfaction.",
+      image: "/images/team/ourTeam- (6).webp",
+      socials: {
+        linkedin: "#",
+        email: "neha@intelligreen.com",
+      },
+    },  
+
+    {
+      name: "Neha Kapoor",
+      designation: "Operations Director",
+      bio: "Ensuring successful deployment and customer satisfaction.",
+      image: "/images/team/ourTeam- (7).webp",
+      socials: {
+        linkedin: "#",
+        email: "neha@intelligreen.com",
+      },
+    },
+
+    {
+      name: "Neha Kapoor",
+      designation: "Operations Director",
+      bio: "Ensuring successful deployment and customer satisfaction.",
+      image: "/images/team/ourTeam- (8).webp",
       socials: {
         linkedin: "#",
         email: "neha@intelligreen.com",

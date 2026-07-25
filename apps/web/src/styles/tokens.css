@@ -1,46 +1,62 @@
 :root {
-  /* Brand */
-  --brand: #0f766e;
-  --brand-light: #14b8a6;
-  --brand-dark: #115e59;
+  /* Brand — IntelliGreen + Praan-inspired cyan accent */
+  --brand: #16a34a;
+  --brand-light: #22c55e;
+  --brand-dark: #15803d;
+  --accent: #00e5ff;
+  --accent-muted: #0891b2;
 
-  /* Backgrounds */
-  --surface: #ffffff;
-  --surface-muted: #f8fafc;
-  --surface-card: #ffffff;
+  /* Backgrounds — dark-first premium palette */
+  --surface: #030712;
+  --surface-muted: #0a0f1a;
+  --surface-card: #0f172a;
+  --surface-elevated: #111827;
 
   /* Text */
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
 
   /* Borders */
-  --border: #e2e8f0;
+  --border: #1e293b;
+  --border-subtle: #334155;
 
   /* Status */
   --success: #22c55e;
   --warning: #f59e0b;
   --danger: #ef4444;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
-  --shadow-md: 0 10px 20px rgb(15 23 42 / 0.08);
-  --shadow-lg: 0 20px 40px rgb(15 23 42 / 0.12);
+  /* Shadows & glow */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 10px 30px rgb(0 0 0 / 0.35);
+  --shadow-lg: 0 24px 60px rgb(0 0 0 / 0.45);
+  --glow-accent: 0 0 60px rgb(0 229 255 / 0.25);
 
   /* Radius */
   --radius-sm: 12px;
   --radius-md: 20px;
   --radius-lg: 32px;
+
+  /* Spacing scale */
+  --section-y: clamp(5rem, 8vw, 8rem);
+  --section-y-lg: clamp(6rem, 10vw, 10rem);
+  --container-x: clamp(1.25rem, 4vw, 2rem);
 }
 
-.dark {
-  --surface: #020617;
-  --surface-muted: #0f172a;
-  --surface-card: #111827;
+.light {
+  --surface: #ffffff;
+  --surface-muted: #f8fafc;
+  --surface-card: #ffffff;
+  --surface-elevated: #f1f5f9;
 
-  --text-primary: #f8fafc;
-  --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
 
-  --border: #334155;
+  --border: #e2e8f0;
+  --border-subtle: #cbd5e1;
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow-md: 0 10px 20px rgb(15 23 42 / 0.08);
+  --shadow-lg: 0 20px 40px rgb(15 23 42 / 0.12);
 }

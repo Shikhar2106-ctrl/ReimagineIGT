@@ -18,26 +18,27 @@ export default function SectionHeader({
   align = "left",
   className,
 }: SectionHeaderProps) {
-  const centered = align === "center";
-
   return (
     <div
       className={cn(
-        centered && "mx-auto max-w-3xl text-center",
+        "mx-auto max-w-3xl",
+        align === "center" && "text-center",
+        align === "center" && "[&>p]:mx-auto",
+        align === "left" && "text-left",
         className
       )}
     >
-      {badge && <Badge>{badge}</Badge>}
+      {badge ? <Badge>{badge}</Badge> : null}
 
-      <Heading className="mt-6">
+      <Heading as="h2" className="mt-8 text-text-primary">
         {title}
       </Heading>
 
-      {description && (
-        <Text className="mt-6">
+      {description ? (
+        <Text className="mt-6 max-w-2xl text-lg leading-8 text-text-secondary">
           {description}
         </Text>
-      )}
+      ) : null}
     </div>
   );
 }

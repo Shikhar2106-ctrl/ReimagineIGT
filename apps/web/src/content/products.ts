@@ -14,14 +14,14 @@ export const productsContent = {
 
   items: [
     {
-      title: "Air Purifier Pro",
+      title: "WALL MOUNTED CTFA",
       description:
-        "Commercial-grade HEPA air purification with AI-powered optimization.",
+        "Fresh Air Solution For The HVAC/Non HVAC Premises.",
 
       features: [
-        "HEPA H14 Filter",
-        "AI Airflow Control",
-        "Energy Efficient",
+        "Fresh Air Mode",
+        "Air Purification Mode",
+        "Light Weight",
       ],
 
       icon: Wind,

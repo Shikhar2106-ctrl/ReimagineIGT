@@ -1,3 +1,5 @@
+import FadeIn from "@/components/motion/FadeIn";
+import StaggerContainer, { StaggerItem } from "@/components/motion/StaggerContainer";
 import ProjectCard from "@/components/common/ProjectCard";
 import SectionHeader from "@/components/common/SectionHeader";
 
@@ -8,30 +10,25 @@ import Section from "@/components/ui/Section";
 
 export default function Projects() {
   return (
-    <Section className="bg-surface-muted">
-
+    <Section size="spacious" className="bg-surface-muted">
       <Container>
+        <FadeIn>
+          <SectionHeader
+            badge={projectsContent.badge}
+            title={projectsContent.title}
+            description={projectsContent.description}
+            align="center"
+          />
+        </FadeIn>
 
-        <SectionHeader
-          badge={projectsContent.badge}
-          title={projectsContent.title}
-          description={projectsContent.description}
-          align="center"
-        />
-
-        <div className="mt-20 grid gap-8 lg:grid-cols-3">
-
+        <StaggerContainer className="mt-16 grid gap-8 lg:mt-20 lg:grid-cols-3">
           {projectsContent.items.map((project) => (
-            <ProjectCard
-              key={project.title}
-              {...project}
-            />
+            <StaggerItem key={project.title}>
+              <ProjectCard {...project} />
+            </StaggerItem>
           ))}
-
-        </div>
-
+        </StaggerContainer>
       </Container>
-
     </Section>
   );
 }

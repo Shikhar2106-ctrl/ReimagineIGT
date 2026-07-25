@@ -2,22 +2,49 @@ export const footerContent = {
   company: {
     name: "IntelliGreen",
     description:
-      "Building healthier indoor environments through intelligent air quality solutions.",
+      "Empowering healthier indoor environments through AI-driven air quality monitoring, intelligent purification systems, and sustainable environmental solutions.",
   },
 
   quickLinks: [
-    "About",
-    "Technology",
-    "Products",
-    "Industries",
-    "Projects",
+    {
+      label: "About Us",
+      href: "#about",
+    },
+    {
+      label: "Technology",
+      href: "#technology",
+    },
+    {
+      label: "Industries",
+      href: "#industries",
+    },
+    {
+      label: "Products",
+      href: "#products",
+    },
+    {
+      label: "Projects",
+      href: "#projects",
+    },
   ],
 
   resources: [
-    "Case Studies",
-    "Blog",
-    "FAQs",
-    "Support",
+    {
+      label: "Case Studies",
+      href: "#",
+    },
+    {
+      label: "Blog",
+      href: "#",
+    },
+    {
+      label: "FAQs",
+      href: "#",
+    },
+    {
+      label: "Support",
+      href: "#",
+    },
   ],
 
   contact: {

@@ -23,15 +23,15 @@ export default function TeamCard({
   return (
     <Card
       hover
-      className="group overflow-hidden text-center"
+      className="group flex h-full flex-col overflow-hidden p-6 text-center sm:p-8"
     >
       <img
         src={image}
         alt={name}
-        className="mx-auto h-40 w-40 rounded-full object-cover ring-4 ring-brand/10 transition-transform duration-300 group-hover:scale-105"
+        className="mx-auto h-32 w-32 rounded-full object-cover ring-4 ring-brand/10 transition-transform duration-300 group-hover:scale-105 sm:h-36 sm:w-36"
       />
 
-      <h3 className="mt-8 text-2xl font-bold text-text-primary">
+      <h3 className="mt-6 text-xl font-bold text-text-primary sm:text-2xl">
         {name}
       </h3>
 
@@ -39,22 +39,24 @@ export default function TeamCard({
         {designation}
       </p>
 
-      <p className="mt-5 leading-7 text-text-secondary">
+      <p className="mt-4 leading-7 text-text-secondary">
         {bio}
       </p>
 
-      <div className="mt-8 flex justify-center gap-4">
+      <div className="mt-auto flex justify-center gap-3 pt-7">
 
         <a
           href={socials.linkedin}
-          className="rounded-full border border-border p-3 transition hover:border-brand hover:bg-brand hover:text-white"
+          aria-label={`${name}'s professional profile`}
+          className="rounded-full border border-border p-3 transition hover:border-brand hover:bg-brand hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
           <Globe2 size={18} />
         </a>
 
         <a
           href={`mailto:${socials.email}`}
-          className="rounded-full border border-border p-3 transition hover:border-brand hover:bg-brand hover:text-white"
+          aria-label={`Email ${name}`}
+          className="rounded-full border border-border p-3 transition hover:border-brand hover:bg-brand hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
           <Mail size={18} />
         </a>

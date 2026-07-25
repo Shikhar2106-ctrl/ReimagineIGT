@@ -1,6 +1,7 @@
 export interface NavItem {
   label: string;
   href: string;
+  external?: boolean;
 }
 
 export const navigation: NavItem[] = [
@@ -9,27 +10,28 @@ export const navigation: NavItem[] = [
     href: "/",
   },
   {
-    label: "Technology",
-    href: "#technology",
-  },
-  {
-    label: "Products",
-    href: "#products",
-  },
-  {
-    label: "Industries",
-    href: "#industries",
-  },
-  {
     label: "About",
-    href: "/about",
+    href: "/About",
   },
   {
-    label: "Projects",
-    href: "#projects",
+    label: "Application",
+    href: "/Application",
+  },
+  {
+    label: "Case Studies",
+    href: "/CaseStudies",
+  },
+  {
+    label: "Clients",
+    href: "/Clients",
   },
   {
     label: "Contact",
-    href: "#contact",
+    href: "/contact",
+  },
+  {
+    label: "Dashboard",
+    href: "https://dashboard.intelligreentech.com/accounts/login/?next=/",
+    external: true,
   },
 ];

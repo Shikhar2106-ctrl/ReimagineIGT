@@ -6,12 +6,10 @@ import Container from "@/components/ui/Container";
 
 export default function NotFound() {
   return (
-    <section className="flex min-h-screen items-center justify-center bg-surface py-20">
-      <Container>
-
-        <div className="mx-auto max-w-2xl text-center">
-
-          <div className="mx-auto flex h-32 w-32 items-center justify-center rounded-full bg-brand/10">
+    <section className="min-h-screen bg-surface">
+      <Container className="flex min-h-screen items-center justify-center">
+        <div className="flex w-full flex-col items-center justify-center text-center">
+          <div className="flex h-32 w-32 items-center justify-center rounded-full bg-brand/10">
             <SearchX
               size={70}
               className="text-brand"
@@ -22,19 +20,16 @@ export default function NotFound() {
             404
           </h1>
 
-          <h2 className="mt-6 text-3xl font-bold text-text-primary">
+          <h2 className="mt-5 text-3xl font-bold text-text-primary">
             Page Not Found
           </h2>
 
-          <p className="mt-5 text-lg leading-8 text-text-secondary">
+          <p className="mt-5 max-w-xl text-lg leading-8 text-text-secondary">
             The page you're looking for doesn't exist or may have been moved.
           </p>
 
-          <Link to="/">
-            <Button
-              size="lg"
-              className="mt-10"
-            >
+          <Link to="/" className="mt-10">
+            <Button size="lg">
               <Home
                 size={18}
                 className="mr-2"
@@ -42,9 +37,7 @@ export default function NotFound() {
               Back to Home
             </Button>
           </Link>
-
         </div>
-
       </Container>
     </section>
   );

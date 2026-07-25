@@ -1,3 +1,4 @@
+import FadeIn from "@/components/motion/FadeIn";
 import ContactInfoCard from "@/components/common/ContactInfoCard";
 import SectionHeader from "@/components/common/SectionHeader";
 
@@ -10,72 +11,59 @@ import { contactContent } from "@/content/contact";
 
 export default function Contact() {
   return (
-    <Section>
-
+    <Section size="spacious" className="bg-surface-muted">
       <Container>
+        <FadeIn>
+          <SectionHeader
+            badge={contactContent.badge}
+            title={contactContent.title}
+            description={contactContent.description}
+            align="center"
+          />
+        </FadeIn>
 
-        <SectionHeader
-          badge={contactContent.badge}
-          title={contactContent.title}
-          description={contactContent.description}
-          align="center"
-        />
+        <div className="mt-16 grid gap-12 lg:mt-20 lg:grid-cols-2 lg:gap-16">
+          <FadeIn>
+            <div className="space-y-6">
+              {contactContent.details.map((item) => (
+                <ContactInfoCard key={item.title} {...item} />
+              ))}
+            </div>
+          </FadeIn>
 
-        <div className="mt-20 grid gap-12 lg:grid-cols-2">
+          <FadeIn delay={0.1} direction="left">
+            <Card className="border-border-subtle bg-surface-card">
+              <form className="space-y-6">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-text-primary outline-none transition-colors focus:border-accent"
+                />
 
-          {/* Left */}
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-text-primary outline-none transition-colors focus:border-accent"
+                />
 
-          <div className="space-y-6">
-            {contactContent.details.map((item) => (
-              <ContactInfoCard
-                key={item.title}
-                {...item}
-              />
-            ))}
-          </div>
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-text-primary outline-none transition-colors focus:border-accent"
+                />
 
-          {/* Right */}
+                <textarea
+                  rows={6}
+                  placeholder="Your Message"
+                  className="w-full resize-none rounded-xl border border-border bg-surface px-4 py-3 text-text-primary outline-none transition-colors focus:border-accent"
+                />
 
-          <Card>
-
-            <form className="space-y-6">
-
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full rounded-xl border border-border bg-transparent px-4 py-3 outline-none focus:border-brand"
-              />
-
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full rounded-xl border border-border bg-transparent px-4 py-3 outline-none focus:border-brand"
-              />
-
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full rounded-xl border border-border bg-transparent px-4 py-3 outline-none focus:border-brand"
-              />
-
-              <textarea
-                rows={6}
-                placeholder="Your Message"
-                className="w-full resize-none rounded-xl border border-border bg-transparent px-4 py-3 outline-none focus:border-brand"
-              />
-
-              <Button size="lg">
-                Send Message
-              </Button>
-
-            </form>
-
-          </Card>
-
+                <Button size="lg">Send Message</Button>
+              </form>
+            </Card>
+          </FadeIn>
         </div>
-
       </Container>
-
     </Section>
   );
 }

@@ -1,12 +1,7 @@
 export const heroContent = {
   badge: "CleanTech Solutions",
 
-  title: [
-    "Creating",
-    "Healthier",
-    "Indoor",
-    "Environments",
-  ],
+  title: ["Air that", "powers healthier", "spaces"],
 
   description:
     "IntelliGreen delivers intelligent air purification, real-time monitoring, and sustainable clean-air solutions for commercial, healthcare, educational, and industrial environments.",
