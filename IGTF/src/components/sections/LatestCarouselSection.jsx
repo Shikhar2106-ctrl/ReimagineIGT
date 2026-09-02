@@ -3,6 +3,7 @@ import Container from '../common/Container';
 import SectionHeader from '../common/SectionHeader';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { getAssetUrl } from '../../utils/assetHelper';
+import perspectivesData from '../../data/perspectives.json';
 
 export default function LatestCarouselSection() {
   const carouselRef = useRef(null);

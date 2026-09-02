@@ -5,6 +5,7 @@ import IconHelper from '../common/IconHelper';
 import Button from '../common/Button';
 import { ArrowRight, CheckCircle2, Info } from 'lucide-react';
 import { getAssetUrl } from '../../utils/assetHelper';
+import productsData from '../../data/products.json';
 
 export default function ProductsSection() {
   const [activeTab, setActiveTab] = useState(productsData.items[0]?.id || '');

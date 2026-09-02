@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Container from '../common/Container';
 import IconHelper from '../common/IconHelper';
 import { getAssetUrl } from '../../utils/assetHelper';
+import siteData from '../../data/site.json';
+import navData from '../../data/navigation.json';
 
 export default function Footer() {
   return (

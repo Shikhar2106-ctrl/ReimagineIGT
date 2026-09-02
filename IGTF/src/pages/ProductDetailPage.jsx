@@ -8,6 +8,7 @@ import IconHelper from '../components/common/IconHelper';
 import SEO from '../components/common/SEO';
 import { ArrowLeft, ArrowRight, CheckCircle2, ChevronDown, Download, ShieldCheck, Zap } from 'lucide-react';
 import { getAssetUrl } from '../utils/assetHelper';
+import productsData from '../data/products.json';
 
 export default function ProductDetailPage() {
   const { productId } = useParams();

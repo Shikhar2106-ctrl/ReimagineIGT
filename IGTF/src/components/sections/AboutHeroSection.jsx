@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '../common/Container';
 import Badge from '../common/Badge';
 import { getAssetUrl } from '../../utils/assetHelper';
+import aboutData from '../../data/about.json';
 
 export default function AboutHeroSection() {
   return (

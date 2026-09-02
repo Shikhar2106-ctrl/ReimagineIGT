@@ -4,6 +4,7 @@ import Container from '../common/Container';
 import Button from '../common/Button';
 import Badge from '../common/Badge';
 import { getAssetUrl } from '../../utils/assetHelper';
+import heroData from '../../data/hero.json';
 
 function TypingText({ phrases = [] }) {
   const [phraseIndex, setPhraseIndex] = useState(0);

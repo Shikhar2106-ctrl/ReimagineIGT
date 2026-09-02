@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '../common/Container';
 import SectionHeader from '../common/SectionHeader';
 import { getAssetUrl } from '../../utils/assetHelper';
+import aboutData from '../../data/about.json';
 
 export default function LeadershipSection() {
   return (

@@ -3,6 +3,7 @@ import Container from '../common/Container';
 import SectionHeader from '../common/SectionHeader';
 import { Quote } from 'lucide-react';
 import { getAssetUrl } from '../../utils/assetHelper';
+import clientsData from '../../data/clients.json';
 
 export default function ClientsSection() {
   return (

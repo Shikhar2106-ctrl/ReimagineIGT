@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Container from '../common/Container';
 import SectionHeader from '../common/SectionHeader';
 import { getAssetUrl } from '../../utils/assetHelper';
+import clientsData from '../../data/clients.json';
 
 export default function ClientGridSection() {
   const [isFlipped, setIsFlipped] = useState(false);
