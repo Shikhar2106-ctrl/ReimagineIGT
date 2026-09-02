@@ -7,7 +7,7 @@ import Badge from '../components/common/Badge';
 import IconHelper from '../components/common/IconHelper';
 import SEO from '../components/common/SEO';
 import { ArrowLeft, ArrowRight, CheckCircle2, ChevronDown, Download, ShieldCheck, Zap } from 'lucide-react';
-import productsData from '../data/products.json';
+import { getAssetUrl } from '../utils/assetHelper';
 
 export default function ProductDetailPage() {
   const { productId } = useParams();
@@ -87,8 +87,8 @@ export default function ProductDetailPage() {
               <div className="relative aspect-video rounded-3xl overflow-hidden border border-slate-200 bg-slate-900 shadow-2xl group">
                 {product.media ? (
                   <video
-                    src={product.media}
-                    poster={product.image}
+                    src={getAssetUrl(product.media)}
+                    poster={getAssetUrl(product.image)}
                     preload="metadata"
                     autoPlay
                     loop
@@ -102,7 +102,7 @@ export default function ProductDetailPage() {
                   />
                 ) : null}
                 <img
-                  src={product.image}
+                  src={getAssetUrl(product.image)}
                   alt={product.title}
                   className={`${product.media ? 'hidden' : 'block'} w-full h-full object-cover rounded-3xl`}
                 />

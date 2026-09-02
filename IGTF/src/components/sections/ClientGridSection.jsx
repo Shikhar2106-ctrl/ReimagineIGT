@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Container from '../common/Container';
 import SectionHeader from '../common/SectionHeader';
-import clientsData from '../../data/clients.json';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 export default function ClientGridSection() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -45,7 +45,7 @@ export default function ClientGridSection() {
                     className="group relative rounded-xl bg-white/90 border border-slate-200/80 p-3 flex items-center justify-center aspect-[16/9] shadow-xs hover:shadow-lg hover:border-emerald-500/50 hover:bg-white hover:-translate-y-2 transition-all duration-300 ease-out"
                   >
                     <img
-                      src={logo}
+                      src={getAssetUrl(logo)}
                       alt={`Client Logo ${index + 1}`}
                       className="max-h-8 sm:max-h-10 w-auto max-w-[85%] object-contain transition-all duration-300 group-hover:scale-105"
                       loading="lazy"
@@ -71,7 +71,7 @@ export default function ClientGridSection() {
                     className="group relative rounded-xl bg-white/90 border border-slate-200/80 p-3 flex items-center justify-center aspect-[16/9] shadow-xs hover:shadow-lg hover:border-emerald-500/50 hover:bg-white hover:-translate-y-2 transition-all duration-300 ease-out"
                   >
                     <img
-                      src={logo}
+                      src={getAssetUrl(logo)}
                       alt={`Client Logo ${index + 19}`}
                       className="max-h-8 sm:max-h-10 w-auto max-w-[85%] object-contain transition-all duration-300 group-hover:scale-105"
                       loading="lazy"

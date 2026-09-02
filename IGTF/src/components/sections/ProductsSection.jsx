@@ -4,7 +4,7 @@ import SectionHeader from '../common/SectionHeader';
 import IconHelper from '../common/IconHelper';
 import Button from '../common/Button';
 import { ArrowRight, CheckCircle2, Info } from 'lucide-react';
-import productsData from '../../data/products.json';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 export default function ProductsSection() {
   const [activeTab, setActiveTab] = useState(productsData.items[0]?.id || '');
@@ -53,8 +53,8 @@ export default function ProductsSection() {
               <div className="lg:col-span-6 relative aspect-video rounded-xl overflow-hidden border border-slate-200 bg-slate-900 shadow-sm group">
                 {product.media ? (
                   <video
-                    src={product.media}
-                    poster={product.image}
+                    src={getAssetUrl(product.media)}
+                    poster={getAssetUrl(product.image)}
                     preload="metadata"
                     autoPlay
                     loop
@@ -68,7 +68,7 @@ export default function ProductsSection() {
                   />
                 ) : null}
                 <img
-                  src={product.image}
+                  src={getAssetUrl(product.image)}
                   alt={product.title}
                   loading="lazy"
                   decoding="async"

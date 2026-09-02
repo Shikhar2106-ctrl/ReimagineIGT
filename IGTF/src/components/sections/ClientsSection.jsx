@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../common/Container';
 import SectionHeader from '../common/SectionHeader';
 import { Quote } from 'lucide-react';
-import clientsData from '../../data/clients.json';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 export default function ClientsSection() {
   return (
@@ -25,7 +25,7 @@ export default function ClientsSection() {
             {[...clientsData.logos, ...clientsData.logos].map((logoPath, idx) => (
               <div key={idx} className="h-10 w-28 flex items-center justify-center shrink-0 opacity-70 hover:opacity-100 transition-opacity">
                 <img
-                  src={logoPath}
+                  src={getAssetUrl(logoPath)}
                   alt={`Client Logo ${idx + 1}`}
                   className="max-h-full max-w-full object-contain"
                   loading="lazy"

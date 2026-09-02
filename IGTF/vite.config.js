@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
 
 export default defineConfig({
-  base: './',
+  base: process.env.GITHUB_ACTIONS ? '/ReimagineIGT/' : '/',
   plugins: [react(), tailwindcss()],
   server: {
     host: '0.0.0.0',

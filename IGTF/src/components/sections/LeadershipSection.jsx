@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../common/Container';
 import SectionHeader from '../common/SectionHeader';
-import aboutData from '../../data/about.json';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 export default function LeadershipSection() {
   return (
@@ -22,7 +22,7 @@ export default function LeadershipSection() {
             >
               <div className="aspect-[4/5] overflow-hidden bg-slate-100">
                 <img
-                  src={member.image}
+                  src={getAssetUrl(member.image)}
                   alt={member.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"

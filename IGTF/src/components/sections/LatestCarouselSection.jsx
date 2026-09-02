@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import Container from '../common/Container';
 import SectionHeader from '../common/SectionHeader';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import perspectivesData from '../../data/perspectives.json';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 export default function LatestCarouselSection() {
   const carouselRef = useRef(null);
@@ -55,7 +55,7 @@ export default function LatestCarouselSection() {
               className="group relative flex-none w-[280px] sm:w-[320px] h-[340px] rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md transition-transform duration-500 hover:-translate-y-1.5"
             >
               <img
-                src={story.image}
+                src={getAssetUrl(story.image)}
                 alt={story.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"

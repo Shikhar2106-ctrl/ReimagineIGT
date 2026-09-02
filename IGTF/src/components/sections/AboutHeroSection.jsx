@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../common/Container';
 import Badge from '../common/Badge';
-import aboutData from '../../data/about.json';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 export default function AboutHeroSection() {
   return (
@@ -21,7 +21,7 @@ export default function AboutHeroSection() {
         <div className="pt-6">
           <div className="relative rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-xl max-w-4xl mx-auto aspect-[21/9]">
             <img
-              src={aboutData.heroImage}
+              src={getAssetUrl(aboutData.heroImage)}
               alt="About IntelliGreen"
               className="w-full h-full object-cover"
             />

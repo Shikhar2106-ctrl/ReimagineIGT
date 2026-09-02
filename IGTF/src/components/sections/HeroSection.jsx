@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import Container from '../common/Container';
 import Button from '../common/Button';
 import Badge from '../common/Badge';
-import heroData from '../../data/hero.json';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 function TypingText({ phrases = [] }) {
   const [phraseIndex, setPhraseIndex] = useState(0);
@@ -56,8 +56,8 @@ export default function HeroSection() {
           
           {/* Background Video */}
           <video
-            src={heroData.videos[0]}
-            poster={heroData.poster || "/images/hero/frame-1.png"}
+            src={getAssetUrl(heroData.videos[0])}
+            poster={getAssetUrl(heroData.poster || "/images/hero/frame-1.png")}
             preload="metadata"
             autoPlay
             loop
@@ -71,7 +71,7 @@ export default function HeroSection() {
           />
           {/* Fallback image */}
           <img
-            src="/images/hero/frame-1.png"
+            src={getAssetUrl("/images/hero/frame-1.png")}
             alt="Hero Background"
             className="hidden w-full h-full object-cover"
           />

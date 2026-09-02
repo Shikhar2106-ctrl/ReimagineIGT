@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Container from '../common/Container';
 import IconHelper from '../common/IconHelper';
-import siteData from '../../data/site.json';
-import navData from '../../data/navigation.json';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 export default function Footer() {
   return (
@@ -14,7 +13,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <Link to="/" className="inline-block">
               <img
-                src={siteData.logo.light}
+                src={getAssetUrl(siteData.logo.light)}
                 alt={siteData.logo.alt}
                 className="h-10 w-auto object-contain"
                 onError={(e) => {

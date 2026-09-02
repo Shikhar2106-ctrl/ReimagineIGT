@@ -6,6 +6,8 @@ import Button from '../common/Button';
 import navData from '../../data/navigation.json';
 import siteData from '../../data/site.json';
 
+import { getAssetUrl } from '../../utils/assetHelper';
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,7 +38,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <img
-              src={siteData.logo.header || "/images/topbar-logo.png"}
+              src={getAssetUrl(siteData.logo.header || "/images/topbar-logo.png")}
               alt={siteData.logo.alt}
               className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               onError={(e) => {
