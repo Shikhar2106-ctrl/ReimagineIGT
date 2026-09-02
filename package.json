@@ -3,14 +3,9 @@
   "private": true,
   "packageManager": "pnpm@11.13.1",
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "lint": "turbo run lint",
-    "typecheck": "turbo run typecheck"
-  },
-  "devDependencies": {
-    "@types/node": "^24.13.3",
-    "turbo": "^2.10.5",
-    "typescript": "~6.0.3"
+    "dev": "pnpm --dir IGTF dev",
+    "build": "pnpm --dir IGTF build",
+    "preview": "pnpm --dir IGTF preview",
+    "deploy": "pnpm --dir IGTF deploy"
   }
 }

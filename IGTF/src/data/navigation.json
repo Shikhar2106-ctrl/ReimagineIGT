@@ -1,0 +1,37 @@
+{
+  "main": [
+    { "label": "Home", "path": "/" },
+    { "label": "About", "path": "/about" },
+    { "label": "Products", "path": "/products" },
+    { "label": "Clients", "path": "/clients" },
+    { "label": "Contact", "path": "/contact" }
+  ],
+  "footer": [
+    {
+      "title": "Solutions",
+      "links": [
+        { "label": "Commercial Air Quality", "path": "/products" },
+        { "label": "Healthcare Sanitation", "path": "/products" },
+        { "label": "Education & Campuses", "path": "/products" },
+        { "label": "Industrial Filtration", "path": "/products" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About Us", "path": "/about" },
+        { "label": "Leadership", "path": "/about#leadership" },
+        { "label": "Certifications", "path": "/about#certifications" },
+        { "label": "Clients & Partners", "path": "/clients" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "Case Studies", "path": "/clients" },
+        { "label": "Air Quality Index Guide", "path": "/products" },
+        { "label": "Contact Support", "path": "/contact" }
+      ]
+    }
+  ]
+}

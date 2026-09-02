@@ -1,0 +1,89 @@
+{
+  "badge": "About IntelliGreen",
+  "title": "Pioneering Sustainable Clean Air Innovation",
+  "description": "We build next-generation indoor environmental technology designed to protect human health, reduce carbon footprint, and drive operational efficiency.",
+  "heroImage": "/images/hero/frame-1.png",
+  "story": {
+    "title": "Our Journey & Vision",
+    "paragraphs": [
+      "Founded with the mission to redefine indoor air quality, IntelliGreen combines environmental engineering with advanced IoT analytics and hospital-grade purification.",
+      "Today, our systems safeguard thousands of occupants across corporate offices, healthcare facilities, academic institutes, and high-footfall commercial venues."
+    ]
+  },
+  "missionVision": {
+    "mission": {
+      "title": "Our Mission",
+      "description": "To transform indoor environments into clean, energy-efficient, and healthy spaces using active AI-assisted air technology."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the global benchmark in intelligent, eco-friendly air management for human wellness and sustainability."
+    }
+  },
+  "values": [
+    {
+      "icon": "ShieldCheck",
+      "title": "Health & Safety First",
+      "description": "Every solution is engineered to eliminate pathogens, particulate matter, and harmful VOCs."
+    },
+    {
+      "icon": "Leaf",
+      "title": "Environmental Sustainability",
+      "description": "Optimizing energy consumption while delivering high-throughput clean air output."
+    },
+    {
+      "icon": "Cpu",
+      "title": "Data-Driven Intelligence",
+      "description": "Real-time analytics and predictive maintenance for effortless operations."
+    },
+    {
+      "icon": "Award",
+      "title": "Certified Excellence",
+      "description": "Rigorously tested and compliant with international clean air standards."
+    }
+  ],
+  "team": [
+    {
+      "name": "Er. Gaurav Shandilya",
+      "role": "Chief Executive Officer & Founder",
+      "image": "/images/team/TeamHead1.webp",
+      "bio": "8+ years in CleanTech innovation & environmental engineering."
+    },
+    {
+      "name": "Dr. Bhawna Gaur",
+      "role": "Director",
+      "image": "/images/team/TeamHead2.webp",
+      "bio": "Drive Sustainability with Smart Air Purification Solutions for Healthier, Cleaner Spaces."
+    },
+    {
+      "name": "Er. Vikash Jha",
+      "role": "Technical Operations & New Product Development",
+      "image": "/images/team/TeamHead3.webp",
+      "bio": "Pioneering R&D and technical operations for next-generation CleanTech products."
+    },
+    {
+      "name": "Lokendra Shekhawat",
+      "role": "Sales Manager",
+      "image": "/images/team/TeamHead4.webp",
+      "bio": "Driving enterprise partnerships and client satisfaction across commercial sectors."
+    },
+    {
+      "name": "Birabrata Bhattacharjee",
+      "role": "Director - Sales & Marketing",
+      "image": "/images/team/TeamHead5.webp",
+      "bio": "Strategic marketing leadership and global market expansion."
+    }
+  ],
+  "timeline": [
+    { "year": "2020", "title": "Company Foundation", "description": "Launched initial IAQ monitoring prototype and seed funding." },
+    { "year": "2022", "title": "CTFA Purification Unit Launch", "description": "Deploys wall-mounted CTFA units across healthcare hubs." },
+    { "year": "2024", "title": "AI Cloud Platform Integration", "description": "Surpassed 500+ commercial installations nationwide." },
+    { "year": "2026", "title": "Next-Gen Smart Sensor Deployment", "description": "Expanding international reach with automated air optimization." }
+  ],
+  "certifications": [
+    "ISO 9001:2015 Quality Management",
+    "ISO 14001:2015 Environmental Standard",
+    "CE Clean Air Certified",
+    "IGBC Green Building Partner"
+  ]
+}

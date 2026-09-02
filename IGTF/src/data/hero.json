@@ -1,0 +1,31 @@
+{
+  "badge": "CleanTech Air Solutions",
+  "poster": "/images/hero/frame-1.png",
+  "typingHeadlines": [
+    "Healthy Spaces First",
+    "Better Air Everywhere",
+    "Smarter Air Quality",
+    "Healthy Air Solutions",
+    "Cleaner Spaces Ahead",
+    "Breathe Better Today"
+  ],
+  "subtitle": "IntelliGreen delivers intelligent air purification, real-time IAQ monitoring, and sustainable clean-air technology.",
+  "primaryCTA": {
+    "label": "Book Consultation",
+    "path": "/contact"
+  },
+  "secondaryCTA": {
+    "label": "Explore Products",
+    "path": "/products"
+  },
+  "videos": [
+    "/media/Video- (3).webm",
+    "/media/Video- (2).webm",
+    "/media/Video- (1).webm"
+  ],
+  "stats": [
+    { "value": "500+", "label": "Projects Delivered" },
+    { "value": "99.9%", "label": "Air Purity Efficiency" },
+    { "value": "15+", "label": "Industry Segments" }
+  ]
+}

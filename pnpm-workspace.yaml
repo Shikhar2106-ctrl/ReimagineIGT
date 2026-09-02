@@ -1,4 +1,4 @@
 packages:
-  - "apps/*"
-  - "packages/*"
-  
+  - "IGTF"
+allowBuilds:
+  esbuild: true

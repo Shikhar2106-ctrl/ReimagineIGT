@@ -1,0 +1,31 @@
+{
+  "name": "IntelliGreen",
+  "companyName": "Intelligreen Technologies Private Limited",
+  "tagline": "CleanTech Air Solutions",
+  "description": "IntelliGreen delivers intelligent air purification, real-time monitoring, and sustainable clean-air solutions for commercial, healthcare, educational, and industrial environments.",
+  "logo": {
+    "header": "/images/topbar-logo.png",
+    "light": "/media/intelligreen-logo.png",
+    "dark": "/media/intelligreen-logo.png",
+    "icon": "/favicon.svg",
+    "alt": "IntelliGreen Logo"
+  },
+  "fonts": {
+    "primary": "Inter, system-ui, sans-serif",
+    "heading": "Inter, system-ui, sans-serif"
+  },
+  "socials": [
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/company/intelligreen-technologies/", "icon": "Linkedin" },
+    { "name": "Twitter", "url": "https://x.com/IntelliGtech", "icon": "Twitter" },
+    { "name": "Instagram", "url": "https://www.instagram.com/intelligreen2?igsi=YW45amN6YWZjNjRp", "icon": "Instagram" },
+    { "name": "YouTube", "url": "https://www.youtube.com/channel/UCUeb4UN1fX9d7fhOxjcoHlQ", "icon": "Youtube" }
+  ],
+  "contact": {
+    "company": "Intelligreen Technologies Private Limited",
+    "email": "info@intelligreentech.com",
+    "phone": "+91-124 425 6862",
+    "mobile": "+91-99710 02858",
+    "address": "Intelligreen Technologies Private Limited, 3rd Floor, Unit No. COS/C/3L/Office/17, M3M Cosmopolitan, Sector - 66, Gurgaon - 122002, Haryana",
+    "workingHours": "Mon to Sat - 10 AM to 07 PM"
+  }
+}

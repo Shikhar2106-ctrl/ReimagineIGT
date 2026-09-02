@@ -1,0 +1,59 @@
+{
+  "badge": "Get In Touch",
+  "title": "Let's Build Healthier Spaces Together",
+  "description": "Have questions about our CTFA air purifiers, IAQ smart sensors, or enterprise solutions? Contact our clean-air experts today.",
+  "cards": [
+    {
+      "icon": "Mail",
+      "title": "Email Us",
+      "detail": "info@intelligreentech.com",
+      "subtext": "Response within 24 business hours"
+    },
+    {
+      "icon": "Phone",
+      "title": "Call Us",
+      "detail": "+91-124 425 6862",
+      "subtext": "Mobile: +91-99710 02858"
+    },
+    {
+      "icon": "MapPin",
+      "title": "Visit HQ",
+      "detail": "Sector - 66, Gurgaon, Haryana",
+      "subtext": "M3M Cosmopolitan, 3rd Floor"
+    },
+    {
+      "icon": "Clock",
+      "title": "Working Hours",
+      "detail": "Mon to Sat - 10 AM to 07 PM",
+      "subtext": "Sunday Closed"
+    }
+  ],
+  "office": {
+    "title": "Headquarters Location",
+    "company": "Intelligreen Technologies Private Limited",
+    "address": "3rd Floor, Unit No. COS/C/3L/Office/17, M3M Cosmopolitan, Sector - 66, Gurgaon - 122002, Haryana",
+    "phone": "+91-124 425 6862",
+    "mobile": "+91-99710 02858",
+    "email": "info@intelligreentech.com",
+    "workingHours": "Mon to Sat - 10 AM to 07 PM",
+    "mapUrl": "https://maps.google.com"
+  },
+  "faqs": [
+    {
+      "question": "How quickly can IntelliGreen systems be installed?",
+      "answer": "Our wall-mounted CTFA units and plug-and-play IAQ smart sensors can be deployed within 24 to 48 hours without major HVAC structural overhaul."
+    },
+    {
+      "question": "Are IntelliGreen products certified for healthcare and hospital usage?",
+      "answer": "Yes. Our HEPA filtration and UV-C / Bipolar Ionisation units comply with ISO Cleanroom and hospital air safety specifications."
+    },
+    {
+      "question": "Can I monitor indoor air quality remotely on mobile?",
+      "answer": "Yes, our IntelliGreen AI Cloud platform provides a responsive web dashboard and real-time mobile app alerts for facility managers."
+    },
+    {
+      "question": "How do I request a site audit for my facility?",
+      "answer": "Simply fill out our contact form below or call our support team at +91-124 425 6862 / +91-99710 02858 to schedule a free on-site air quality audit."
+    }
+  ]
+}

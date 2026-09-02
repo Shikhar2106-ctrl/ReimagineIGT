@@ -1,0 +1,43 @@
+{
+  "badge": "Perspectives",
+  "title": "New at IntelliGreen",
+  "description": "Discover our latest insights, product announcements, and case study breakthroughs.",
+  "stories": [
+    {
+      "id": "1",
+      "title": "Clean air that works with your space.",
+      "category": "Inside IntelliGreen",
+      "image": "/images/team/ourTeam- (1).webp"
+    },
+    {
+      "id": "2",
+      "title": "Air quality intelligence, in real time.",
+      "category": "Technology",
+      "image": "/images/team/ourTeam- (2).webp"
+    },
+    {
+      "id": "3",
+      "title": "A more resilient indoor environment.",
+      "category": "Case Study",
+      "image": "/images/team/ourTeam- (3).webp"
+    },
+    {
+      "id": "4",
+      "title": "Designed for people. Engineered for performance.",
+      "category": "Product Story",
+      "image": "/images/team/ourTeam- (4).webp"
+    },
+    {
+      "id": "5",
+      "title": "Reducing HVAC Carbon Footprint with AI Automation.",
+      "category": "Sustainability",
+      "image": "/images/team/ourTeam- (5).webp"
+    },
+    {
+      "id": "6",
+      "title": "Transforming Healthcare IAQ Standards.",
+      "category": "Case Study",
+      "image": "/images/team/ourTeam- (6).webp"
+    }
+  ]
+}

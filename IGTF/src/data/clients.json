@@ -1,0 +1,80 @@
+{
+  "badge": "Clients & Partners",
+  "title": "Trusted by Leading Enterprises",
+  "description": "Over 500+ commercial, educational, government, and medical spaces rely on IntelliGreen for clean indoor air.",
+  "logos": [
+    "/logos/clientLogo (1).webp",
+    "/logos/clientLogo (2).webp",
+    "/logos/clientLogo (3).webp",
+    "/logos/clientLogo (4).webp",
+    "/logos/clientLogo (5).webp",
+    "/logos/clientLogo (6).webp",
+    "/logos/clientLogo (7).webp",
+    "/logos/clientLogo (8).webp",
+    "/logos/clientLogo (9).webp",
+    "/logos/clientLogo (10).webp",
+    "/logos/clientLogo (11).webp",
+    "/logos/clientLogo (12).webp",
+    "/logos/clientLogo (13).webp",
+    "/logos/clientLogo (14).webp",
+    "/logos/clientLogo (15).webp"
+  ],
+  "allLogos": [
+    "/logos/clientLogo (1).webp",
+    "/logos/clientLogo (2).webp",
+    "/logos/clientLogo (3).webp",
+    "/logos/clientLogo (4).webp",
+    "/logos/clientLogo (5).webp",
+    "/logos/clientLogo (6).webp",
+    "/logos/clientLogo (7).webp",
+    "/logos/clientLogo (8).webp",
+    "/logos/clientLogo (9).webp",
+    "/logos/clientLogo (10).webp",
+    "/logos/clientLogo (11).webp",
+    "/logos/clientLogo (12).webp",
+    "/logos/clientLogo (13).webp",
+    "/logos/clientLogo (14).webp",
+    "/logos/clientLogo (15).webp",
+    "/logos/clientLogo (16).webp",
+    "/logos/clientLogo (17).webp",
+    "/logos/clientLogo (18).webp",
+    "/logos/clientLogo (19).webp",
+    "/logos/clientLogo (20).webp",
+    "/logos/clientLogo (21).webp",
+    "/logos/clientLogo (22).webp",
+    "/logos/clientLogo (23).webp",
+    "/logos/clientLogo (24).webp",
+    "/logos/clientLogo (25).webp",
+    "/logos/clientLogo (26).webp",
+    "/logos/clientLogo (27).webp",
+    "/logos/clientLogo (28).webp",
+    "/logos/clientLogo (29).webp",
+    "/logos/clientLogo (30).webp",
+    "/logos/clientLogo (31).webp",
+    "/logos/clientLogo (32).webp",
+    "/logos/clientLogo (33).webp",
+    "/logos/clientLogo (34).webp",
+    "/logos/clientLogo (35).webp",
+    "/logos/clientLogo (36).webp"
+  ],
+  "testimonials": [
+    {
+      "quote": "Installing IntelliGreen CTFA systems decreased our workplace sick leaves by 34% while improving employee focus across our corporate campus.",
+      "author": "Sanjay K.",
+      "role": "Head of Workplace Experience",
+      "company": "Global Tech Hub"
+    },
+    {
+      "quote": "The real-time IAQ dashboard gave our facility managers total control over HVAC power consumption and CO2 levels.",
+      "author": "Dr. Priyamvada N.",
+      "role": "Operations Director",
+      "company": "Apex Healthcare Group"
+    },
+    {
+      "quote": "IntelliGreen provided hospital-grade air safety with zero disruption to our daily operations.",
+      "author": "Rohan Deshmukh",
+      "role": "Infrastructure Vice President",
+      "company": "Horizon Educational Trust"
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "badge": "Our Products",
+  "title": "Smart Solutions for Every Indoor Environment",
+  "description": "A complete ecosystem of intelligent air quality products designed to monitor, analyze, and purify indoor environments.",
+  "items": [
+    {
+      "id": "ctfa-wall",
+      "slug": "ctfa-wall",
+      "title": "WALL MOUNTED CTFA",
+      "subtitle": "Fresh Air Solution For HVAC / Non-HVAC Premises",
+      "description": "Engineered for rapid air exchange, allergen removal, and dual-mode purification with ultra-quiet fan acoustics.",
+      "seoTitle": "WALL MOUNTED CTFA Fresh Air Purifier | IntelliGreen CleanTech",
+      "seoDescription": "Discover the WALL MOUNTED CTFA fresh air purifier. Dual-mode HEPA & carbon filtration for HVAC and non-HVAC commercial premises.",
+      "media": "/media/intelligreen-product3.mp4",
+      "image": "/images/hero/frame-6.png",
+      "icon": "Wind",
+      "features": [
+        "Fresh Air Intake Mode",
+        "Hospital Grade HEPA + Carbon Filtration",
+        "Lightweight Wall Mount Enclosure",
+        "Low Energy Consumption (<45W)"
+      ],
+      "specs": {
+        "Coverage": "Up to 850 sq. ft.",
+        "CADR": "450 m³/h",
+        "Filter Life": "12 Months",
+        "Noise Level": "<34 dB"
+      },
+      "overview": "The WALL MOUNTED CTFA (Clean Technology Fresh Air) unit represents a breakthrough in commercial space air purification. Built for both HVAC-connected buildings and standalone non-HVAC rooms, it introduces positive fresh air pressure while filtering PM2.5, pollen, airborne bacteria, and toxic gaseous compounds.",
+      "applications": [
+        "Corporate Executive Offices & Boardrooms",
+        "Healthcare Clinics & Patient Waiting Rooms",
+        "Schools, Educational Classrooms & Nurseries",
+        "Hotels, Hospitality Suites & Restaurants"
+      ],
+      "workingMechanism": [
+        {
+          "step": "01",
+          "title": "Fresh Air Intake",
+          "description": "Pulls fresh ambient air from external ducts or high-efficiency intake vents."
+        },
+        {
+          "step": "02",
+          "title": "Dual-Stage Filtration",
+          "description": "Passes incoming air through high-grade HEPA filters and activated carbon beds."
+        },
+        {
+          "step": "03",
+          "title": "Positive Pressure Circulation",
+          "description": "Distributes purified fresh air into the room while driving out stale indoor air."
+        }
+      ],
+      "technicalSpecifications": {
+        "Model Series": "IG-CTFA-850",
+        "Input Voltage": "220-240V AC / 50Hz",
+        "Power Consumption": "18W to 45W",
+        "CADR (Air Delivery)": "450 m³/h",
+        "Filtration Standard": "HEPA H13 (99.97% @ 0.3μm) + Activated Carbon",
+        "Noise Output": "34 dB(A) silent mode / 48 dB(A) max boost",
+        "Mounting Type": "Wall Mounted / Surface Mount Bracket",
+        "Dimensions (W x H x D)": "620mm x 380mm x 210mm",
+        "Unit Weight": "8.5 kg",
+        "Warranty": "2 Years Limited Warranty"
+      },
+      "faqs": [
+        {
+          "question": "Can the CTFA unit operate in rooms without central HVAC?",
+          "answer": "Yes! The CTFA unit is specifically designed to function either as a standalone wall-mounted fresh air unit or integrated into existing ductwork."
+        },
+        {
+          "question": "How often do the HEPA filters need replacement?",
+          "answer": "Under standard commercial usage (10-12 hours daily), the primary HEPA filter lasts 12 months. Built-in pressure sensors alert facility staff when replacement is due."
+        }
+      ]
+    },
+    {
+      "id": "bipolar-ionisation",
+      "slug": "bipolar-ionisation",
+      "title": "Active Bipolar Ionisation System",
+      "subtitle": "Replicating Nature's Air Purification Model",
+      "description": "Plasma Ionization technology that injects millions of balanced positive and negative ions throughout the room, continuously neutralizing airborne pathogens, mold spores, and odors at their source.",
+      "seoTitle": "Active Bipolar Ionisation System | In-Room Disinfection | IntelliGreen",
+      "seoDescription": "Active Bipolar Ionisation technology replicating nature's air purification model. Ozone-free, energy efficient, and universal central HVAC system integration.",
+      "media": "/media/Video- (5).webm",
+      "image": "/images/hero/frame-3.png",
+      "icon": "Zap",
+      "features": [
+        "Nature's Air Purification Model Replicated",
+        "Active In-Room Air & Surface Disinfection",
+        "High Density Positive & Negative Ions",
+        "180° Opposite to Passive Traditional Purifiers",
+        "Universal Central HVAC System Integration",
+        "UL 2998 Certified Ozone-Free Standard"
+      ],
+      "specs": {
+        "Technology": "Plasma Bipolar Ionization",
+        "Coverage": "Up to 1,500 sq. ft.",
+        "Ion Density": ">10 Million ions/cm³",
+        "Integration": "All Central HVAC Systems"
+      },
+      "overview": "Nature purifies mountain, forest, and post-rain ocean air through a natural balance of positive and negative ions. In modern cities and centralized air-conditioned buildings, ion density drops sharply, causing indoor air to feel dense and stale. The Active Bipolar Ionisation System replicates nature’s air purification model using Plasma Ionization technology. By releasing millions of balanced positive (H+) and negative (O2-) ions into the room, it actively neutralizes airborne viruses, bacteria, VOCs, and mold throughout 100% of the breathing zone. Designed for seamless integration into any HVAC system, it operates as a central, filterless air purifier.",
+      "applications": [
+        "Open-Plan Office Workspaces & Call Centers",
+        "Hospital Operating Theaters & ICU Rooms",
+        "Fitness Centers, Gyms & Sports Facilities",
+        "Food Processing Plants & Cold Storage"
+      ],
+      "workingMechanism": [
+        {
+          "step": "01",
+          "title": "Natural Plasma Generation",
+          "description": "Replicates nature's purification process by splitting water vapor into balanced streams of positive (H+) and negative (O2-) ions."
+        },
+        {
+          "step": "02",
+          "title": "Active In-Room Disinfection",
+          "description": "Ions travel throughout the entire space, actively attacking airborne viruses, bacteria, mold spores, and toxic VOCs at their source."
+        },
+        {
+          "step": "03",
+          "title": "Agglomeration & HVAC Integration",
+          "description": "Causes ultrafine particles to cluster together for easy capture by ventilation systems, operating seamlessly with any HVAC setup."
+        }
+      ],
+      "technicalSpecifications": {
+        "Model Series": "IG-BPI-1500",
+        "Technology Principle": "Plasma Bipolar Ionization (Active In-Room Purifier)",
+        "Ion Generation": "Balanced Positive (H+) and Negative (O2-) Ions",
+        "Ozone Certification": "UL 2998 / UL 867 Zero Ozone (< 0.005 ppm)",
+        "System Integration": "AHUs, Ductwork, VRF/VRV Units & Standalone Duct Systems",
+        "Coverage Area": "1,500 sq. ft. per ioniser head",
+        "Pathogens Inactivated": "Viruses, Bacteria, Mold Spores, VOCs & Odors",
+        "Consumable Parts": "Zero Filter Replacement Required",
+        "Warranty": "3 Years Manufacturer Warranty"
+      },
+      "faqs": [
+        {
+          "question": "Why is Plasma Ionization described as '180 degrees opposite' to traditional purifiers?",
+          "answer": "Traditional purifiers are passive—air must be sucked into a physical box to be filtered. Bipolar Ionisation is active—it floods the living space with natural ions to kill pathogens right where you breathe."
+        },
+        {
+          "question": "Can this system be installed into existing central HVAC ductwork?",
+          "answer": "Yes, IntelliGreen ionisation units integrate seamlessly into AHUs, ductwork, FCUs, or VRF systems to turn your existing HVAC into a central air purifier."
+        }
+      ]
+    },
+    {
+      "id": "eac-filter",
+      "slug": "eac-filter",
+      "title": "EAC Electronic Air Cleaner",
+      "subtitle": "CII–IGBC GreenPro Certified Electrostatic Collector",
+      "description": "Dual-stage electrostatic precipitator with MERV 15+ filtration efficiency for sub-micron dust, smoke, and pathogens at ultra-low static pressure resistance.",
+      "seoTitle": "EAC Electronic Air Cleaner Filter | GreenPro Certified | IntelliGreen",
+      "seoDescription": "CII–IGBC GreenPro Certified EAC Electronic Air Cleaner featuring dual-stage electrostatic precipitation. MERV 15+ efficiency for sub-micron particles with washable cells.",
+      "media": "/media/Video- (6).webm",
+      "image": "/images/hero/frame-5.png",
+      "icon": "ShieldCheck",
+      "features": [
+        "CII–IGBC GreenPro Certified Product",
+        "MERV 15+ Equivalent Electrostatic Filtration",
+        "Dual-Stage Charging & Collector Cell Architecture",
+        "Captures Smoke, Mold Spores, Bacteria & Sub-Micron Dust",
+        "Ultra-Low Airflow Pressure Drop (Saves HVAC Energy)",
+        "Washable Aluminum Collector Plates (Zero Waste)"
+      ],
+      "specs": {
+        "Efficiency": "MERV 15+ Equivalent",
+        "Certification": "CII–IGBC GreenPro Certified",
+        "Pressure Drop": "<25 Pa (Ultra-Low Resistance)",
+        "Maintenance": "Washable Metal Cells (Zero Waste)"
+      },
+      "overview": "The EAC Electronic Air Cleaner relies on fundamental principles of Electrostatic Precipitation to deliver high-capacity micro-particle collection without restricting HVAC airflow. Engineered with a dual-stage setup featuring an initial Charging Section and a subsequent Collector Section, airborne particles are positively charged and attracted to oppositely charged collection plates. It removes a broad spectrum of airborne contaminants—including dust, pollen, mold spores, bacteria, smoke, haze, and sub-micron particles—with filtration performance equivalent to MERV 15 or higher, yet with a significantly lower pressure drop compared to conventional mechanical filters. Officially GreenPro certified by CII–IGBC (Confederation of Indian Industry – Indian Green Building Council).",
+      "applications": [
+        "Commercial Office Air Handling Units (AHUs)",
+        "Industrial Manufacturing Facilities & Metal Workshops",
+        "Data Centers & Server Rooms",
+        "Commercial Kitchen Exhaust & Cafeterias"
+      ],
+      "workingMechanism": [
+        {
+          "step": "01",
+          "title": "Charging Section (Ionizing Stage)",
+          "description": "Airborne contaminants pass through high-voltage ionizing wires, imparting a positive electrical charge to fine dust, pollen, bacteria, and smoke particles."
+        },
+        {
+          "step": "02",
+          "title": "Collector Section (Electrostatic Capture)",
+          "description": "Charged particles enter an intense electrostatic field between oppositely charged aluminum collection plates, trapping micro-pollutants down to sub-micron sizes."
+        },
+        {
+          "step": "03",
+          "title": "Low Resistance Airflow Circulation",
+          "description": "Purified air passes through with minimal static pressure drop, maintaining optimum HVAC energy efficiency with zero disposable filter waste."
+        }
+      ],
+      "technicalSpecifications": {
+        "Model Series": "IG-EAC-2000",
+        "Filtration Principle": "Two-Stage Electrostatic Precipitation (Ionizing & Collector Cells)",
+        "Filtration Standard": "MERV 15+ Equivalent / Captures Sub-Micron Particles",
+        "Environmental Certification": "GreenPro Certified by CII–IGBC (Indian Green Building Council)",
+        "Pressure Drop": "< 25 Pa (Significantly lower than mechanical filters)",
+        "Contaminants Removed": "Dust, Pollen, Mold Spores, Bacteria, Tobacco Smoke, Haze & PM0.3",
+        "Maintenance": "Washable Metal Cells (No Disposable Filter Replacements)",
+        "HVAC Compatibility": "AHU Ductwork, Return Air Ducts & FCU Integration",
+        "Warranty": "2 Years Parts & Service Warranty"
+      },
+      "faqs": [
+        {
+          "question": "What is GreenPro Certification by CII-IGBC?",
+          "answer": "GreenPro certification by CII–IGBC validates that the EAC filter meets stringent environmental standards, reducing building HVAC energy consumption and eliminating disposable filter waste."
+        },
+        {
+          "question": "How does electrostatic precipitation compare to standard HEPA filters?",
+          "answer": "Unlike dense mechanical HEPA filters that obstruct airflow and strain HVAC fans, EAC electrostatic cells capture sub-micron particles at MERV 15+ efficiency with ultra-low static pressure resistance (<25 Pa), saving up to 30% fan energy."
+        }
+      ]
+    },
+    {
+      "id": "iaq-sensor",
+      "slug": "iaq-sensor",
+      "title": "IAQ Smart Sensor Station",
+      "subtitle": "LoRaWAN & AWS Cloud Environmental Intelligence",
+      "description": "Customizable multi-parameter environmental monitor with Wi-Fi, MODBUS, GPRS, and LoRaWAN telemetry connected to AWS Secured Cloud.",
+      "seoTitle": "IAQ Smart Sensor Station | LoRaWAN & AWS Cloud | IntelliGreen",
+      "seoDescription": "Customizable IAQ Smart Sensor Station featuring LoRaWAN, Wi-Fi, MODBUS & AWS Secured Cloud. iOS/Android apps, custom analytics, and real-time alerts.",
+      "media": "/media/intelligreen-product4.webm",
+      "image": "/images/hero/frame-4.jpeg",
+      "icon": "Activity",
+      "features": [
+        "Customizable Parameter Selection for Local Conditions",
+        "LoRaWAN, Wi-Fi, MODBUS & GPRS Multi-Protocol",
+        "AWS Secured Cloud Server Infrastructure",
+        "iOS & Android Mobile App + Web Dashboards",
+        "Hourly, Monthly & Custom Period Analytics",
+        "Real-Time Automated Zone Threshold Alerts"
+      ],
+      "specs": {
+        "Connectivity": "LoRaWAN / Wi-Fi / MODBUS / GPRS",
+        "Cloud": "AWS Secured Cloud Server",
+        "Apps": "iOS / Android / Web Dashboard",
+        "Alerts": "Instant Zone Threshold Notifications"
+      },
+      "overview": "Knowledge and independence to verify indoor air quality integrity are essential for modern facility management. The IAQ Smart Sensor Station empowers clients to independently select and customize monitoring parameters tailored to their local environmental conditions. Equipped with multi-channel communication protocols—including Wi-Fi, MODBUS, GPRS, and long-range LoRaWAN—it delivers precision telemetry beyond conventional market standards. Data is protected with end-to-end encryption on AWS (Amazon Web Services) Secured Cloud, accessible via intuitive web dashboards and iOS/Android mobile apps with automated zone threshold alerts.",
+      "applications": [
+        "WELL & LEED Green Building Certified Spaces",
+        "Corporate Smart Offices & Co-Working Spaces",
+        "Pharma Cleanrooms & Laboratories",
+        "Public Venues, Auditoriums & Airports"
+      ],
+      "workingMechanism": [
+        {
+          "step": "01",
+          "title": "Customizable Parameter Sampling",
+          "description": "Continuously samples client-selected environmental metrics (PM2.5, PM10, CO2, Temp, RH, TVOC) calibrated for local conditions."
+        },
+        {
+          "step": "02",
+          "title": "Multi-Protocol Telemetry (LoRaWAN / MODBUS)",
+          "description": "Transmits encrypted real-time sensor data across Wi-Fi, MODBUS RS485, GPRS, or long-range LoRaWAN networks."
+        },
+        {
+          "step": "03",
+          "title": "AWS Cloud Analytics & Alerts",
+          "description": "Aggregates trends on AWS Secured Cloud with iOS/Android mobile app visualization and instant zone threshold notifications."
+        }
+      ],
+      "technicalSpecifications": {
+        "Model Series": "IG-IAQ-6P",
+        "Connectivity Protocols": "LoRaWAN, Wi-Fi 802.11 b/g/n, RS485 MODBUS RTU, GPRS / Cellular",
+        "Cloud Engine": "AWS (Amazon Web Services) Secured Cloud Infrastructure",
+        "Mobile & Web Software": "iOS App, Android App & Real-Time Web Operations Dashboard",
+        "Sensor Selection": "Customizable Parameter Modules (PM2.5/10, CO2, TVOC, Temp, RH)",
+        "Data Analytics": "Hourly, Daily, Monthly & Custom Period Analytics Reports",
+        "Notification System": "Push Notifications, Email & SMS Zone Threshold Alerts",
+        "Power Options": "5V DC USB-C / 12-24V Terminal Block / PoE",
+        "Warranty": "2 Years Limited Warranty"
+      },
+      "faqs": [
+        {
+          "question": "How does LoRaWAN connectivity benefit large multi-floor facility deployments?",
+          "answer": "LoRaWAN provides ultra-long-range wireless signal penetration through thick concrete walls and multiple building floors with minimal power, eliminating complex ethernet duct wiring."
+        },
+        {
+          "question": "Is our indoor air quality data secure on the cloud?",
+          "answer": "Yes, all telemetry streams are end-to-end encrypted at rest and in transit on AWS (Amazon Web Services) Secured Cloud infrastructure with strict enterprise privacy protocols."
+        }
+      ]
+    },
+    {
+      "id": "intelligreen-hub",
+      "slug": "intelligreen-hub",
+      "title": "IntelliGreen Cloud AI Hub",
+      "subtitle": "Predictive Building Management Platform",
+      "description": "Central AI software platform that aggregates multi-building IAQ sensor metrics, predicts filter replacement, and automates fan speeds.",
+      "seoTitle": "IntelliGreen Cloud AI Hub | Predictive Building Management Software",
+      "seoDescription": "Centralized AI cloud platform for indoor air quality management, predictive analytics, automated compliance reporting, and smart HVAC control.",
+      "media": "/media/intelligreen-product1.mp4",
+      "image": "/images/hero/frame-2.png",
+      "icon": "Cpu",
+      "features": [
+        "Predictive Energy & AQ Analytics",
+        "Remote Device Group Control",
+        "Automated Compliance PDF Reports",
+        "API Webhook Integrations"
+      ],
+      "specs": {
+        "Deployment": "Cloud / On-Premise",
+        "API": "REST / MQTT",
+        "Security": "TLS 1.3 / AES-256",
+        "Multi-Tenant": "Supported"
+      },
+      "overview": "The IntelliGreen Cloud AI Hub is the intelligent software brain behind smart clean air deployments. By applying machine learning models to historical indoor air quality data, weather forecasts, and occupancy patterns, the platform automatically optimizes ventilation speeds, predicts filter saturation, and generates audit-ready ESG compliance reports.",
+      "applications": [
+        "Multi-Building Corporate Campuses & Real Estate Portfolios",
+        "Facility Management Operations Teams",
+        "Sustainability & ESG Compliance Officers",
+        "Hospitality Chains & Enterprise Tenants"
+      ],
+      "workingMechanism": [
+        {
+          "step": "01",
+          "title": "Data Aggregation",
+          "description": "Ingests continuous sensor telemetry streams from hundreds of connected IAQ stations."
+        },
+        {
+          "step": "02",
+          "title": "AI Predictive Optimization",
+          "description": "Runs machine learning algorithms to forecast peak pollution hours and adjust fan speeds autonomously."
+        },
+        {
+          "step": "03",
+          "title": "Automated Reporting",
+          "description": "Generates weekly and monthly WELL/LEED compliance certificates and filter maintenance alerts."
+        }
+      ],
+      "technicalSpecifications": {
+        "Platform Name": "IntelliGreen Cloud AI Suite v4.0",
+        "Hosting Options": "AWS Cloud SaaS / On-Premise Docker Container",
+        "Data Encryption": "AES-256 at rest / TLS 1.3 in transit",
+        "Integrations Supported": "REST API, Webhooks, MQTT, BACnet/IP Gateway",
+        "User Roles": "Super Admin, Facility Manager, ESG Officer, Viewer",
+        "SLA Guarantee": "99.9% Uptime Guarantee",
+        "Reporting Formats": "Automated PDF, CSV, Excel & Interactive Dashboards"
+      },
+      "faqs": [
+        {
+          "question": "Is the software compliant with international data privacy laws?",
+          "answer": "Yes, IntelliGreen Cloud AI Hub is SOC2 Type II certified and compliant with GDPR regulations."
+        }
+      ]
+    }
+  ]
+}
