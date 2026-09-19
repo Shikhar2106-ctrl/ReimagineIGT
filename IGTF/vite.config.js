@@ -6,6 +6,16 @@ import path from 'path';
 export default defineConfig({
   base: process.env.GITHUB_ACTIONS ? '/ReimagineIGT/' : '/',
   plugins: [react(), tailwindcss()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+          'vendor-motion': ['framer-motion'],
+        },
+      },
+    },
+  },
   server: {
     host: '0.0.0.0',
     port: 5173,

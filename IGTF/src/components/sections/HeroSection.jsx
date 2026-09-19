@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Container from '../common/Container';
 import Button from '../common/Button';
@@ -49,30 +49,66 @@ function TypingText({ phrases = [] }) {
 }
 
 export default function HeroSection() {
+  const desktopVideos = heroData.desktopVideos || heroData.videos || [];
+  const [currentVideoIdx, setCurrentVideoIdx] = useState(0);
+  const desktopVideoRef = useRef(null);
+  const fallbackImgRef = useRef(null);
+
+  const handleDesktopVideoEnded = () => {
+    if (desktopVideos.length > 0) {
+      setCurrentVideoIdx((prev) => (prev + 1) % desktopVideos.length);
+    }
+  };
+
+  useEffect(() => {
+    if (desktopVideoRef.current) {
+      desktopVideoRef.current.load();
+      desktopVideoRef.current.play().catch(() => {});
+    }
+  }, [currentVideoIdx]);
+
   return (
     <section className="relative py-2 sm:py-3 px-3 sm:px-6">
       <Container className="p-0 max-w-7xl">
         {/* Compact Full-width Cover Video Container designed to fit on-screen without scrolling */}
         <div className="relative w-full h-[calc(100vh-6rem)] max-h-[520px] sm:max-h-[560px] min-h-[440px] rounded-3xl overflow-hidden shadow-xl bg-slate-900 border border-slate-200/80 group">
           
-          {/* Background Video */}
+          {/* Mobile Video: Displays mobileview.webm */}
           <video
-            src={getAssetUrl(heroData.videos[0])}
+            src={getAssetUrl(heroData.mobileVideo || "/media/mobileview.webm")}
             poster={getAssetUrl(heroData.poster || "/images/hero/frame-1.png")}
-            preload="metadata"
+            preload="auto"
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+            className="block sm:hidden w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
             onError={(e) => {
               e.target.style.display = 'none';
-              e.target.nextSibling.style.display = 'block';
+              if (fallbackImgRef.current) fallbackImgRef.current.style.display = 'block';
             }}
           />
+
+          {/* Desktop/Laptop Video: Sequentially loops Video-(3), intelligreen-product2, and intelligreen-product1 */}
+          <video
+            ref={desktopVideoRef}
+            src={getAssetUrl(desktopVideos[currentVideoIdx] || "/media/Video- (3).webm")}
+            poster={getAssetUrl(heroData.poster || "/images/hero/frame-1.png")}
+            preload="auto"
+            autoPlay
+            muted
+            playsInline
+            onEnded={handleDesktopVideoEnded}
+            onError={() => {
+              handleDesktopVideoEnded();
+            }}
+            className="hidden sm:block w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+          />
+
           {/* Fallback image */}
           <img
-            src={getAssetUrl("/images/hero/frame-1.png")}
+            ref={fallbackImgRef}
+            src={getAssetUrl(heroData.poster || "/images/hero/frame-1.png")}
             alt="Hero Background"
             className="hidden w-full h-full object-cover"
           />

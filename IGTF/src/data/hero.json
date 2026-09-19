@@ -18,10 +18,16 @@
     "label": "Explore Products",
     "path": "/products"
   },
+  "desktopVideos": [
+    "/media/Video- (3).webm",
+    "/media/intelligreen-product2.webm",
+    "/media/intelligreen-product1.webm"
+  ],
+  "mobileVideo": "/media/mobileview.webm",
   "videos": [
     "/media/Video- (3).webm",
-    "/media/Video- (2).webm",
-    "/media/Video- (1).webm"
+    "/media/intelligreen-product2.webm",
+    "/media/intelligreen-product1.webm"
   ],
   "stats": [
     { "value": "500+", "label": "Projects Delivered" },

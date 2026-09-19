@@ -3,6 +3,7 @@ import Container from '../common/Container';
 import SectionHeader from '../common/SectionHeader';
 import Button from '../common/Button';
 import { ArrowRight, Check } from 'lucide-react';
+import { getAssetUrl } from '../../utils/assetHelper';
 import showcaseData from '../../data/showcase.json';
 
 export default function ShowcaseSection() {
@@ -51,7 +52,7 @@ export default function ShowcaseSection() {
                 {[...showcaseData.columns.columnOne, ...showcaseData.columns.columnOne].map((imgSrc, i) => (
                   <div key={i} className="rounded-xl overflow-hidden border border-slate-200 bg-slate-50 shrink-0 shadow-sm">
                     <img
-                      src={imgSrc}
+                      src={getAssetUrl(imgSrc)}
                       alt="Showcase item"
                       className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -65,7 +66,7 @@ export default function ShowcaseSection() {
                 {[...showcaseData.columns.columnTwo, ...showcaseData.columns.columnTwo].map((imgSrc, i) => (
                   <div key={i} className="rounded-xl overflow-hidden border border-slate-200 bg-slate-50 shrink-0 shadow-sm">
                     <img
-                      src={imgSrc}
+                      src={getAssetUrl(imgSrc)}
                       alt="Showcase item"
                       className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -79,7 +80,7 @@ export default function ShowcaseSection() {
                 {[...showcaseData.columns.columnThree, ...showcaseData.columns.columnThree].map((imgSrc, i) => (
                   <div key={i} className="rounded-xl overflow-hidden border border-slate-200 bg-slate-50 shrink-0 shadow-sm">
                     <img
-                      src={imgSrc}
+                      src={getAssetUrl(imgSrc)}
                       alt="Showcase item"
                       className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                       loading="lazy"

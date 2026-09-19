@@ -71,6 +71,7 @@ html.lenis, html.lenis body {
   display: flex;
   width: max-content;
   animation: partner-marquee 30s linear infinite;
+  will-change: transform;
 }
 
 .partner-marquee-track:hover {
@@ -89,10 +90,12 @@ html.lenis, html.lenis body {
 
 .animate-scroll-up {
   animation: scroll-up 24s linear infinite;
+  will-change: transform;
 }
 
 .animate-scroll-down {
   animation: scroll-down 24s linear infinite;
+  will-change: transform;
 }
 
 .animate-scroll-up:hover,
