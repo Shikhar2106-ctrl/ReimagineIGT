@@ -1,10 +1,10 @@
 {
   "main": [
-    { "label": "Home", "path": "/" },
     { "label": "About", "path": "/about" },
     { "label": "Solutions", "path": "/solutions" },
     { "label": "Products", "path": "/products" },
     { "label": "Case Studies", "path": "/case-studies" },
+    { "label": "Resources", "path": "/resources" },
     { "label": "Clients", "path": "/clients" },
     { "label": "Contact", "path": "/contact" }
   ],
@@ -30,9 +30,11 @@
     {
       "title": "Resources",
       "links": [
-        { "label": "Case Studies", "path": "/case-studies" },
-        { "label": "Air Quality Index Guide", "path": "/case-studies#aqi-guide" },
-        { "label": "Contact Support", "path": "/contact" }
+        { "label": "Blog", "path": "/resources?category=blog" },
+        { "label": "News", "path": "/resources?category=news" },
+        { "label": "Partner Portals", "path": "/resources?category=partner-portals" },
+        { "label": "Engineering", "path": "/resources?category=engineering" },
+        { "label": "Support Center", "path": "/resources?category=support-center" }
       ]
     }
   ]

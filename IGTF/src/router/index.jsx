@@ -8,6 +8,7 @@ const SolutionsPage = lazy(() => import('../pages/SolutionsPage'));
 const ProductsPage = lazy(() => import('../pages/ProductsPage'));
 const ProductDetailPage = lazy(() => import('../pages/ProductDetailPage'));
 const CaseStudiesPage = lazy(() => import('../pages/CaseStudiesPage'));
+const ResourcesPage = lazy(() => import('../pages/ResourcesPage'));
 const StoryDetailPage = lazy(() => import('../pages/StoryDetailPage'));
 const ClientsPage = lazy(() => import('../pages/ClientsPage'));
 const Contact = lazy(() => import('../pages/Contact'));
@@ -33,6 +34,8 @@ export const router = createBrowserRouter(
         { path: 'products/:productId', element: <SuspenseWrapper><ProductDetailPage /></SuspenseWrapper> },
         { path: 'case-studies', element: <SuspenseWrapper><CaseStudiesPage /></SuspenseWrapper> },
         { path: 'case-studies/:caseStudyId', element: <SuspenseWrapper><CaseStudiesPage /></SuspenseWrapper> },
+        { path: 'resources', element: <SuspenseWrapper><ResourcesPage /></SuspenseWrapper> },
+        { path: 'resources/:resourceSlug', element: <SuspenseWrapper><ResourcesPage /></SuspenseWrapper> },
         { path: 'stories/:storySlug', element: <SuspenseWrapper><StoryDetailPage /></SuspenseWrapper> },
         { path: 'clients', element: <SuspenseWrapper><ClientsPage /></SuspenseWrapper> },
         { path: 'contact', element: <SuspenseWrapper><Contact /></SuspenseWrapper> },

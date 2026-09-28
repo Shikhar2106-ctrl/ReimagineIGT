@@ -423,6 +423,77 @@ const MEGA_MENUS = {
       },
     ],
   },
+
+  '/resources': {
+    title: 'Resources',
+    subtitle:
+      'Explore technical blogs, industry news, MEP partner portals, engineering submittals, and support documentation.',
+    ctaLabel: 'See all Resources',
+    ctaPath: '/resources',
+    defaultFeature: {
+      title: 'Knowledge. When you need it.',
+      description:
+        'Explore resources designed to support your success at every step.',
+      image: '/images/products/igt-unit-exterior.webp',
+    },
+    items: [
+      {
+        title: 'Blog',
+        description:
+          'Deep-dive articles on indoor air quality science, positive-pressure CTFAs, ASHRAE standards, and HVAC energy optimization.',
+        path: '/resources?category=blog',
+        icon: Sparkles,
+        featureTitle: 'Knowledge. When you need it.',
+        featureDescription:
+          'Explore resources designed to support your success at every step.',
+        image: '/images/showcase/clean-office-wellness.jpg',
+      },
+      {
+        title: 'News',
+        description:
+          'Latest company announcements, GreenPro & UL 2998 certification milestones, and major enterprise IAQ deployments.',
+        path: '/resources?category=news',
+        icon: TrendingUp,
+        featureTitle: 'Latest News & Press Releases.',
+        featureDescription:
+          'Stay updated on IntelliGreen product launches, sustainability awards, and clean-air policy updates.',
+        image: '/images/showcase/smart-hvac-building.jpg',
+      },
+      {
+        title: 'Partner Portals',
+        description:
+          'Dedicated resources for MEP consultants, architects, HVAC contractors, and authorized channel partners.',
+        path: '/resources?category=partner-portals',
+        icon: Users,
+        featureTitle: 'Partner Portals & MEP Toolkits.',
+        featureDescription:
+          'Access dealer pricing schedules, project registration, and co-branded architectural proposal decks.',
+        image: '/images/showcase/modern-boardroom-iaq.jpg',
+      },
+      {
+        title: 'Engineering',
+        description:
+          'Download BIM/CAD drawings, CFM static-pressure curves, MODBUS register maps, and CII–IGBC GreenPro submittals.',
+        path: '/resources?category=engineering',
+        icon: Cpu,
+        featureTitle: 'Engineering Datasheets & CAD Specs.',
+        featureDescription:
+          'Complete technical documentation for seamless HVAC plenum, duct, and BMS integration.',
+        image: '/images/products/igt-cutaway-intake.webp',
+      },
+      {
+        title: 'Support Center',
+        description:
+          'Installation manuals, filter maintenance schedules, warranty registration, and 24/7 field service assistance.',
+        path: '/resources?category=support-center',
+        icon: ShieldCheck,
+        featureTitle: '24/7 Lifecycle & Maintenance Support.',
+        featureDescription:
+          'Step-by-step commissioning guides, washable EAC cell cleaning protocols, and direct engineer support.',
+        image: '/images/showcase/iaq-cloud-dashboard.jpg',
+      },
+    ],
+  },
 };
 
 export default function Navbar() {

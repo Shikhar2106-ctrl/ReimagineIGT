@@ -1,0 +1,220 @@
+{
+  "hero": {
+    "badge": "Resources & Knowledge Hub",
+    "title": "Knowledge. When you need it.",
+    "subtitle": "Explore technical blogs, company news, MEP partner portals, engineering submittals, and support documentation designed to support your success at every step.",
+    "heroImage": "/images/showcase/clean-office-wellness.jpg"
+  },
+  "categories": [
+    { "id": "blog", "label": "Blog", "description": "In-depth engineering articles, IAQ research, and HVAC energy insights." },
+    { "id": "news", "label": "News", "description": "Press releases, certification announcements, and deployment milestones." },
+    { "id": "partner-portals", "label": "Partner Portals", "description": "MEP consultant toolkits, dealer resources, and architectural design guides." },
+    { "id": "engineering", "label": "Engineering", "description": "Technical datasheets, BIM/CAD submittals, static-pressure curves, and MODBUS protocols." },
+    { "id": "support-center", "label": "Support Center", "description": "Commissioning guides, filter maintenance SOPs, and field service documentation." }
+  ],
+  "items": [
+    {
+      "id": "res-blog-01",
+      "slug": "positive-pressure-ctfa-vs-standalone-purifiers",
+      "category": "blog",
+      "categoryLabel": "Blog",
+      "featured": true,
+      "title": "Why Positive-Pressure CTFAs Outperform Standalone Room Air Purifiers by 4x",
+      "subtitle": "How introducing filtered outdoor air at +10 Pa prevents window smog infiltration while keeping indoor CO₂ below 600 ppm.",
+      "excerpt": "Standalone room air purifiers only recirculate stale indoor air, allowing metabolic CO₂ to surge above 1,800 ppm while negative room pressure pulls outdoor PM2.5 through window cracks. Learn how Customized Treated Fresh Air (CTFA) units solve both challenges simultaneously.",
+      "author": "IntelliGreen IAQ Research Desk",
+      "authorRole": "Aerodynamics & Filtration Division",
+      "publishedAt": "September 24, 2026",
+      "readTime": "6 Min Read",
+      "image": "/images/products/igt-cutaway-intake.webp",
+      "tags": ["CTFA", "Positive Pressure", "CO2 Control", "HEPA H13"],
+      "contentSections": [
+        {
+          "heading": "The Hidden Flaw of Recirculation-Only Air Purifiers",
+          "paragraphs": [
+            "Most portable and cassette-style air purifiers operate strictly in closed-loop recirculation. While they trap airborne particles passing through their intake grilles, they do not bring a single cubic foot of fresh oxygen into the room. Within 45 minutes in an occupied conference room or bedroom, exhaled carbon dioxide (CO₂) climbs from 450 ppm to over 1,600 ppm—triggering cognitive fatigue, headaches, and drowsiness.",
+            "Even worse, exhaust fans in washrooms, pantries, and elevator shafts place commercial and residential floors under slight negative pressure. That negative pressure acts like a vacuum, continuously sucking raw outdoor PM2.5 smog through every hairline gap around windows and doors."
+          ]
+        },
+        {
+          "heading": "How Positive-Pressure CTFAs Create an Invisible Air Shield",
+          "paragraphs": [
+            "IntelliGreen's Customized Treated Fresh Air (CTFA) units draw controlled outdoor air, pass it through a progressive G4 washable pre-filter, high-iodine honeycomb activated carbon bed, medical-grade HEPA H13 matrix, and UL 2998 active bipolar ionization, and inject it into the occupied room.",
+            "This continuous influx creates +8 to +15 Pascals of positive indoor pressure. Whenever a door opens or a window seal flexes, purified indoor air gently pushes outward—physically blocking raw street smog from entering while keeping indoor CO₂ locked below 650 ppm."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-blog-02",
+      "slug": "cross-flow-erv-enthalpy-recovery-hvac-savings",
+      "category": "blog",
+      "categoryLabel": "Blog",
+      "featured": false,
+      "title": "Recovering 78% of HVAC Thermal Energy with Cross-Flow Enthalpy ERV Cores",
+      "subtitle": "Decoupling fresh-air ventilation requirements from chiller electricity penalties in tropical and composite climates.",
+      "excerpt": "Bringing 45°C summer air or humid monsoon air directly into a building can spike chiller loads by 35%. Discover how diamond-matrix counter-crossflow ERV exchangers transfer sensible heat and latent moisture without air cross-contamination.",
+      "author": "Dr. A. Verma",
+      "authorRole": "Lead Thermal Systems Engineer",
+      "publishedAt": "September 18, 2026",
+      "readTime": "5 Min Read",
+      "image": "/images/products/igt-erv-crossflow-core.webp",
+      "tags": ["ERV", "Energy Efficiency", "GreenPro", "Net-Zero HVAC"],
+      "contentSections": [
+        {
+          "heading": "The Energy Penalty of Untreated Outdoor Ventilation",
+          "paragraphs": [
+            "ASHRAE Standard 62.1 and WELL v2 mandate generous outdoor air ventilation rates per occupant. Yet in Indian summer and monsoon conditions, conditioning raw outdoor air accounts for nearly 40% of a commercial building's total HVAC electricity bill.",
+            "By routing outgoing 24°C conditioned exhaust air and incoming hot outdoor air through an IntelliGreen Cross-Flow ERV polymer membrane core, up to 78% of thermal enthalpy is exchanged automatically—slashing chiller tonnage requirements and earning direct LEED and IGBC credits."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-blog-03",
+      "slug": "ul-2998-zero-ozone-needlepoint-bipolar-ionization",
+      "category": "blog",
+      "categoryLabel": "Blog",
+      "featured": false,
+      "title": "Understanding UL 2998 Zero-Ozone Certification in Active Bipolar Ionization",
+      "subtitle": "Why safety validation matters when deploying active in-room airborne pathogen neutralization.",
+      "excerpt": "Not all ionizers are created equal. Legacy corona-discharge tubes produced unwanted ozone byproducts, whereas modern Needlepoint Bipolar Ionization (NPBI) is engineered and UL 2998 certified for zero ozone emission.",
+      "author": "IntelliGreen Clinical IAQ Team",
+      "authorRole": "Bio-Aerosol & Safety Compliance",
+      "publishedAt": "September 10, 2026",
+      "readTime": "7 Min Read",
+      "image": "/images/products/igt-bpi-needlepoint.webp",
+      "tags": ["UL 2998", "Bipolar Ionisation", "Healthcare IAQ", "Zero Ozone"],
+      "contentSections": [
+        {
+          "heading": "Active vs. Passive Air Disinfection in Critical Spaces",
+          "paragraphs": [
+            "Passive filters like HEPA H13 only capture pollutants that travel through ductwork and reach the filter face. In high-occupancy hospitals, schools, and boardrooms, sneeze droplets and bio-aerosols circulate between occupants long before reaching a return grille.",
+            "UL 2998 certified Needlepoint Bipolar Ionization floods the breathing zone with >10 million H+ and O2- ions/cm³, clustering ultrafine particulates so they drop out of the breathing zone and inactivating enveloped viruses on contact—with verified zero ozone generation (<0.005 ppm)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-news-01",
+      "slug": "intelligreen-achieves-cii-igbc-greenpro-certification",
+      "category": "news",
+      "categoryLabel": "News",
+      "featured": true,
+      "title": "IntelliGreen Electronic Air Cleaners & CTFAs Awarded CII–IGBC GreenPro Ecolabelling",
+      "subtitle": "Official recognition enabling commercial developers and MEP consultants to claim direct green building innovation credits.",
+      "excerpt": "Confederation of Indian Industry (CII) has officially awarded the prestigious GreenPro Ecolabel to IntelliGreen's low-static-drag Electronic Air Cleaners and Treated Fresh Air systems following rigorous lifecycle and energy audits.",
+      "author": "IntelliGreen Corporate Communications",
+      "authorRole": "Press & Regulatory Affairs",
+      "publishedAt": "September 26, 2026",
+      "readTime": "3 Min Read",
+      "image": "/images/products/igt-unit-exterior.webp",
+      "tags": ["Press Release", "CII-IGBC GreenPro", "Sustainability", "Certification"],
+      "contentSections": [
+        {
+          "heading": "Accelerating Green Building Compliance Across India",
+          "paragraphs": [
+            "With CII–IGBC GreenPro certification, real estate developers, corporate facility heads, and hospitality groups deploying IntelliGreen hardware can directly document product sustainability credits under IGBC, LEED, and GRIHA rating frameworks.",
+            "The audit highlighted IntelliGreen's washable MERV 15+ electrostatic collector cells—which operate at under 25 Pa pressure drop and eliminate thousands of disposable fiberglass bag filters from landfills over a 10-year lifecycle."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-news-02",
+      "slug": "intelligreen-deploys-cloud-ai-telemetry-500-zones",
+      "category": "news",
+      "categoryLabel": "News",
+      "featured": false,
+      "title": "IntelliGreen Crosses 500+ Enterprise Clean-Air Zones Monitored via Real-Time Cloud AI",
+      "subtitle": "Delivering second-by-second PM2.5, CO₂, and TVOC transparency across Fortune 500 campuses, hospitals, and universities.",
+      "excerpt": "IntelliGreen's AWS-backed IAQ Cloud Telemetry platform now actively governs over 500 commercial, clinical, and institutional zones across Delhi-NCR, Mumbai, Bengaluru, Pune, and Hyderabad.",
+      "author": "IntelliGreen Corporate Communications",
+      "authorRole": "Milestone Announcement",
+      "publishedAt": "September 14, 2026",
+      "readTime": "4 Min Read",
+      "image": "/images/showcase/iaq-cloud-dashboard.jpg",
+      "tags": ["Milestone", "Cloud Telemetry", "Smart Buildings", "IoT"],
+      "contentSections": [
+        {
+          "heading": "Real-Time Closed-Loop HVAC Automation at Scale",
+          "paragraphs": [
+            "By pairing LoRaWAN and RS485 MODBUS RTU environmental sensors with brushless EC fresh-air blowers, partner facilities have recorded an average 94% reduction in indoor PM2.5 alongside a 28% reduction in ventilation fan energy."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-partner-01",
+      "slug": "mep-consultant-bim-sizing-portal",
+      "category": "partner-portals",
+      "categoryLabel": "Partner Portals",
+      "featured": false,
+      "title": "MEP Consultant & Architect Design Portal: CFM Sizing & Plenum Integration",
+      "subtitle": "Turnkey schedules, psychrometric calculators, and BOQ specification templates for commercial HVAC retrofits.",
+      "excerpt": "Access standardized AutoCAD/Revit blocks, ASHRAE 62.1 outdoor air calculators, and tender specification sheets for Wall-Mounted CTFAs, Concealed Ceiling CTFAs, and AHU Electronic Air Cleaners.",
+      "author": "Partner Enablement Desk",
+      "authorRole": "MEP & Channel Engineering",
+      "publishedAt": "Updated September 2026",
+      "readTime": "Portal Access",
+      "image": "/images/showcase/modern-boardroom-iaq.jpg",
+      "tags": ["MEP Portal", "BOQ Specs", "Revit / CAD", "Dealer Network"],
+      "contentSections": [
+        {
+          "heading": "Built for Seamless MEP Tender & Submittal Workflows",
+          "paragraphs": [
+            "Our Partner Portal equips HVAC consultants, interior architects, and authorized system integrators with instant CFM-to-occupant calculation sheets, acoustic octave-band data, and false-ceiling clearance templates (<290 mm height)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-eng-01",
+      "slug": "ctfa-erv-modbus-technical-submittal-pack",
+      "category": "engineering",
+      "categoryLabel": "Engineering",
+      "featured": false,
+      "title": "Engineering Submittal Pack: Static Pressure Curves, EC Fan Laws & MODBUS Register Map",
+      "subtitle": "Complete electrical, aerodynamic, and BMS integration reference for facility engineers.",
+      "excerpt": "Technical reference covering 0–10V / PWM EC motor modulation curves, RS485 MODBUS RTU holding registers for IAQ sensors, and pressure-drop curves across G4 + Honeycomb Carbon + HEPA H13 filter banks.",
+      "author": "IntelliGreen R&D Systems",
+      "authorRole": "Hardware & Firmware Documentation",
+      "publishedAt": "Rev 4.2 • September 2026",
+      "readTime": "Technical Spec",
+      "image": "/images/products/stage05-ec-impeller.webp",
+      "tags": ["MODBUS RTU", "Static Pressure", "EC Impeller", "BMS Integration"],
+      "contentSections": [
+        {
+          "heading": "Direct RS485 MODBUS RTU & BACnet Gateway Integration",
+          "paragraphs": [
+            "Every IntelliGreen sensor and controller exposes standard 16-bit holding registers for real-time PM1.0, PM2.5, PM10, CO₂, TVOC, temperature, relative humidity, and filter differential pressure—allowing seamless plug-and-play integration with Honeywell, Johnson Controls, Schneider, and Siemens BMS platforms."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res-support-01",
+      "slug": "preventive-maintenance-filter-eac-cleaning-guide",
+      "category": "support-center",
+      "categoryLabel": "Support Center",
+      "featured": false,
+      "title": "Support Center: Filter Replacement & Washable EAC Collector Cell Maintenance SOP",
+      "subtitle": "Step-by-step maintenance intervals, differential pressure thresholds, and warranty service protocols.",
+      "excerpt": "Learn how to inspect magnetic service hatches, wash aluminum G4 and electrostatic collector plates, reset filter hours on the digital controller, and schedule authorized quarterly AMC visits.",
+      "author": "IntelliGreen Field Service & AMC",
+      "authorRole": "Customer Support Center",
+      "publishedAt": "Support SOP • 2026",
+      "readTime": "5 Min Guide",
+      "image": "/images/products/stage02-g4-prefilter.webp",
+      "tags": ["Maintenance SOP", "Filter Care", "AMC Support", "Warranty"],
+      "contentSections": [
+        {
+          "heading": "Zero-Tool 5-Minute Filter & Cell Servicing",
+          "paragraphs": [
+            "All IntelliGreen CTFAs and ducted purification modules feature hinged magnetic access doors and slide-out filter rails. Washable metallic G4 pre-filters and EAC collector plates can be rinsed with water and mild neutral detergent every 90 days, restoring 100% electrostatic capture efficiency with zero replacement cost."
+          ]
+        }
+      ]
+    }
+  ]
+}
