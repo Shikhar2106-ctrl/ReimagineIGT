@@ -10,7 +10,7 @@
       "category": "Inside IntelliGreen",
       "ctaText": "Read Inside Story",
       "path": "/stories/inside-intelligreen",
-      "image": "/images/team/ourTeam- (1).webp",
+      "image": "/images/team/perspective-inside-intelligreen.webp",
       "heroVisual": "/images/products/igt-unit-exterior.webp",
       "secondaryVisual": "/images/products/igt-cutaway-intake.webp",
       "readTime": "4 Min Read",
@@ -64,7 +64,7 @@
       "category": "Technology",
       "ctaText": "Read Technology Story",
       "path": "/stories/air-quality-intelligence",
-      "image": "/images/team/ourTeam- (2).webp",
+      "image": "/images/team/perspective-technology-iaq.webp",
       "heroVisual": "/images/showcase/smart-iaq-sensor.jpg",
       "secondaryVisual": "/images/showcase/iaq-cloud-dashboard.jpg",
       "readTime": "5 Min Read",
@@ -118,7 +118,7 @@
       "category": "Case Study",
       "ctaText": "Read Case Study",
       "path": "/case-studies/gurugram-fintech-campus",
-      "image": "/images/team/ourTeam- (3).webp"
+      "image": "/images/team/perspective-resilient-environment.webp"
     },
     {
       "id": "4",
@@ -127,7 +127,7 @@
       "category": "Product Story",
       "ctaText": "Read Product Story",
       "path": "/stories/engineered-for-performance",
-      "image": "/images/team/ourTeam- (4).webp",
+      "image": "/images/team/perspective-product-story.webp",
       "heroVisual": "/images/products/igt-filter-exploded.webp",
       "secondaryVisual": "/images/products/igt-carbon-hepa-stage.webp",
       "readTime": "5 Min Read",
@@ -181,7 +181,7 @@
       "category": "Sustainability",
       "ctaText": "Read Sustainability Story",
       "path": "/stories/reducing-hvac-carbon-footprint",
-      "image": "/images/team/ourTeam- (5).webp",
+      "image": "/images/team/perspective-sustainability-ai.webp",
       "heroVisual": "/images/products/igt-erv-crossflow-core.webp",
       "secondaryVisual": "/images/products/igt-ec-impeller-vortex.webp",
       "readTime": "5 Min Read",
@@ -234,7 +234,7 @@
       "category": "Case Study",
       "ctaText": "Read Case Study",
       "path": "/case-studies/apollo-maternity-icu-sanitation",
-      "image": "/images/team/ourTeam- (6).webp"
+      "image": "/images/team/perspective-healthcare-iaq.webp"
     }
   ]
 }

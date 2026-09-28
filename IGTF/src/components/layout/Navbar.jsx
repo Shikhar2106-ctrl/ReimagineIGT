@@ -135,7 +135,7 @@ const MEGA_MENUS = {
         featureTitle: 'Wall & Ceiling CTFA Fresh Air System.',
         featureDescription:
           'Blocks outdoor smog window infiltration with +8.5 Pa positive indoor pressure at <34 dB(A) silent operation.',
-        image: '/images/hero/frame-6.webp',
+        image: '/images/hero/hero-slide-04.webp',
       },
       {
         title: 'Active Bipolar Ionisation (BPI)',
@@ -168,7 +168,7 @@ const MEGA_MENUS = {
         featureTitle: 'GreenPro Certified Electrostatic Capture.',
         featureDescription:
           'Ultra-low <25 Pa static pressure drop saves up to 30% AHU fan energy with zero disposable filters.',
-        image: '/images/hero/frame-5.png',
+        image: '/images/hero/hero-slide-03.png',
       },
       {
         title: 'IAQ Smart Sensor Station',
@@ -179,7 +179,7 @@ const MEGA_MENUS = {
         featureTitle: 'Reference-Grade IoT Air Sensing.',
         featureDescription:
           'Encrypted AWS Cloud telemetry with direct closed-loop speed control for CTFAs, ERV, and AHU systems.',
-        image: '/images/hero/frame-4.jpeg',
+        image: '/images/hero/hero-slide-02.jpeg',
       },
       {
         title: 'IntelliGreen Cloud AI Hub',

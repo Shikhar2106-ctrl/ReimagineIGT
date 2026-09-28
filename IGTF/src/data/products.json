@@ -17,7 +17,7 @@
         "description": "Precision laser-cut powder-coated steel enclosure with dual-flange cylindrical duct collars, vibration-damping suspension mounts, and quick-latch service doors for false-ceiling or wall installation.",
         "image": "/images/products/igt-unit-exterior.webp",
         "secondaryImage": "/images/products/igt-transparent-chassis.webp",
-        "video": "/media/tfas-cutaway-airflow.webm",
+        "video": "/media/stage01-sealed-chassis.webm",
         "metric": "0.8mm GI Steel",
         "metricLabel": "Acoustic Insulated",
         "hotspot": { "x": "18%", "y": "52%" }
@@ -29,9 +29,9 @@
         "title": "Washable Aluminum Mesh & G4 Pre-Filtration Matrix",
         "subtitle": "Macro-Particulate & Lint Interception",
         "description": "First-line defense screen engineered to trap coarse urban dust, lint, insects, and PM10 particulates before they reach the fine medical-grade filtration chambers, extending downstream HEPA life by 40%.",
-        "image": "/images/products/igt-filter-exploded.webp",
+        "image": "/images/products/stage02-g4-prefilter.webp",
         "secondaryImage": "/images/products/igt-cutaway-intake.webp",
-        "video": "/media/tfas-cutaway-airflow.webm",
+        "video": "/media/stage02-g4-prefilter.webm",
         "metric": "95% @ >5μm",
         "metricLabel": "Washable Primary Stage",
         "hotspot": { "x": "34%", "y": "48%" }
@@ -43,9 +43,9 @@
         "title": "Medical HEPA H13 + Honeycomb Activated Carbon Bed",
         "subtitle": "Sub-Micron PM2.5 & VOC Chemical Adsorption",
         "description": "Deep-pleated borosilicate micro-glass HEPA H13 media paired with a high-iodine coconut shell honeycomb activated carbon matrix to capture 99.97% of PM0.3 particulates, traffic exhaust, NO2, and formaldehyde.",
-        "image": "/images/products/igt-carbon-hepa-stage.webp",
+        "image": "/images/products/stage03-hepa-h13-carbon.webp",
         "secondaryImage": "/images/products/igt-filter-exploded.webp",
-        "video": "/media/intelligreen-anatomy-showcase.webm",
+        "video": "/media/stage03-hepa-h13-carbon.webm",
         "metric": "99.97% @ 0.3μm",
         "metricLabel": "HEPA H13 + Carbon",
         "hotspot": { "x": "50%", "y": "45%" }
@@ -59,7 +59,7 @@
         "description": "Diamond-matrix counter-crossflow heat exchanger transfers up to 78% of sensible and latent thermal energy between outgoing conditioned room air and incoming outdoor air—slashing chiller & HVAC electrical loads.",
         "image": "/images/products/igt-erv-crossflow-core.webp",
         "secondaryImage": "/images/products/igt-cutaway-intake.webp",
-        "video": "/media/erv-heat-recovery.webm",
+        "video": "/media/stage04-erv-heat-recovery.webm",
         "metric": "Up to 78%",
         "metricLabel": "Thermal Recovery",
         "hotspot": { "x": "64%", "y": "50%" }
@@ -71,9 +71,9 @@
         "title": "Brushless EC Centrifugal Impeller & Vortex Plenum",
         "subtitle": "Whisper-Quiet High-Static Laminar Propulsion",
         "description": "Aerodynamically balanced backward-curved EC motorized impeller delivers constant CFM airflow across varying duct static pressures while operating below 34 dB(A) with 50% lower wattage.",
-        "image": "/images/products/igt-ec-impeller-vortex.webp",
+        "image": "/images/products/stage05-ec-impeller.webp",
         "secondaryImage": "/images/products/igt-silent-duct-outlet.webp",
-        "video": "/media/intelligreen-anatomy-showcase.webm",
+        "video": "/media/stage05-ec-impeller.webm",
         "metric": "<34 dB(A)",
         "metricLabel": "Silent EC Motor",
         "hotspot": { "x": "76%", "y": "46%" }
@@ -87,7 +87,7 @@
         "description": "Carbon-fiber brush & needlepoint electrodes mounted at the discharge collar flood the purified airstream with >10 million H+ and O2- ions/cm³ to neutralize airborne viruses, mold spores, and odors directly in the breathing zone.",
         "image": "/images/products/igt-bpi-needlepoint.webp",
         "secondaryImage": "/images/products/igt-bpi-ions-stream.webp",
-        "video": "/media/bpi-active-module.webm",
+        "video": "/media/stage06-active-bpi.webm",
         "metric": ">10M ions/cm³",
         "metricLabel": "UL 2998 Zero Ozone",
         "hotspot": { "x": "88%", "y": "52%" }
@@ -105,7 +105,7 @@
       "seoTitle": "WALL MOUNTED CTFA Fresh Air Purifier | IntelliGreen CleanTech",
       "seoDescription": "Discover the WALL MOUNTED CTFA fresh air purifier. Dual-mode HEPA & carbon filtration for HVAC and non-HVAC commercial premises.",
       "media": "/media/intelligreen-product1.webm",
-      "image": "/images/hero/frame-6.webp",
+      "image": "/images/hero/hero-slide-04.webp",
       "icon": "Wind",
       "features": [
         "Fresh Air Intake & Positive Pressurization Mode",
@@ -197,7 +197,7 @@
       "description": "Plasma Needlepoint Ionization technology that injects millions of balanced positive (H+) and negative (O2-) ions throughout the room, continuously neutralizing airborne pathogens, mold spores, and odors at their source.",
       "seoTitle": "Active Bipolar Ionisation System | In-Room Disinfection | IntelliGreen",
       "seoDescription": "Active Bipolar Ionisation technology replicating nature's air purification model. Ozone-free, energy efficient, and universal central HVAC system integration.",
-      "media": "/media/bpi-active-module.webm",
+      "media": "/media/stage06-active-bpi.webm",
       "image": "/images/products/igt-bpi-needlepoint.webp",
       "icon": "Zap",
       "features": [
@@ -291,7 +291,7 @@
       "description": "High-efficiency counter-crossflow enthalpy heat recovery system that exchanges 78% of thermal energy between exhaust indoor air and incoming filtered outdoor air—cutting HVAC cooling loads while maintaining <600 ppm CO2.",
       "seoTitle": "Cross-Flow ERV Energy Recovery Ventilator | IntelliGreen CleanTech",
       "seoDescription": "IntelliGreen Cross-Flow ERV system with dual EC blowers, enthalpy heat exchanger core, HEPA H13 filtration, and 78% HVAC energy recovery.",
-      "media": "/media/erv-heat-recovery.webm",
+      "media": "/media/stage04-erv-heat-recovery.webm",
       "image": "/images/products/igt-erv-crossflow-core.webp",
       "icon": "Layers",
       "features": [
@@ -378,8 +378,8 @@
       "description": "Dual-stage electrostatic precipitator with MERV 15+ filtration efficiency for sub-micron dust, smoke, and pathogens at ultra-low static pressure resistance.",
       "seoTitle": "EAC Electronic Air Cleaner Filter | GreenPro Certified | IntelliGreen",
       "seoDescription": "CII–IGBC GreenPro Certified EAC Electronic Air Cleaner featuring dual-stage electrostatic precipitation. MERV 15+ efficiency for sub-micron particles with washable cells.",
-      "media": "/media/Video- (6).webm",
-      "image": "/images/hero/frame-5.png",
+      "media": "/media/hero-smart-ventilation.webm",
+      "image": "/images/hero/hero-slide-03.png",
       "icon": "ShieldCheck",
       "features": [
         "CII–IGBC GreenPro Certified Product",
@@ -397,7 +397,7 @@
         {
           "title": "High-Voltage Ionizing & Collector Cell Matrix",
           "caption": "Two-stage aluminum electrostatic collector plates trap sub-micron particles with <25 Pa static pressure drop.",
-          "image": "/images/hero/frame-5.png"
+          "image": "/images/hero/hero-slide-03.png"
         },
         {
           "title": "Modular Ductwork & AHU Housing",
@@ -455,7 +455,7 @@
       "seoTitle": "IAQ Smart Sensor Station | LoRaWAN & AWS Cloud | IntelliGreen",
       "seoDescription": "Customizable IAQ Smart Sensor Station featuring LoRaWAN, Wi-Fi, MODBUS & AWS Secured Cloud. Real-time AQI display and automated HVAC demand control.",
       "media": "/media/intelligreen-product4.webm",
-      "image": "/images/hero/frame-4.jpeg",
+      "image": "/images/hero/hero-slide-02.jpeg",
       "icon": "Activity",
       "features": [
         "9-Parameter Real-Time Sensing (PM2.5, PM10, CO2, TVOC, Temp, RH)",
@@ -473,7 +473,7 @@
         {
           "title": "Precision Laser Scattering & NDIR Sensor Array",
           "caption": "Individually calibrated optical particle counters and dual-beam NDIR CO2 waveguides deliver reference-grade telemetry.",
-          "image": "/images/hero/frame-4.jpeg"
+          "image": "/images/hero/hero-slide-02.jpeg"
         },
         {
           "title": "Cloud AI Telemetry Dashboard Integration",

@@ -29,7 +29,7 @@ export default function LeadershipSection() {
                   loading="lazy"
                   decoding="async"
                   onError={(e) => {
-                    e.target.src = '/images/hero/frame-1.png';
+                    e.target.src = '/images/hero/hero-slide-01.png';
                   }}
                 />
               </div>

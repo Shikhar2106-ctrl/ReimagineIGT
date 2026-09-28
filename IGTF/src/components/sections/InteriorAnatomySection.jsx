@@ -21,7 +21,7 @@ const STAGE_ICONS = [Layers, Wind, ShieldCheck, Cpu, Wind, Zap];
 export default function InteriorAnatomySection() {
   const anatomy = productsData.anatomyShowcase;
   const [activeIndex, setActiveIndex] = useState(0);
-  const [showVideo, setShowVideo] = useState(false);
+  const [showVideo, setShowVideo] = useState(true);
 
   if (!anatomy || !anatomy.layers?.length) return null;
 

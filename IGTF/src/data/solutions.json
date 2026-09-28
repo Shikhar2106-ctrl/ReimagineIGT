@@ -13,7 +13,7 @@
       "description": "Eliminate Sick Building Syndrome, reduce afternoon CO₂ fatigue, and lower HVAC energy consumption by up to 28% with AI-driven demand-controlled purification.",
       "image": "/images/showcase/clean-office-wellness.jpg",
       "secondaryImage": "/images/showcase/modern-boardroom-iaq.jpg",
-      "media": "/media/Video- (3).webm",
+      "media": "/media/hero-clean-air-flow.webm",
       "icon": "Building2",
       "stats": [
         { "value": "28%", "label": "HVAC Energy Saved" },
@@ -89,7 +89,7 @@
       "description": "Protect vulnerable patients and medical staff with active in-room bipolar ionisation and HEPA H13 positive-pressure filtration—certified 100% ozone-free.",
       "image": "/images/showcase/hospital-clean-room.jpg",
       "secondaryImage": "/images/showcase/plasma-air-clean.jpg",
-      "media": "/media/Video- (5).webm",
+      "media": "/media/about-innovation-showcase.webm",
       "icon": "HeartPulse",
       "stats": [
         { "value": "99.97%", "label": "Pathogen Inactivation" },
@@ -240,8 +240,8 @@
       "subtitle": "Zero-Waste MERV 15+ Electrostatic Precipitation for Plants, Warehouses & Commercial AHUs",
       "description": "Capture sub-micron dust, smoke, oil mist, and fumes with CII–IGBC GreenPro Certified washable aluminum collector cells—delivering <25 Pa ultra-low pressure drop.",
       "image": "/images/showcase/commercial-hvac-ahu.jpg",
-      "secondaryImage": "/images/hero/frame-5.png",
-      "media": "/media/Video- (6).webm",
+      "secondaryImage": "/images/hero/hero-slide-03.png",
+      "media": "/media/hero-smart-ventilation.webm",
       "icon": "Factory",
       "stats": [
         { "value": "MERV 15+", "label": "Filtration Efficiency" },

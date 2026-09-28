@@ -1,6 +1,6 @@
 {
   "badge": "CleanTech Air Solutions",
-  "poster": "/images/hero/frame-1.png",
+  "poster": "/images/hero/hero-slide-01.png",
   "typingHeadlines": [
     "Healthy Spaces First",
     "Better Air Everywhere",
@@ -19,13 +19,13 @@
     "path": "/products"
   },
   "desktopVideos": [
-    "/media/Video- (3).webm",
+    "/media/hero-clean-air-flow.webm",
     "/media/intelligreen-product2.webm",
     "/media/intelligreen-product1.webm"
   ],
-  "mobileVideo": "/media/mobileview.webm",
+  "mobileVideo": "/media/hero-mobile-showcase.webm",
   "videos": [
-    "/media/Video- (3).webm",
+    "/media/hero-clean-air-flow.webm",
     "/media/intelligreen-product2.webm",
     "/media/intelligreen-product1.webm"
   ],

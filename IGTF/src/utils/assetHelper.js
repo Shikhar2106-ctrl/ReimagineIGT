@@ -1,6 +1,6 @@
 /**
  * Resolves static asset paths (images, media videos, logos) for GitHub Pages base URL
- * @param {string} path - Asset path (e.g. '/images/hero/frame-1.png')
+ * @param {string} path - Asset path (e.g. '/images/hero/hero-slide-01.png')
  * @returns {string} - Full base-aware asset URL
  */
 export function getAssetUrl(path) {

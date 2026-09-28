@@ -75,8 +75,8 @@ export default function HeroSection() {
           
           {/* Mobile Video: Displays mobileview.webm */}
           <video
-            src={getAssetUrl(heroData.mobileVideo || "/media/mobileview.webm")}
-            poster={getAssetUrl(heroData.poster || "/images/hero/frame-1.png")}
+            src={getAssetUrl(heroData.mobileVideo || "/media/hero-mobile-showcase.webm")}
+            poster={getAssetUrl(heroData.poster || "/images/hero/hero-slide-01.png")}
             preload="auto"
             autoPlay
             loop
@@ -92,8 +92,8 @@ export default function HeroSection() {
           {/* Desktop/Laptop Video: Sequentially loops Video-(3), intelligreen-product2, and intelligreen-product1 */}
           <video
             ref={desktopVideoRef}
-            src={getAssetUrl(desktopVideos[currentVideoIdx] || "/media/Video- (3).webm")}
-            poster={getAssetUrl(heroData.poster || "/images/hero/frame-1.png")}
+            src={getAssetUrl(desktopVideos[currentVideoIdx] || "/media/hero-clean-air-flow.webm")}
+            poster={getAssetUrl(heroData.poster || "/images/hero/hero-slide-01.png")}
             preload="auto"
             autoPlay
             muted
@@ -108,7 +108,7 @@ export default function HeroSection() {
           {/* Fallback image */}
           <img
             ref={fallbackImgRef}
-            src={getAssetUrl(heroData.poster || "/images/hero/frame-1.png")}
+            src={getAssetUrl(heroData.poster || "/images/hero/hero-slide-01.png")}
             alt="Hero Background"
             className="hidden w-full h-full object-cover"
           />
