@@ -5,38 +5,235 @@
   "stories": [
     {
       "id": "1",
+      "slug": "inside-intelligreen",
       "title": "Clean air that works with your space.",
       "category": "Inside IntelliGreen",
-      "image": "/images/team/ourTeam- (1).webp"
+      "ctaText": "Read Inside Story",
+      "path": "/stories/inside-intelligreen",
+      "image": "/images/team/ourTeam- (1).webp",
+      "heroVisual": "/images/products/igt-wall-ctfa-closeup.webp",
+      "secondaryVisual": "/images/products/igt-cutaway-intake.webp",
+      "readTime": "4 Min Read",
+      "publishedDate": "Editorial Story • Inside IntelliGreen",
+      "subtitle": "How IntelliGreen engineers positive-pressure architectural air purification that integrates invisibly into luxury residences, corporate floors, and modern interiors without disrupting spatial design.",
+      "quote": "Clean air should never look like an afterthought bolted onto a room. It should breathe silently through the architecture itself.",
+      "keyHighlights": [
+        {
+          "metric": "+15 Pa",
+          "label": "Positive Room Pressure",
+          "detail": "Prevents raw outdoor smog and corridor dust from infiltrating through doors and window gaps."
+        },
+        {
+          "metric": "<34 dB(A)",
+          "label": "Whisper-Quiet Acoustics",
+          "detail": "Acoustic-lined plenums and dynamically balanced EC fans operate quieter than a library whisper."
+        },
+        {
+          "metric": "Zero",
+          "label": "Floor Footprint Option",
+          "detail": "Concealed false-ceiling CTFAs and slim wall-mounted profiles preserve every square foot of interior aesthetics."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Why Standalone Room Purifiers Fail Modern Architecture",
+          "paragraphs": [
+            "For years, building owners and homeowners were told that placing portable plastic air purifiers in the corners of rooms was the answer to indoor pollution. In practice, standalone units only recirculate the same stale indoor air, allowing metabolic CO₂ to climb past 1,800 ppm while raw PM2.5 continuously leaks back inside through negative-pressure window frames and door thresholds.",
+            "Inside IntelliGreen, our architectural engineering team started from a fundamentally different premise: clean air must work seamlessly with your space. Rather than cluttering floors or fighting against existing HVAC layouts, air purification must become a silent, structural layer of the room."
+          ]
+        },
+        {
+          "heading": "Positive-Pressure CTFAs That Blend Into Any Interior",
+          "paragraphs": [
+            "Whether through our slim, powder-coated Wall-Mounted CTFA or our completely hidden False-Ceiling Concealed CTFA, IntelliGreen systems draw controlled outdoor fresh air, scrub it through multi-stage HEPA H13 and activated carbon beds, and gently pressurize the indoor environment.",
+            "By maintaining a slight positive pressure inside the occupied zone, the room naturally pushes air outward through micro-cracks rather than sucking street pollution inward. Every diffuser slot, magnetic service hatch, and flush wall grille is co-designed with interior architects so occupants feel the crispness of mountain-grade air without ever seeing bulky machinery."
+          ]
+        },
+        {
+          "heading": "Co-Engineered With Architects, Facility Planners & Designers",
+          "paragraphs": [
+            "Every space has its own rhythm—from glass-walled boardrooms and sun-lit luxury living rooms to heritage retrofits where ceiling plenum height is under 290 mm. Our team maps airflow vectors, diffuser throw distances, and acoustic reverberation before a single bracket is installed, ensuring clean air works effortlessly with the way people live and work."
+          ]
+        }
+      ]
     },
     {
       "id": "2",
+      "slug": "air-quality-intelligence",
       "title": "Air quality intelligence, in real time.",
       "category": "Technology",
-      "image": "/images/team/ourTeam- (2).webp"
+      "ctaText": "Read Technology Story",
+      "path": "/stories/air-quality-intelligence",
+      "image": "/images/team/ourTeam- (2).webp",
+      "heroVisual": "/images/products/igt-aqi-monitor-display.webp",
+      "secondaryVisual": "/images/products/igt-cloud-dashboard.webp",
+      "readTime": "5 Min Read",
+      "publishedDate": "Technology Deep Dive • Real-Time Telemetry",
+      "subtitle": "Inside IntelliGreen's continuous laser-scattering sensor arrays, dual-beam NDIR waveguides, and cloud-connected closed-loop ventilation algorithms that react to invisible pollutants in milliseconds.",
+      "quote": "You cannot manage what you only measure once a quarter. True indoor air safety requires second-by-second optical intelligence and autonomous HVAC response.",
+      "keyHighlights": [
+        {
+          "metric": "1 Sec",
+          "label": "Optical Sampling Rate",
+          "detail": "Continuous laser scattering for PM1.0, PM2.5, and PM10 alongside NDIR CO₂ and TVOC sensing."
+        },
+        {
+          "metric": "MODBUS / LoRa",
+          "label": "Native BMS & Cloud Sync",
+          "detail": "Dual industrial RS485 MODBUS RTU and encrypted Wi-Fi/LoRaWAN telemetry with zero packet loss."
+        },
+        {
+          "metric": "100%",
+          "label": "Closed-Loop Automation",
+          "detail": "Automatically modulates EC fan speed and fresh-air dampers the instant occupancy or outdoor smog shifts."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Making the Invisible Visible in Real Time",
+          "paragraphs": [
+            "Indoor air quality changes by the minute. A twenty-person conference call can double boardroom CO₂ levels in under eighteen minutes; a passing diesel truck or winter temperature inversion outside can spike outdoor PM2.5 past 400 µg/m³ while traditional HVAC dampers remain blindly wide open.",
+            "IntelliGreen's real-time air quality intelligence bridges the gap between sensing and action. Our industrial-grade AQI sensor nodes continuously sample six critical environmental parameters—PM2.5, PM10, CO₂, TVOCs, Temperature, and Relative Humidity—using calibrated laser particle counters and self-correcting dual-wavelength NDIR optical waveguides."
+          ]
+        },
+        {
+          "heading": "Autonomous Closed-Loop Control From Sensor to Purifier",
+          "paragraphs": [
+            "Displaying numbers on a screen is only half the equation. Every IntelliGreen sensor node communicates directly with our CTFA fresh-air units, ceiling cassettes, and central AHU filtration stages via encrypted MQTT cloud pipelines and local RS485 MODBUS RTU.",
+            "When boardroom CO₂ rises above 800 ppm, the intelligence engine proportionally ramps up treated fresh-air injection before drowsiness sets in. When sensors detect an outdoor particulate surge, electrostatic and H13 filtration stages adjust airflow velocity to maximize single-pass capture efficiency without manual intervention."
+          ]
+        },
+        {
+          "heading": "Enterprise Transparency Across Every Floor and Campus",
+          "paragraphs": [
+            "Through the IntelliGreen Cloud Dashboard and lobby kiosk displays, facility directors and occupants share a single source of truth. Historical trends, filter life telemetry, ESG compliance logs, and zone-by-zone indoor vs. outdoor comparisons are generated automatically in real time."
+          ]
+        }
+      ]
     },
     {
       "id": "3",
+      "slug": "gurugram-fintech-campus",
       "title": "A more resilient indoor environment.",
       "category": "Case Study",
+      "ctaText": "Read Case Study",
+      "path": "/case-studies/gurugram-fintech-campus",
       "image": "/images/team/ourTeam- (3).webp"
     },
     {
       "id": "4",
+      "slug": "engineered-for-performance",
       "title": "Designed for people. Engineered for performance.",
       "category": "Product Story",
-      "image": "/images/team/ourTeam- (4).webp"
+      "ctaText": "Read Product Story",
+      "path": "/stories/engineered-for-performance",
+      "image": "/images/team/ourTeam- (4).webp",
+      "heroVisual": "/images/products/igt-chassis-exploded.webp",
+      "secondaryVisual": "/images/products/igt-triple-stage-filters.webp",
+      "readTime": "5 Min Read",
+      "publishedDate": "Product Story • Industrial Craftsmanship",
+      "subtitle": "From precision-bent double-skin galvanized steel housings and backward-curved German EC impellers to UL 2998 zero-ozone ionization—how every IntelliGreen machine is built for decades of human wellness.",
+      "quote": "We build air purification hardware to industrial HVAC tolerances, yet refine every touchpoint—sound, airflow feel, and serviceability—around the human beings in the room.",
+      "keyHighlights": [
+        {
+          "metric": "99.97%",
+          "label": "Sub-Micron Capture",
+          "detail": "True medical-grade H13 HEPA + high-iodine honeycomb activated carbon + washable aluminum pre-filtration."
+        },
+        {
+          "metric": "UL 2998",
+          "label": "Zero-Ozone Certified",
+          "detail": "Needlepoint Bipolar Ionization engineered specifically for continuous human occupancy without ozone byproducts."
+        },
+        {
+          "metric": "50,000+ Hrs",
+          "label": "Brushless EC Motor Life",
+          "detail": "High-static-pressure centrifugal impellers deliver unwavering CFM output even as filters load over time."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Human-Centric Design Starts With Acoustic & Thermal Comfort",
+          "paragraphs": [
+            "An air purifier only protects people if they never feel tempted to turn it off. Early commercial air scrubbers suffered from two fatal flaws: deafening fan whine at high speeds and harsh, drafty air throws that chilled occupants sitting nearby.",
+            "When designing the IntelliGreen product line, our mechanical engineers wrapped every internal blower chamber in high-density closed-cell nitrile acoustic insulation and isolated the motor mounts with elastomeric dampers. The result is full-rated CFM air exchange that remains practically imperceptible during deep work, classroom lectures, or sleep."
+          ]
+        },
+        {
+          "heading": "Uncompromising Multi-Stage Filtration Architecture",
+          "paragraphs": [
+            "Inside the heavy-gauge powder-coated GI chassis lies a progressive four-stage purification train. First, a washable metallic mesh pre-filter captures coarse lint and PM10 dust. Second, a high-iodine-value honeycomb activated carbon bank adsorbs volatile organic compounds (TVOCs), formaldehyde, and traffic exhaust fumes.",
+            "Third, a deep-pleat HEPA H13 media bank traps 99.97% of fine PM2.5 and 0.3-micron bio-aerosols. Finally, UL 2998 verified Needlepoint Bipolar Ionization actively neutralizes airborne pathogens in the breathing zone without generating harmful ozone."
+          ]
+        },
+        {
+          "heading": "Built for Zero-Hassle Maintenance",
+          "paragraphs": [
+            "Performance also respects the technicians who maintain the building. Tool-free magnetic access panels, slide-out filter tracks, and automated pressure-drop alerts mean routine filter servicing takes under five minutes per unit with zero ceiling demolition."
+          ]
+        }
+      ]
     },
     {
       "id": "5",
+      "slug": "reducing-hvac-carbon-footprint",
       "title": "Reducing HVAC Carbon Footprint with AI Automation.",
       "category": "Sustainability",
-      "image": "/images/team/ourTeam- (5).webp"
+      "ctaText": "Read Sustainability Story",
+      "path": "/stories/reducing-hvac-carbon-footprint",
+      "image": "/images/team/ourTeam- (5).webp",
+      "heroVisual": "/images/products/igt-erv-airflow-diagram.webp",
+      "secondaryVisual": "/images/products/igt-duct-eac-cell.webp",
+      "readTime": "5 Min Read",
+      "publishedDate": "Sustainability & ESG • Net-Zero HVAC",
+      "subtitle": "How IntelliGreen combines AI demand-controlled ventilation, 78% enthalpy Cross-Flow ERV cores, and ultra-low-drag washable electrostatic cells to slash chiller electricity consumption and eliminate filter landfill waste.",
+      "quote": "Healthy indoor air shouldn't cost the planet. By pairing AI-driven ventilation modulation with enthalpy heat recovery and washable filtration, buildings cut HVAC energy waste by up to 34%.",
+      "keyHighlights": [
+        {
+          "metric": "78%",
+          "label": "Enthalpy Heat Recovery",
+          "detail": "Cross-flow polymer ERV cores pre-cool and dehumidify incoming hot outdoor air using exhaust air energy."
+        },
+        {
+          "metric": "<25 Pa",
+          "label": "Ultra-Low Static Drag",
+          "detail": "Washable GreenPro MERV 15+ electrostatic cells reduce AHU fan power compared to 250 Pa fibrous bag filters."
+        },
+        {
+          "metric": "Zero",
+          "label": "Disposable Filter Waste",
+          "detail": "Cleanable metallic collector plates last 10+ years, keeping thousands of fiberglass filters out of landfills."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Breaking the Trade-Off Between Fresh Air and Chiller Energy",
+          "paragraphs": [
+            "In warm and humid climates, bringing untreated outdoor air into an air-conditioned building imposes a massive thermal penalty on central chillers. Historically, facility managers faced an impossible choice: seal the building tight to save electricity—causing indoor CO₂ and pollutants to soar—or over-ventilate on a fixed schedule and watch HVAC carbon emissions skyrocket.",
+            "IntelliGreen eliminates this trade-off through AI-automated Demand-Controlled Ventilation (DCV) paired with high-efficiency Cross-Flow Energy Recovery Ventilation (ERV). Our enthalpy exchange cores transfer up to 78% of both sensible temperature and latent humidity between outgoing conditioned exhaust air and incoming fresh air."
+          ]
+        },
+        {
+          "heading": "AI Modulation That Breathes With Real-Time Occupancy",
+          "paragraphs": [
+            "Instead of running fresh-air blowers at 100% capacity in half-empty floors, IntelliGreen's AI telemetry engine continuously reads real-time CO₂ and particulate loads across every zone. When meeting rooms empty out, EC fans smoothly ramp down along the fan-affinity cubic power curve—where a 30% reduction in airflow yields nearly a 65% reduction in fan motor electricity consumption."
+          ]
+        },
+        {
+          "heading": "Slashing Static Pressure & Eliminating Landfill Waste",
+          "paragraphs": [
+            "Conventional fibrous AHU bag filters choke airflow with 180–250 Pa of static pressure resistance and must be ripped out and dumped into landfills every few months. IntelliGreen's GreenPro-certified Electronic Air Cleaners (EAC) capture sub-micron particulates electrostatically with less than 25 Pa of airflow resistance—cutting AHU blower energy every hour of the year while washing clean with water for over a decade of zero-waste operation."
+          ]
+        }
+      ]
     },
     {
       "id": "6",
+      "slug": "apollo-maternity-icu-sanitation",
       "title": "Transforming Healthcare IAQ Standards.",
       "category": "Case Study",
+      "ctaText": "Read Case Study",
+      "path": "/case-studies/apollo-maternity-icu-sanitation",
       "image": "/images/team/ourTeam- (6).webp"
     }
   ]

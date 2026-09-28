@@ -51,34 +51,43 @@ export default function LatestCarouselSection() {
           ref={carouselRef}
           className="flex gap-5 overflow-x-auto pb-4 pt-1 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none]"
         >
-          {perspectivesData.stories.map((story) => (
-            <Link
-              to="/case-studies"
-              key={story.id}
-              className="group relative flex-none w-[280px] sm:w-[320px] h-[340px] rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md transition-transform duration-500 hover:-translate-y-1.5 block"
-            >
-              <img
-                src={getAssetUrl(story.image)}
-                alt={story.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent opacity-90" />
-              
-              <div className="absolute inset-x-0 bottom-0 p-6 space-y-2">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400">
-                  {story.category}
-                </span>
-                <h3 className="text-base font-bold text-white leading-snug group-hover:text-emerald-300 transition-colors">
-                  {story.title}
-                </h3>
-                <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-200 pt-1 group-hover:text-emerald-400">
-                  <span>Read Case Study</span>
-                  <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
+          {perspectivesData.stories.map((story) => {
+            const isCaseStudy = story.category?.toUpperCase() === 'CASE STUDY';
+            const targetPath =
+              story.path ||
+              (isCaseStudy ? '/case-studies' : `/stories/${story.slug || story.id}`);
+            const ctaLabel =
+              story.ctaText || (isCaseStudy ? 'Read Case Study' : 'Read Story');
+
+            return (
+              <Link
+                to={targetPath}
+                key={story.id}
+                className="group relative flex-none w-[280px] sm:w-[320px] h-[340px] rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md transition-transform duration-500 hover:-translate-y-1.5 block"
+              >
+                <img
+                  src={getAssetUrl(story.image)}
+                  alt={story.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent opacity-90" />
+
+                <div className="absolute inset-x-0 bottom-0 p-6 space-y-2">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400">
+                    {story.category}
+                  </span>
+                  <h3 className="text-base font-bold text-white leading-snug group-hover:text-emerald-300 transition-colors">
+                    {story.title}
+                  </h3>
+                  <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-200 pt-1 group-hover:text-emerald-400">
+                    <span>{ctaLabel}</span>
+                    <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
+                  </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </div>
       </Container>
     </section>
