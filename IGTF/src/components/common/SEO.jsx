@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 export default function SEO({
-  title = 'IntelliGreen - CleanTech & Smart Air Quality Solutions',
-  description = 'IntelliGreen delivers intelligent air purification, real-time IAQ monitoring, and sustainable clean-air solutions for commercial, healthcare, and industrial environments.',
-  keywords = 'air purification, clean tech, indoor air quality, IAQ monitoring, HEPA filter, bipolar ionisation, electronic air cleaner, smart building',
+  title = 'IntelliGreen Technologies | CleanTech Air Purification, TFAS, ERV & Smart IAQ Systems',
+  description = 'IntelliGreen Technologies delivers intelligent air purification, Wall & Ceiling CTFA/TFAS units, Cross-Flow ERV energy recovery, UL 2998 Zero-Ozone Bipolar Ionisation, and AWS IoT IAQ monitoring.',
+  keywords = 'IntelliGreen Technologies, air purification, clean tech, indoor air quality, IAQ monitoring, Wall Mounted CTFA, ERV, bipolar ionisation, electronic air cleaner',
   image = '/media/intelligreen-logo.png',
   schemaData = null,
 }) {
   const location = useLocation();
+  const resolvedImage = getAssetUrl(image);
   const currentUrl = typeof window !== 'undefined' ? `${window.location.origin}${location.pathname}` : '';
 
   useEffect(() => {
@@ -35,16 +37,16 @@ export default function SEO({
     updateMetaTag('og:description', description, 'property');
     updateMetaTag('og:url', currentUrl, 'property');
     updateMetaTag('og:type', 'website', 'property');
-    if (image) {
-      updateMetaTag('og:image', image, 'property');
+    if (resolvedImage) {
+      updateMetaTag('og:image', resolvedImage, 'property');
     }
 
     // Update Twitter Card tags
     updateMetaTag('twitter:card', 'summary_large_image');
     updateMetaTag('twitter:title', title);
     updateMetaTag('twitter:description', description);
-    if (image) {
-      updateMetaTag('twitter:image', image);
+    if (resolvedImage) {
+      updateMetaTag('twitter:image', resolvedImage);
     }
 
     // Update Canonical Link
@@ -68,9 +70,9 @@ export default function SEO({
     const defaultSchema = {
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      name: 'IntelliGreen CleanTech',
+      name: 'IntelliGreen Technologies Private Limited',
       url: currentUrl,
-      logo: `${window.location.origin}/media/intelligreen-logo.png`,
+      logo: `${window.location.origin}${getAssetUrl('/media/intelligreen-logo.png')}`,
       description: description,
       sameAs: [
         'https://linkedin.com',
@@ -79,7 +81,7 @@ export default function SEO({
     };
 
     schemaScript.textContent = JSON.stringify(schemaData || defaultSchema);
-  }, [title, description, keywords, image, currentUrl, schemaData]);
+  }, [title, description, keywords, resolvedImage, currentUrl, schemaData]);
 
   return null;
 }
