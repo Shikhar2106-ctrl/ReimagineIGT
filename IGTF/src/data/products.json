@@ -1,16 +1,17 @@
 {
   "badge": "Engineering & Hardware Ecosystem",
-  "title": "Precision Clean-Air Systems & Interior Anatomy",
-  "description": "Every IntelliGreen system is engineered from the inside out—combining aerospace-grade EC impellers, medical H13 HEPA + activated carbon matrices, cross-flow enthalpy recovery cores, and active needlepoint bi-polar ionization.",
+  "title": "Smart Clean-Air Systems & Interior Engineering",
+  "description": "Explore our complete ecosystem of intelligent air purification, energy recovery, active ionization, and IoT sensing hardware—engineered from the inside out.",
   "anatomyShowcase": {
-    "badge": "Interior Architecture Breakdown",
+    "badge": "Interactive 3D Hardware Anatomy",
     "title": "Inside the IntelliGreen Purification Engine",
-    "subtitle": "Explore the 6-stage internal hardware anatomy captured directly from our CAD & fluid-dynamics engineering assemblies.",
+    "subtitle": "Tap any stage or hotspot below to inspect the 6-stage internal hardware assembly and live fluid-dynamics airflow.",
     "video": "/media/intelligreen-anatomy-showcase.webm",
     "layers": [
       {
         "id": "stage-intake",
-        "code": "STAGE 01",
+        "code": "01",
+        "shortLabel": "Sealed Chassis",
         "title": "Acoustic-Sealed Galvanized Chassis & Collar Intake",
         "subtitle": "Zero-Leakage Positive Pressure Housing",
         "description": "Precision laser-cut powder-coated steel enclosure with dual-flange cylindrical duct collars, vibration-damping suspension mounts, and quick-latch service doors for false-ceiling or wall installation.",
@@ -18,11 +19,13 @@
         "secondaryImage": "/images/products/igt-transparent-chassis.webp",
         "video": "/media/tfas-cutaway-airflow.webm",
         "metric": "0.8mm GI Steel",
-        "metricLabel": "Acoustic Insulated"
+        "metricLabel": "Acoustic Insulated",
+        "hotspot": { "x": "18%", "y": "52%" }
       },
       {
         "id": "stage-prefilter",
-        "code": "STAGE 02",
+        "code": "02",
+        "shortLabel": "G4 Pre-Filter",
         "title": "Washable Aluminum Mesh & G4 Pre-Filtration Matrix",
         "subtitle": "Macro-Particulate & Lint Interception",
         "description": "First-line defense screen engineered to trap coarse urban dust, lint, insects, and PM10 particulates before they reach the fine medical-grade filtration chambers, extending downstream HEPA life by 40%.",
@@ -30,11 +33,13 @@
         "secondaryImage": "/images/products/igt-cutaway-intake.webp",
         "video": "/media/tfas-cutaway-airflow.webm",
         "metric": "95% @ >5μm",
-        "metricLabel": "Washable Primary Stage"
+        "metricLabel": "Washable Primary Stage",
+        "hotspot": { "x": "34%", "y": "48%" }
       },
       {
         "id": "stage-hepa-carbon",
-        "code": "STAGE 03",
+        "code": "03",
+        "shortLabel": "HEPA H13 + Carbon",
         "title": "Medical HEPA H13 + Honeycomb Activated Carbon Bed",
         "subtitle": "Sub-Micron PM2.5 & VOC Chemical Adsorption",
         "description": "Deep-pleated borosilicate micro-glass HEPA H13 media paired with a high-iodine coconut shell honeycomb activated carbon matrix to capture 99.97% of PM0.3 particulates, traffic exhaust, NO2, and formaldehyde.",
@@ -42,11 +47,13 @@
         "secondaryImage": "/images/products/igt-filter-exploded.webp",
         "video": "/media/intelligreen-anatomy-showcase.webm",
         "metric": "99.97% @ 0.3μm",
-        "metricLabel": "HEPA H13 + Carbon"
+        "metricLabel": "HEPA H13 + Carbon",
+        "hotspot": { "x": "50%", "y": "45%" }
       },
       {
         "id": "stage-erv-core",
-        "code": "STAGE 04",
+        "code": "04",
+        "shortLabel": "ERV Heat Core",
         "title": "Cross-Flow Enthalpy Heat & Energy Recovery Core",
         "subtitle": "Thermal Exchange Without Air Cross-Contamination",
         "description": "Diamond-matrix counter-crossflow heat exchanger transfers up to 78% of sensible and latent thermal energy between outgoing conditioned room air and incoming outdoor air—slashing chiller & HVAC electrical loads.",
@@ -54,11 +61,13 @@
         "secondaryImage": "/images/products/igt-cutaway-intake.webp",
         "video": "/media/erv-heat-recovery.webm",
         "metric": "Up to 78%",
-        "metricLabel": "Thermal Recovery"
+        "metricLabel": "Thermal Recovery",
+        "hotspot": { "x": "64%", "y": "50%" }
       },
       {
         "id": "stage-ec-impeller",
-        "code": "STAGE 05",
+        "code": "05",
+        "shortLabel": "EC Impeller",
         "title": "Brushless EC Centrifugal Impeller & Vortex Plenum",
         "subtitle": "Whisper-Quiet High-Static Laminar Propulsion",
         "description": "Aerodynamically balanced backward-curved EC motorized impeller delivers constant CFM airflow across varying duct static pressures while operating below 34 dB(A) with 50% lower wattage.",
@@ -66,11 +75,13 @@
         "secondaryImage": "/images/products/igt-silent-duct-outlet.webp",
         "video": "/media/intelligreen-anatomy-showcase.webm",
         "metric": "<34 dB(A)",
-        "metricLabel": "Silent EC Motor"
+        "metricLabel": "Silent EC Motor",
+        "hotspot": { "x": "76%", "y": "46%" }
       },
       {
         "id": "stage-bpi-module",
-        "code": "STAGE 06",
+        "code": "06",
+        "shortLabel": "Active BPI",
         "title": "Active Needlepoint Bi-Polar Ionization (BPI) Emitter",
         "subtitle": "UL 2998 Zero-Ozone Active In-Room Disinfection",
         "description": "Carbon-fiber brush & needlepoint electrodes mounted at the discharge collar flood the purified airstream with >10 million H+ and O2- ions/cm³ to neutralize airborne viruses, mold spores, and odors directly in the breathing zone.",
@@ -78,7 +89,8 @@
         "secondaryImage": "/images/products/igt-bpi-ions-stream.webp",
         "video": "/media/bpi-active-module.webm",
         "metric": ">10M ions/cm³",
-        "metricLabel": "UL 2998 Zero Ozone"
+        "metricLabel": "UL 2998 Zero Ozone",
+        "hotspot": { "x": "88%", "y": "52%" }
       }
     ]
   },
@@ -86,32 +98,31 @@
     {
       "id": "ctfa-wall",
       "slug": "ctfa-wall",
-      "title": "Concealed & Wall-Mounted TFAS / CTFA Unit",
-      "subtitle": "Multi-Stage Treated Fresh Air & Positive Pressurization System",
-      "description": "Engineered for rapid fresh air exchange, positive room pressurization, 3-stage G4 + Honeycomb Carbon + HEPA H13 filtration, and optional Active BPI disinfection with whisper-quiet EC acoustics.",
-      "seoTitle": "Concealed & Wall Mounted TFAS / CTFA Fresh Air Purifier | IntelliGreen",
-      "seoDescription": "Discover the IntelliGreen TFAS/CTFA fresh air unit featuring G4 pre-filter, activated carbon honeycomb, HEPA H13, EC centrifugal fan, and optional BPI module.",
-      "media": "/media/tfas-cutaway-airflow.webm",
-      "image": "/images/products/igt-cutaway-intake.webp",
+      "shortTitle": "Wall Mounted CTFA",
+      "title": "WALL MOUNTED CTFA",
+      "subtitle": "Fresh Air Solution For HVAC / Non-HVAC Premises",
+      "description": "Engineered for rapid fresh air exchange, positive room pressurization, allergen removal, and dual-mode HEPA H13 + Activated Carbon purification with whisper-quiet fan acoustics.",
+      "seoTitle": "WALL MOUNTED CTFA Fresh Air Purifier | IntelliGreen CleanTech",
+      "seoDescription": "Discover the WALL MOUNTED CTFA fresh air purifier. Dual-mode HEPA & carbon filtration for HVAC and non-HVAC commercial premises.",
+      "media": "/media/intelligreen-product1.webm",
+      "image": "/images/hero/frame-6.webp",
       "icon": "Wind",
       "features": [
-        "Positive Pressure Fresh Air Intake Mode",
-        "3-Stage G4 + Honeycomb Carbon + HEPA H13 Matrix",
-        "Whisper-Quiet EC Centrifugal Impeller (<34 dB)",
-        "Optional Needlepoint Bi-Polar Ionization (BPI) Module",
-        "False-Ceiling Concealed or Wall-Mount Configurations",
-        "Low Energy Consumption (<45W)"
+        "Fresh Air Intake & Positive Pressurization Mode",
+        "Hospital Grade HEPA H13 + Honeycomb Carbon Filtration",
+        "Sleek Wall-Mount & Concealed False-Ceiling Options",
+        "Ultra-Low Energy Consumption (<45W EC Motor)"
       ],
       "specs": {
-        "Coverage": "Up to 1,200 sq. ft.",
-        "CADR / Airflow": "350 – 850 CFM",
-        "Filtration": "G4 + Carbon + HEPA H13",
-        "Noise Level": "<34 dB(A)"
+        "Coverage": "Up to 850 sq. ft.",
+        "CADR": "450 m³/h",
+        "Filter Life": "12 Months",
+        "Noise Level": "<34 dB"
       },
       "interiorGallery": [
         {
           "title": "3D Cutaway Intake & Multi-Filter Chamber",
-          "caption": "Polluted outdoor air enters through the acoustic-sealed duct collar and passes sequentially through G4, Honeycomb Carbon, and HEPA H13 stages.",
+          "caption": "Outdoor air enters through the acoustic-sealed collar and passes sequentially through G4, Honeycomb Carbon, and HEPA H13 stages.",
           "image": "/images/products/igt-cutaway-intake.webp"
         },
         {
@@ -121,85 +132,87 @@
         },
         {
           "title": "EC Centrifugal Vortex Impeller",
-          "caption": "High-efficiency brushless EC motor maintains laminar positive pressure airflow across ducting at whisper-quiet acoustic levels.",
+          "caption": "High-efficiency brushless EC motor maintains laminar positive pressure airflow at whisper-quiet acoustic levels (<34 dB).",
           "image": "/images/products/igt-ec-impeller-vortex.webp"
         },
         {
           "title": "Active BPI Discharge Collar",
-          "caption": "Integrated needlepoint Bi-Polar Ionization module enriches outgoing purified air with millions of pathogen-neutralizing positive & negative ions.",
+          "caption": "Optional needlepoint Bi-Polar Ionization module enriches outgoing purified air with millions of pathogen-neutralizing ions.",
           "image": "/images/products/igt-bpi-needlepoint.webp"
         }
       ],
-      "overview": "The IntelliGreen TFAS / CTFA (Clean Technology Treated Fresh Air) unit represents a breakthrough in architectural air purification. Built for false-ceiling concealed ducting as well as standalone non-HVAC rooms, it blocks outdoor urban smog infiltration by creating positive indoor air pressure while stripping 99.97% of PM2.5, VOCs, pollen, and airborne pathogens.",
+      "overview": "The WALL MOUNTED CTFA (Clean Technology Fresh Air) unit represents a breakthrough in commercial and residential space air purification. Built for both HVAC-connected buildings and standalone non-HVAC rooms, it introduces positive fresh air pressure while filtering PM2.5, pollen, airborne bacteria, and toxic gaseous compounds.",
       "applications": [
-        "Luxury Residences, Penthouses & False-Ceiling Living Rooms",
-        "Corporate Executive Offices, Boardrooms & Co-Working Hubs",
-        "Healthcare Clinics, IVF Labs & Patient Recovery Suites",
-        "Educational Classrooms, Universities & Hospitality Suites"
+        "Corporate Executive Offices & Boardrooms",
+        "Healthcare Clinics & Patient Waiting Rooms",
+        "Schools, Educational Classrooms & Nurseries",
+        "Luxury Residences, Hotels & Hospitality Suites"
       ],
       "workingMechanism": [
         {
           "step": "01",
-          "title": "Outdoor Smog Block & Pressurized Intake",
-          "description": "Draws controlled outdoor ambient air through a sealed intake collar while maintaining positive indoor pressure to stop unfiltered window infiltration."
+          "title": "Fresh Air Intake",
+          "description": "Pulls fresh ambient air from external ducts or high-efficiency intake vents while maintaining positive indoor barometric pressure."
         },
         {
           "step": "02",
-          "title": "Tri-Stage Mechanical & Chemical Filtration",
-          "description": "Captures coarse dust on the G4 screen, adsorbs toxic gases/VOCs in the honeycomb carbon bed, and traps 99.97% of PM0.3 microbes in the HEPA H13 stage."
+          "title": "Multi-Stage HEPA + Carbon Filtration",
+          "description": "Passes incoming air through washable G4 pre-filters, medical-grade HEPA H13 filters, and honeycomb activated carbon beds."
         },
         {
           "step": "03",
-          "title": "EC Laminar Propulsion & Active BPI Ionization",
-          "description": "Propels silent purified air through the EC impeller and optional BPI ionizer bar directly into the occupied zone."
+          "title": "Positive Pressure Circulation",
+          "description": "Distributes purified, oxygen-rich air into the room while driving out stale high-CO2 air and blocking window dust seepage."
         }
       ],
       "technicalSpecifications": {
-        "Model Series": "IG-TFAS-850 / CTFA Pro",
-        "Input Voltage": "220-240V AC / 50Hz (EC Motor)",
-        "Power Consumption": "18W to 65W (Variable Speed)",
-        "Airflow Capacity": "250 CFM / 500 CFM / 850 CFM Models",
-        "Filtration Stages": "Stage 1: G4 Mesh | Stage 2: Honeycomb Activated Carbon | Stage 3: HEPA H13 | Stage 4: Active BPI",
-        "Noise Output": "32–34 dB(A) Silent Mode / 46 dB(A) Max Boost",
-        "Mounting Options": "False-Ceiling Suspended Threaded Rod / Wall Bracket",
-        "Casing Material": "Double-Skinned Powder-Coated GI Steel with Acoustic Foam",
-        "Warranty": "2 Years Comprehensive On-Site Warranty"
+        "Model Series": "IG-CTFA-850",
+        "Input Voltage": "220-240V AC / 50Hz",
+        "Power Consumption": "18W to 45W",
+        "CADR (Air Delivery)": "450 m³/h",
+        "Filtration Standard": "G4 Pre-Filter + HEPA H13 (99.97% @ 0.3μm) + Activated Carbon",
+        "Noise Output": "34 dB(A) silent mode / 48 dB(A) max boost",
+        "Mounting Type": "Wall Mounted / Concealed Ceiling Bracket",
+        "Dimensions (W x H x D)": "620mm x 380mm x 210mm",
+        "Unit Weight": "8.5 kg",
+        "Warranty": "2 Years Limited Warranty"
       },
       "faqs": [
         {
-          "question": "Can the TFAS unit be concealed above a false ceiling?",
-          "answer": "Yes! The low-profile matte-black industrial enclosure features integrated suspension brackets and dual duct collars specifically designed to fit seamlessly inside residential and commercial false ceilings."
+          "question": "Can the CTFA unit operate in rooms without central HVAC?",
+          "answer": "Yes! The CTFA unit is specifically designed to function either as a standalone wall-mounted fresh air unit or integrated into existing ductwork."
         },
         {
-          "question": "How does positive pressurization stop window dust infiltration?",
-          "answer": "By continuously introducing filtered fresh air, indoor barometric pressure becomes slightly higher than outdoor pressure, preventing polluted city smog from seeping in through window gaps and door frames."
+          "question": "How often do the HEPA filters need replacement?",
+          "answer": "Under standard commercial usage (10-12 hours daily), the primary HEPA filter lasts 12 months. Built-in pressure sensors alert facility staff when replacement is due."
         }
       ]
     },
     {
       "id": "bipolar-ionisation",
       "slug": "bipolar-ionisation",
-      "title": "Active Needlepoint Bi-Polar Ionisation (BPI) Module",
-      "subtitle": "UL 2998 Zero-Ozone Active In-Room & Duct Disinfection",
-      "description": "High-density plasma needlepoint ionization module that releases millions of balanced positive (H+) and negative (O2-) ions into the airstream, neutralizing pathogens, mold spores, and VOCs throughout the breathing space.",
-      "seoTitle": "Active Needlepoint Bi-Polar Ionisation (BPI) Module | IntelliGreen",
-      "seoDescription": "Active Bipolar Ionisation technology replicating nature's air purification model. UL 2998 Zero-Ozone certified, modular TFAS & central AHU integration.",
+      "shortTitle": "Bipolar Ionisation",
+      "title": "Active Bipolar Ionisation System",
+      "subtitle": "Replicating Nature's Air Purification Model",
+      "description": "Plasma Needlepoint Ionization technology that injects millions of balanced positive (H+) and negative (O2-) ions throughout the room, continuously neutralizing airborne pathogens, mold spores, and odors at their source.",
+      "seoTitle": "Active Bipolar Ionisation System | In-Room Disinfection | IntelliGreen",
+      "seoDescription": "Active Bipolar Ionisation technology replicating nature's air purification model. Ozone-free, energy efficient, and universal central HVAC system integration.",
       "media": "/media/bpi-active-module.webm",
       "image": "/images/products/igt-bpi-needlepoint.webp",
       "icon": "Zap",
       "features": [
-        "High-Output Needlepoint Carbon & Titanium Emitter Array",
-        "Floods Breathing Zone with >10M Positive & Negative Ions/cm³",
-        "Active In-Space Pathogen, Virus & Mold Neutralization",
-        "Particle Agglomeration Boosts Downstream Filter Efficiency",
-        "Modular Slot-In Integration for TFAS, AHU, FCU & VRF Ducts",
-        "UL 2998 Certified Zero-Ozone (<0.005 ppm) Safety Standard"
+        "Nature's Air Purification Model Replicated",
+        "Active In-Room Air & Surface Disinfection",
+        "High Density Positive (H+) & Negative (O2-) Ions",
+        "Universal Central HVAC & TFAS Duct Integration",
+        "UL 2998 Certified Zero-Ozone Standard",
+        "Zero Consumable Filter Replacement Required"
       ],
       "specs": {
-        "Technology": "Needlepoint Plasma BPI",
-        "Coverage": "Up to 2,000 sq. ft. / head",
-        "Ion Polarity": "Balanced H+ & O2- Ions",
-        "Ozone Emission": "UL 2998 Zero Ozone"
+        "Technology": "Plasma Bipolar Ionization",
+        "Coverage": "Up to 1,500 sq. ft.",
+        "Ion Density": ">10 Million ions/cm³",
+        "Integration": "All Central HVAC Systems"
       },
       "interiorGallery": [
         {
@@ -223,54 +236,56 @@
           "image": "/images/products/igt-silent-duct-outlet.webp"
         }
       ],
-      "overview": "Traditional mechanical filters are passive—contaminants must be drawn all the way back into the return duct to be trapped. The IntelliGreen Active Needlepoint Bi-Polar Ionisation (BPI) Module transforms your supply air itself into an active purifying agent. By generating a dense, balanced cloud of positive (H+) and negative (O2-) ions with zero ozone byproduct, it neutralizes viruses, bacteria, VOCs, and ultrafine particulates directly in the occupied room.",
+      "overview": "Nature purifies mountain, forest, and post-rain ocean air through a natural balance of positive and negative ions. The Active Bipolar Ionisation System replicates nature’s air purification model using Needlepoint Plasma Ionization technology. By releasing millions of balanced positive (H+) and negative (O2-) ions into the room, it actively neutralizes airborne viruses, bacteria, VOCs, and mold throughout 100% of the breathing zone.",
       "applications": [
-        "Hospital Operating Theaters, ICUs & Isolation Wards",
-        "High-Density Open-Plan Offices, Auditoriums & Airports",
-        "Integration Module for IntelliGreen TFAS & ERV Systems",
-        "Central HVAC Air Handling Units (AHUs) & VRF Fan Coils"
+        "Open-Plan Office Workspaces & Call Centers",
+        "Hospital Operating Theaters & ICU Rooms",
+        "Fitness Centers, Gyms & Sports Facilities",
+        "Food Processing Plants & Cold Storage"
       ],
       "workingMechanism": [
         {
           "step": "01",
-          "title": "Needlepoint Corona Discharge",
-          "description": "Precision voltage-regulated needlepoint electrodes split ambient water vapor molecules into balanced positive (H+) and negative (O2-) ions without producing ozone."
+          "title": "Natural Plasma Generation",
+          "description": "Replicates nature's purification process by splitting water vapor into balanced streams of positive (H+) and negative (O2-) ions."
         },
         {
           "step": "02",
-          "title": "Microbial Surface & Airborne Inactivation",
-          "description": "Ions cluster around airborne viruses, bacteria, and mold spores, extracting hydrogen from their surface proteins to render them inactive."
+          "title": "Active In-Room Disinfection",
+          "description": "Ions travel throughout the entire space, actively attacking airborne viruses, bacteria, mold spores, and toxic VOCs at their source."
         },
         {
           "step": "03",
-          "title": "Sub-Micron Particle Agglomeration",
-          "description": "Oppositely charged ultrafine particles attract and clump into larger clusters, settling out of the breathing zone or getting easily trapped by filters."
+          "title": "Agglomeration & HVAC Integration",
+          "description": "Causes ultrafine particles to cluster together for easy capture by ventilation systems, operating seamlessly with any HVAC setup."
         }
       ],
       "technicalSpecifications": {
-        "Model Series": "IG-BPI-NP1500",
-        "Emitter Architecture": "Dual Needlepoint Titanium / Carbon Brush Array with Status LED",
-        "Ion Output Density": ">10 Million to 25 Million ions/cm³",
-        "Ozone Safety Standard": "UL 2998 & UL 867 Certified Zero-Ozone (<0.005 ppm)",
-        "Power Input": "12V–24V DC / 110–240V AC Universal Driver (<5W)",
-        "Static Pressure Drop": "0 Pa (Zero Airflow Obstruction)",
-        "Consumable Parts": "Zero Replacement Filters Required",
-        "Warranty": "3 Years Manufacturer Replacement Warranty"
+        "Model Series": "IG-BPI-1500",
+        "Technology Principle": "Needlepoint Plasma Bipolar Ionization (Active In-Room Purifier)",
+        "Ion Generation": "Balanced Positive (H+) and Negative (O2-) Ions",
+        "Ozone Certification": "UL 2998 / UL 867 Zero Ozone (< 0.005 ppm)",
+        "System Integration": "AHUs, TFAS Units, Ductwork, VRF/VRV Units",
+        "Coverage Area": "1,500 sq. ft. per ioniser head",
+        "Pathogens Inactivated": "Viruses, Bacteria, Mold Spores, VOCs & Odors",
+        "Consumable Parts": "Zero Filter Replacement Required",
+        "Warranty": "3 Years Manufacturer Warranty"
       },
       "faqs": [
         {
-          "question": "Does the BPI module produce harmful ozone?",
-          "answer": "No. Unlike legacy corona-tube ionizers, our needlepoint BPI circuit is voltage-clamped below the ozone activation threshold and is independently validated to UL 2998 Zero-Ozone standards (<0.005 ppm)."
+          "question": "Why is Plasma Ionization described as '180 degrees opposite' to traditional purifiers?",
+          "answer": "Traditional purifiers are passive—air must be sucked into a physical box to be filtered. Bipolar Ionisation is active—it floods the living space with natural ions to kill pathogens right where you breathe."
         },
         {
-          "question": "Can this module be added to the IntelliGreen TFAS unit or an existing AHU?",
-          "answer": "Yes! It mounts directly into the dedicated BPI slot inside our TFAS/ERV units or bolts onto any standard HVAC supply duct/AHU coil face in under 15 minutes."
+          "question": "Can this system be installed into existing central HVAC ductwork?",
+          "answer": "Yes, IntelliGreen ionisation units integrate seamlessly into AHUs, ductwork, FCUs, or VRF systems to turn your existing HVAC into a central air purifier."
         }
       ]
     },
     {
       "id": "tfas-erv-system",
       "slug": "tfas-erv-system",
+      "shortTitle": "Cross-Flow ERV",
       "title": "Cross-Flow ERV Energy Recovery Ventilator",
       "subtitle": "Dual-Stream Thermal Exchange & Fresh Air Purification Core",
       "description": "High-efficiency counter-crossflow enthalpy heat recovery system that exchanges 78% of thermal energy between exhaust indoor air and incoming filtered outdoor air—cutting HVAC cooling loads while maintaining <600 ppm CO2.",
@@ -281,11 +296,9 @@
       "icon": "Layers",
       "features": [
         "Diamond Cross-Flow Enthalpy Heat & Humidity Recovery Core",
-        "Up to 78% Thermal Energy Recovery (Cuts AC Load)",
+        "Up to 78% Thermal Energy Recovery (Cuts AC Chiller Load)",
         "Quad-Motor Brushless EC Supply & Exhaust Blowers",
-        "100% Zero Cross-Contamination Between Exhaust & Fresh Air",
-        "Integrated HEPA H13 + Activated Carbon Supply Filtration",
-        "Automated CO2 Demand-Controlled Ventilation (DCV)"
+        "100% Zero Cross-Contamination Between Exhaust & Fresh Air"
       ],
       "specs": {
         "Thermal Efficiency": "Up to 78% Enthalpy",
@@ -353,30 +366,25 @@
         {
           "question": "Does exhaust air mix with the fresh incoming air inside the ERV core?",
           "answer": "Zero mixing occurs. The cross-flow enthalpy core consists of sealed alternating plates that transfer only thermal energy and water vapor molecules across a selective membrane while keeping exhaust pollutants 100% isolated."
-        },
-        {
-          "question": "How much HVAC electricity does an ERV save?",
-          "answer": "By pre-cooling incoming 42°C summer air down to ~27°C using outgoing 24°C room exhaust, the ERV reduces fresh-air air conditioning load by up to 65–75%."
         }
       ]
     },
     {
       "id": "eac-filter",
       "slug": "eac-filter",
+      "shortTitle": "EAC Air Cleaner",
       "title": "EAC Electronic Air Cleaner",
       "subtitle": "CII–IGBC GreenPro Certified Electrostatic Collector",
       "description": "Dual-stage electrostatic precipitator with MERV 15+ filtration efficiency for sub-micron dust, smoke, and pathogens at ultra-low static pressure resistance.",
       "seoTitle": "EAC Electronic Air Cleaner Filter | GreenPro Certified | IntelliGreen",
       "seoDescription": "CII–IGBC GreenPro Certified EAC Electronic Air Cleaner featuring dual-stage electrostatic precipitation. MERV 15+ efficiency for sub-micron particles with washable cells.",
       "media": "/media/Video- (6).webm",
-      "image": "/images/hero/frame-5.webp",
+      "image": "/images/hero/frame-5.png",
       "icon": "ShieldCheck",
       "features": [
         "CII–IGBC GreenPro Certified Product",
         "MERV 15+ Equivalent Electrostatic Filtration",
         "Dual-Stage Charging & Collector Cell Architecture",
-        "Captures Smoke, Mold Spores, Bacteria & Sub-Micron Dust",
-        "Ultra-Low Airflow Pressure Drop (Saves HVAC Energy)",
         "Washable Aluminum Collector Plates (Zero Waste)"
       ],
       "specs": {
@@ -389,7 +397,7 @@
         {
           "title": "High-Voltage Ionizing & Collector Cell Matrix",
           "caption": "Two-stage aluminum electrostatic collector plates trap sub-micron particles with <25 Pa static pressure drop.",
-          "image": "/images/hero/frame-5.webp"
+          "image": "/images/hero/frame-5.png"
         },
         {
           "title": "Modular Ductwork & AHU Housing",
@@ -434,31 +442,26 @@
         {
           "question": "What is GreenPro Certification by CII-IGBC?",
           "answer": "GreenPro certification by CII–IGBC validates that the EAC filter meets stringent green building performance criteria, earning direct credits toward IGBC and LEED ratings."
-        },
-        {
-          "question": "How does electrostatic precipitation compare to standard mechanical bag/HEPA filters?",
-          "answer": "Unlike dense mechanical filters that clog and create 150–250 Pa of static pressure resistance, EAC aluminum cells maintain <25 Pa pressure drop and are 100% washable and reusable."
         }
       ]
     },
     {
       "id": "iaq-sensor",
       "slug": "iaq-sensor",
+      "shortTitle": "IAQ Smart Sensor",
       "title": "IAQ Smart Sensor Station",
       "subtitle": "LoRaWAN, MODBUS & AWS Cloud Environmental Intelligence",
       "description": "Industrial-grade 9-parameter environmental monitor with laser PM2.5/PM10 scattering, NDIR CO2, TVOC, and multi-protocol LoRaWAN / Wi-Fi / RS485 MODBUS telemetry.",
       "seoTitle": "IAQ Smart Sensor Station | LoRaWAN & AWS Cloud | IntelliGreen",
       "seoDescription": "Customizable IAQ Smart Sensor Station featuring LoRaWAN, Wi-Fi, MODBUS & AWS Secured Cloud. Real-time AQI display and automated HVAC demand control.",
       "media": "/media/intelligreen-product4.webm",
-      "image": "/images/hero/frame-4.webp",
+      "image": "/images/hero/frame-4.jpeg",
       "icon": "Activity",
       "features": [
-        "9-Parameter Real-Time Sensing (PM2.5, PM10, CO2, TVOC, HCHO, Temp, RH)",
+        "9-Parameter Real-Time Sensing (PM2.5, PM10, CO2, TVOC, Temp, RH)",
         "LoRaWAN, Wi-Fi, RS485 MODBUS RTU & 4G Cellular Telemetry",
         "AWS Secured Cloud Server Infrastructure",
-        "Direct Closed-Loop Trigger for IntelliGreen TFAS & ERV Units",
-        "RESET, WELL v2 & LEED v4.1 Continuous Audit Compliance",
-        "Real-Time Automated Zone Threshold Alerts"
+        "Direct Closed-Loop Trigger for IntelliGreen TFAS & ERV Units"
       ],
       "specs": {
         "Connectivity": "LoRaWAN / Wi-Fi / MODBUS",
@@ -470,12 +473,12 @@
         {
           "title": "Precision Laser Scattering & NDIR Sensor Array",
           "caption": "Individually calibrated optical particle counters and dual-beam NDIR CO2 waveguides deliver reference-grade telemetry.",
-          "image": "/images/hero/frame-4.webp"
+          "image": "/images/hero/frame-4.jpeg"
         },
         {
           "title": "Cloud AI Telemetry Dashboard Integration",
           "caption": "Real-time floorplan heatmaps and automated HVAC demand-control triggers hosted on AWS Cloud.",
-          "image": "/images/showcase/cloud-dashboard.jpg"
+          "image": "/images/showcase/iaq-cloud-dashboard.jpg"
         }
       ],
       "overview": "You cannot manage what you do not measure. The IAQ Smart Sensor Station acts as the sensory nervous system for smart buildings—continuously sampling particulate matter, CO2 accumulation, and volatile organic compounds while automatically modulating IntelliGreen TFAS, ERV, and AHU purification hardware.",
@@ -521,21 +524,20 @@
     {
       "id": "intelligreen-hub",
       "slug": "intelligreen-hub",
+      "shortTitle": "Cloud AI Hub",
       "title": "IntelliGreen Cloud AI Hub",
       "subtitle": "Predictive IAQ & ESG Building Management Platform",
       "description": "Centralized AI command platform that aggregates multi-site IAQ telemetry, automates HVAC ventilation demand, predicts HEPA filter life, and generates one-click ESG compliance reports.",
       "seoTitle": "IntelliGreen Cloud AI Hub | Predictive Building Management Software",
       "seoDescription": "Centralized AI cloud platform for indoor air quality management, predictive analytics, automated compliance reporting, and smart HVAC control.",
       "media": "/media/intelligreen-product2.webm",
-      "image": "/images/showcase/cloud-dashboard.jpg",
+      "image": "/images/showcase/iaq-cloud-dashboard.jpg",
       "icon": "Cpu",
       "features": [
         "Live Multi-Floor & Multi-City AQI Digital Twin",
         "AI Predictive Filter Life & Maintenance Scheduling",
         "Automated Demand-Controlled Ventilation (DCV) Energy Savings",
-        "One-Click WELL, LEED, IGBC & ESG Audit PDF Reports",
-        "Public Lobby TV Kiosk Mode & QR Occupant Transparency",
-        "Enterprise BACnet/IP, MQTT & REST API Webhooks"
+        "One-Click WELL, LEED, IGBC & ESG Audit PDF Reports"
       ],
       "specs": {
         "Deployment": "AWS Cloud / On-Prem",
@@ -547,7 +549,7 @@
         {
           "title": "Enterprise Multi-Zone IAQ Command Center",
           "caption": "Real-time PM2.5, CO2, TVOC, and HVAC energy recovery telemetry across all connected building zones.",
-          "image": "/images/showcase/cloud-dashboard.jpg"
+          "image": "/images/showcase/iaq-cloud-dashboard.jpg"
         },
         {
           "title": "Hardware-to-Cloud Closed-Loop Ecosystem",

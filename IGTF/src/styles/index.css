@@ -154,6 +154,16 @@ html.lenis, html.lenis body {
   animation: blink-cursor 0.8s infinite;
 }
 
+/* Hide scrollbars on touch horizontal carousels while keeping smooth scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

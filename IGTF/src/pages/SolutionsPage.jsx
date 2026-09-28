@@ -72,16 +72,16 @@ export default function SolutionsPage() {
             </nav>
 
             {/* All 4 Solutions Navigation Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 overflow-x-auto no-scrollbar snap-x snap-mandatory gap-3 -mx-4 px-4 sm:mx-0 sm:px-0 pb-1">
               {solutionsData.items.map((item) => {
                 const isActive = item.id === activeSolution.id;
                 return (
                   <button
                     key={item.id}
                     onClick={() => navigate(`/solutions/${item.slug}`)}
-                    className={`group text-left p-4 rounded-2xl border transition-all duration-300 cursor-pointer flex items-start gap-3.5 ${
+                    className={`snap-start shrink-0 w-60 sm:w-auto group text-left p-3.5 sm:p-4 rounded-2xl border transition-all duration-300 cursor-pointer flex items-center gap-3 ${
                       isActive
-                        ? 'bg-slate-900 border-slate-900 text-white shadow-lg shadow-slate-900/15 scale-[1.01]'
+                        ? 'bg-slate-900 border-slate-900 text-white shadow-lg shadow-slate-900/15'
                         : 'bg-white border-slate-200/90 text-slate-800 hover:border-emerald-500/50 hover:shadow-md'
                     }`}
                   >
@@ -331,12 +331,12 @@ export default function SolutionsPage() {
               align="left"
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="flex md:grid md:grid-cols-3 overflow-x-auto no-scrollbar snap-x snap-mandatory gap-5 -mx-4 px-4 md:mx-0 md:px-0 pb-2">
               {recommendedProducts.map((product) => (
                 <Link
                   key={product.id}
                   to={`/products/${product.slug}`}
-                  className="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                  className="snap-start shrink-0 w-72 sm:w-80 md:w-auto group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
                 >
                   <div className="relative h-48 bg-slate-900 overflow-hidden">
                     <img
@@ -344,16 +344,20 @@ export default function SolutionsPage() {
                       alt={product.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src = getAssetUrl('/images/products/igt-cutaway-intake.webp');
+                      }}
                     />
-                    <div className="absolute top-3 left-3 bg-slate-950/75 backdrop-blur-md text-emerald-400 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1.5">
+                    <div className="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md text-emerald-400 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1.5 border border-white/10">
                       <IconHelper name={product.icon} size={12} />
                       <span>Core System</span>
                     </div>
                   </div>
 
-                  <div className="p-6 flex-grow flex flex-col justify-between space-y-4">
+                  <div className="p-5 flex-grow flex flex-col justify-between space-y-4">
                     <div className="space-y-2">
-                      <h3 className="text-lg font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                      <h3 className="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors">
                         {product.title}
                       </h3>
                       <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed">
