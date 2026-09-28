@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import Container from '../common/Container';
 import SectionHeader from '../common/SectionHeader';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
@@ -51,9 +52,10 @@ export default function LatestCarouselSection() {
           className="flex gap-5 overflow-x-auto pb-4 pt-1 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none]"
         >
           {perspectivesData.stories.map((story) => (
-            <article
+            <Link
+              to="/case-studies"
               key={story.id}
-              className="group relative flex-none w-[280px] sm:w-[320px] h-[340px] rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md transition-transform duration-500 hover:-translate-y-1.5"
+              className="group relative flex-none w-[280px] sm:w-[320px] h-[340px] rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md transition-transform duration-500 hover:-translate-y-1.5 block"
             >
               <img
                 src={getAssetUrl(story.image)}
@@ -71,11 +73,11 @@ export default function LatestCarouselSection() {
                   {story.title}
                 </h3>
                 <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-200 pt-1 group-hover:text-emerald-400">
-                  <span>Read Article</span>
+                  <span>Read Case Study</span>
                   <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </Container>

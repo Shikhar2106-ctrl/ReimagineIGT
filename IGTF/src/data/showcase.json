@@ -1,28 +1,31 @@
 {
-  "badge": "Technology Showcase",
-  "title": "Smarter Buildings. Healthier Spaces.",
-  "description": "IntelliGreen combines intelligent monitoring, AI-powered insights, and advanced purification systems to create healthier indoor environments for offices, hospitals, schools and commercial spaces.",
+  "badge": "Engineering & Architecture Showcase",
+  "title": "Smarter Buildings. Purest Breathing Zones.",
+  "description": "IntelliGreen unites concealed positive-pressure TFAS hardware, cross-flow ERV thermal recovery cores, needlepoint bi-polar ionization, and AWS IoT telemetry to transform modern indoor spaces.",
   "features": [
-    "Real-time Air Quality Monitoring",
-    "Predictive AI Analytics",
-    "IoT Enabled Smart Sensors",
-    "Energy Efficient Ventilation"
+    "Concealed False-Ceiling Positive Pressurization",
+    "78% Enthalpy Cross-Flow ERV Energy Recovery",
+    "UL 2998 Zero-Ozone Needlepoint BPI Disinfection",
+    "Real-Time LoRaWAN & AWS Cloud IAQ Telemetry"
   ],
   "columns": {
     "columnOne": [
-      "/images/showcase/smart-hvac-building.jpg",
-      "/images/showcase/clean-office-wellness.jpg",
+      "/images/products/igt-cutaway-intake.webp",
+      "/images/showcase/clean-family-living.webp",
+      "/images/products/igt-ec-impeller-vortex.webp",
       "/images/showcase/hospital-clean-room.jpg"
     ],
     "columnTwo": [
-      "/images/showcase/iaq-cloud-dashboard.jpg",
-      "/images/showcase/smart-iaq-sensor.jpg",
-      "/images/showcase/plasma-air-clean.jpg"
+      "/images/products/igt-erv-crossflow-core.webp",
+      "/images/showcase/false-ceiling-concealed.webp",
+      "/images/products/igt-bpi-needlepoint.webp",
+      "/images/showcase/iaq-cloud-dashboard.jpg"
     ],
     "columnThree": [
-      "/images/showcase/commercial-hvac-ahu.jpg",
-      "/images/showcase/smart-school-iaq.jpg",
-      "/images/showcase/modern-boardroom-iaq.jpg"
+      "/images/products/igt-filter-exploded.webp",
+      "/images/products/igt-bpi-ions-stream.webp",
+      "/images/showcase/modern-boardroom-iaq.jpg",
+      "/images/products/igt-silent-duct-outlet.webp"
     ]
   }
 }

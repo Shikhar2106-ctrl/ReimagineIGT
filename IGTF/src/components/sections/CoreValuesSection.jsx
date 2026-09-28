@@ -6,7 +6,7 @@ import aboutData from '../../data/about.json';
 
 export default function CoreValuesSection() {
   return (
-    <section className="py-20 bg-[#F5F5F5] relative border-t border-slate-200">
+    <section id="certifications" className="py-20 bg-[#F5F5F5] relative border-t border-slate-200 scroll-mt-20">
       <Container className="space-y-16">
         <SectionHeader
           badge="Values"

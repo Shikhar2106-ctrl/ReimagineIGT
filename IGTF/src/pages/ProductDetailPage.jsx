@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import Container from '../components/common/Container';
 import SectionHeader from '../components/common/SectionHeader';
 import Button from '../components/common/Button';
 import Badge from '../components/common/Badge';
 import IconHelper from '../components/common/IconHelper';
 import SEO from '../components/common/SEO';
-import { ArrowLeft, ArrowRight, CheckCircle2, ChevronDown, Download, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, ChevronDown, Download, ShieldCheck, Zap, Layers, Play } from 'lucide-react';
 import { getAssetUrl } from '../utils/assetHelper';
 import productsData from '../data/products.json';
 
@@ -14,6 +15,11 @@ export default function ProductDetailPage() {
   const { productId } = useParams();
   const navigate = useNavigate();
   const [openFaqIndex, setOpenFaqIndex] = useState(0);
+  const [activeMediaView, setActiveMediaView] = useState('video'); // 'video' or gallery index
+
+  useEffect(() => {
+    setActiveMediaView('video');
+  }, [productId]);
 
   // Find product by id or slug
   const product = productsData.items.find(
@@ -59,6 +65,11 @@ export default function ProductDetailPage() {
     },
   };
 
+  const selectedShot =
+    typeof activeMediaView === 'number' && product.interiorGallery?.[activeMediaView]
+      ? product.interiorGallery[activeMediaView]
+      : null;
+
   return (
     <>
       <SEO
@@ -83,10 +94,10 @@ export default function ProductDetailPage() {
           {/* Main Product Hero Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
-            {/* Left Column: Media Video Showcase */}
+            {/* Left Column: Media Video & Interior Cutaway Switcher */}
             <div className="lg:col-span-6 space-y-4">
-              <div className="relative aspect-video rounded-3xl overflow-hidden border border-slate-200 bg-slate-900 shadow-2xl group">
-                {product.media ? (
+              <div className="relative aspect-video rounded-3xl overflow-hidden border border-slate-200 bg-slate-950 shadow-2xl group">
+                {activeMediaView === 'video' && product.media ? (
                   <video
                     src={getAssetUrl(product.media)}
                     poster={getAssetUrl(product.image)}
@@ -96,21 +107,73 @@ export default function ProductDetailPage() {
                     muted
                     playsInline
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'block';
-                    }}
                   />
-                ) : null}
-                <img
-                  src={getAssetUrl(product.image)}
-                  alt={product.title}
-                  className={`${product.media ? 'hidden' : 'block'} w-full h-full object-cover rounded-3xl`}
-                />
+                ) : (
+                  <img
+                    src={getAssetUrl(selectedShot ? selectedShot.image : product.image)}
+                    alt={selectedShot ? selectedShot.title : product.title}
+                    className="w-full h-full object-cover rounded-3xl"
+                  />
+                )}
+
+                {/* Caption Overlay when viewing a specific interior shot */}
+                {selectedShot && (
+                  <div className="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent text-white">
+                    <div className="text-xs font-extrabold uppercase tracking-wider text-emerald-400">
+                      Interior Hardware View
+                    </div>
+                    <div className="text-sm font-bold">{selectedShot.title}</div>
+                  </div>
+                )}
               </div>
 
+              {/* Interactive Thumbnail Strip (3D Video + Interior Cutaway Shots) */}
+              {product.interiorGallery?.length > 0 && (
+                <div className="grid grid-cols-5 gap-2.5">
+                  <button
+                    type="button"
+                    onClick={() => setActiveMediaView('video')}
+                    className={`relative h-16 rounded-xl overflow-hidden border transition-all cursor-pointer bg-slate-900 ${
+                      activeMediaView === 'video'
+                        ? 'border-emerald-600 ring-2 ring-emerald-500/30'
+                        : 'border-slate-200 opacity-75 hover:opacity-100'
+                    }`}
+                  >
+                    <img
+                      src={getAssetUrl(product.image)}
+                      alt="3D Motion"
+                      className="w-full h-full object-cover opacity-50"
+                    />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+                      <Play size={14} className="fill-emerald-400 text-emerald-400" />
+                      <span className="text-[9px] font-bold uppercase tracking-wider mt-0.5">3D Video</span>
+                    </div>
+                  </button>
+
+                  {product.interiorGallery.slice(0, 4).map((shot, idx) => (
+                    <button
+                      key={idx}
+                      type="button"
+                      onClick={() => setActiveMediaView(idx)}
+                      className={`relative h-16 rounded-xl overflow-hidden border transition-all cursor-pointer bg-slate-950 ${
+                        activeMediaView === idx
+                          ? 'border-emerald-600 ring-2 ring-emerald-500/30'
+                          : 'border-slate-200 opacity-75 hover:opacity-100'
+                      }`}
+                    >
+                      <img
+                        src={getAssetUrl(shot.image)}
+                        alt={shot.title}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
+
               {/* Quick Specs Pills */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
                 {product.specs && Object.entries(product.specs).map(([key, val]) => (
                   <div key={key} className="bg-white rounded-2xl p-3 border border-slate-200 shadow-sm text-center">
                     <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">{key}</div>
@@ -159,6 +222,61 @@ export default function ProductDetailPage() {
             </div>
 
           </div>
+
+          {/* Section: Interior Architecture & Cutaway Gallery */}
+          {product.interiorGallery?.length > 0 && (
+            <section className="bg-slate-950 text-white rounded-3xl p-8 sm:p-12 shadow-2xl space-y-8 relative overflow-hidden">
+              <div className="pointer-events-none absolute -top-32 right-10 w-80 h-80 bg-emerald-500/15 rounded-full blur-3xl" />
+              <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 relative z-10">
+                <div className="space-y-2 max-w-2xl">
+                  <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-emerald-400">
+                    <Layers size={14} />
+                    Interior Hardware Breakdown
+                  </div>
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
+                    Inside the {product.title}
+                  </h2>
+                  <p className="text-slate-400 text-sm sm:text-base">
+                    High-precision internal sub-assemblies engineered for maximum filtration efficiency, thermal recovery, and silent laminar propulsion.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+                {product.interiorGallery.map((item, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 18 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.08, duration: 0.4 }}
+                    className="group bg-white/[0.04] border border-white/10 rounded-2xl overflow-hidden hover:border-emerald-400/50 transition-all"
+                  >
+                    <div className="relative aspect-video bg-slate-900 overflow-hidden">
+                      <img
+                        src={getAssetUrl(item.image)}
+                        alt={item.title}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-slate-950/85 border border-white/15 text-[10px] font-bold text-emerald-400 uppercase tracking-wider">
+                        Sub-Assembly 0{idx + 1}
+                      </span>
+                    </div>
+                    <div className="p-5 space-y-1.5">
+                      <h3 className="text-base font-extrabold text-white group-hover:text-emerald-400 transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        {item.caption}
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Section: Overview & Detailed Narrative */}
           {product.overview && (

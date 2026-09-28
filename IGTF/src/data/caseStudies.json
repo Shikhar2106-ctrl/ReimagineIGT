@@ -1,0 +1,259 @@
+{
+  "badge": "Proven Impact & Case Studies",
+  "title": "Real-World Clean Air Transformations",
+  "description": "Explore how leading corporate campuses, multi-specialty hospitals, schools, and industrial plants achieved healthy indoor air quality and measurable energy savings with IntelliGreen.",
+  "summaryMetrics": [
+    { "value": "500+", "label": "Enterprise Installations" },
+    { "value": "12M+ sq.ft", "label": "Clean Air Area Protected" },
+    { "value": "99.9%", "label": "Peak Pathogen & PM2.5 Reduction" },
+    { "value": "26%", "label": "Avg. HVAC Energy Savings" }
+  ],
+  "categories": [
+    { "id": "all", "label": "All Case Studies" },
+    { "id": "commercial-air-quality", "label": "Commercial Air Quality" },
+    { "id": "healthcare-sanitation", "label": "Healthcare Sanitation" },
+    { "id": "education-campuses", "label": "Education & Campuses" },
+    { "id": "industrial-filtration", "label": "Industrial Filtration" }
+  ],
+  "studies": [
+    {
+      "id": "global-fintech-campus-gurugram",
+      "slug": "global-fintech-campus-gurugram",
+      "title": "Maintaining <20 AQI Across a 12-Floor FinTech Corporate Tower During Severe Winter Smog",
+      "client": "Fortune 500 Global FinTech Hub",
+      "location": "Cyber City, Gurugram",
+      "category": "commercial-air-quality",
+      "categoryLabel": "Commercial Air Quality",
+      "duration": "3 Weeks Deployment",
+      "area": "4,20,000 sq. ft.",
+      "image": "/images/showcase/smart-hvac-building.jpg",
+      "beforeAqi": "340 AQI (Hazardous)",
+      "afterAqi": "18 AQI (Healthy)",
+      "headlineMetric": "94% PM2.5 Reduction & 28% HVAC Energy Saved",
+      "challenge": "During peak winter pollution in NCR, outdoor AQI exceeded 420 while indoor PM2.5 reached 185 µg/m³ across 12 floors. Simultaneously, high-density trading floors and boardrooms experienced CO₂ spikes above 1,500 ppm, causing afternoon employee fatigue and complaints.",
+      "solution": "IntelliGreen retrofitted 24 central AHUs with MERV 15+ EAC Electronic Air Cleaners, installed 45 Wall-Mounted CTFA positive-pressure units in executive zones, and deployed 120 LoRaWAN IAQ Smart Sensor Stations linked to the IntelliGreen Cloud AI Hub.",
+      "results": [
+        "Indoor PM2.5 stabilized below 12 µg/m³ (AQI < 20) even when outdoor AQI hit 450+",
+        "Conference room CO₂ levels capped below 720 ppm via automated fresh-air modulation",
+        "28% reduction in AHU fan power consumption compared to dense mechanical bag filters",
+        "Earned full Indoor Environmental Quality credits for LEED v4.1 Platinum certification"
+      ],
+      "productsUsed": ["ctfa-wall", "eac-filter", "iaq-sensor", "intelligreen-hub"],
+      "quote": {
+        "text": "Our employees immediately noticed the difference—and the live AQI lobby displays gave everyone complete confidence coming into the office during peak winter smog.",
+        "author": "VP – Corporate Real Estate & Workplace Facilities"
+      }
+    },
+    {
+      "id": "apex-multispecialty-hospital-delhi",
+      "slug": "apex-multispecialty-hospital-delhi",
+      "title": "Zero-Ozone Active Airborne Pathogen Disinfection Across 18 ICUs & Neonatal Wards",
+      "client": "Apex Super-Specialty Hospital & Research Centre",
+      "location": "South Delhi",
+      "category": "healthcare-sanitation",
+      "categoryLabel": "Healthcare Sanitation",
+      "duration": "10 Days Phased Rollout",
+      "area": "1,85,000 sq. ft.",
+      "image": "/images/showcase/hospital-clean-room.jpg",
+      "beforeAqi": "High Microbial CFU & VOCs",
+      "afterAqi": "99.94% Sterile Air Reduction",
+      "headlineMetric": "99.94% Airborne Pathogen Neutralization",
+      "challenge": "The hospital sought to eliminate airborne viral cross-contamination, bacterial colony-forming units (CFUs), and chemical sterilant odors in its Critical Care, NICU, and Outpatient Waiting blocks without interrupting 24/7 patient care or generating ozone.",
+      "solution": "IntelliGreen integrated UL 2998 Certified Active Bipolar Ionisation modules into 18 central HVAC supply ducts and installed Hospital-Grade HEPA H13 Wall-Mounted CTFA units in high-footfall OPDs, paired with 24/7 clinical telemetry alerts.",
+      "results": [
+        "99.94% reduction in airborne bacterial and fungal CFU counts verified by third-party lab swabs",
+        "0.000 ppm ozone emission verified under UL 2998 continuous clinical monitoring",
+        "Complete neutralization of formalin and chemical disinfectant odors within 30 minutes",
+        "100% compliance with NABH revised OT and Critical Care air quality standards"
+      ],
+      "productsUsed": ["bipolar-ionisation", "ctfa-wall", "iaq-sensor"],
+      "quote": {
+        "text": "Active Bipolar Ionisation allowed us to turn every ward's breathing zone into an actively sanitizing environment without shutting down a single ICU bed.",
+        "author": "Chief Medical Superintendent & Head of Infection Control"
+      }
+    },
+    {
+      "id": "heritage-international-academy-noida",
+      "slug": "heritage-international-academy-noida",
+      "title": "Protecting 2,400+ Students with Whisper-Quiet Fresh Air & Live Parent Transparency Dashboards",
+      "client": "Heritage International K-12 Academy",
+      "location": "Sector 62, Noida",
+      "category": "education-campuses",
+      "categoryLabel": "Education & Campuses",
+      "duration": "2 Weeks (Winter Break)",
+      "area": "90 Classrooms & 3 Auditoriums",
+      "image": "/images/showcase/smart-school-iaq.jpg",
+      "beforeAqi": "295 AQI & 1,850 ppm CO₂",
+      "afterAqi": "22 AQI & 590 ppm CO₂",
+      "headlineMetric": "34% Drop in Seasonal Student Sick Leave",
+      "challenge": "Portable floor air purifiers previously used in classrooms failed because closed doors caused CO₂ to surge past 1,850 ppm within an hour, making students drowsy. Additionally, floor units occupied valuable space and exceeded 52 dB of noise.",
+      "solution": "Replaced floor units with 90 child-safe Wall-Mounted CTFA Fresh Air Purifiers operating at a library-quiet 34 dB(A), drawing purified outdoor air through HEPA H13 + Carbon filters while streaming live classroom AQI to the school's parent portal.",
+      "results": [
+        "Classroom CO₂ dropped from 1,850 ppm down to a crisp 590 ppm throughout school hours",
+        "34% decrease in student absences related to seasonal asthma, allergies, and flu",
+        "Silent 34 dB(A) operation ensured zero disruption during lectures and examinations",
+        "Live Parent Portal AQI widget eliminated parent concerns during severe pollution days"
+      ],
+      "productsUsed": ["ctfa-wall", "iaq-sensor", "intelligreen-hub"],
+      "quote": {
+        "text": "Parents check our live classroom air quality widget every morning on their phones. Switching from floor purifiers to wall-mounted fresh air CTFA units solved both smog and CO₂.",
+        "author": "Director of Campus Operations"
+      }
+    },
+    {
+      "id": "precision-electronics-manufacturing-pune",
+      "slug": "precision-electronics-manufacturing-pune",
+      "title": "Zero-Waste MERV 15+ Filtration Saving ₹18.5 Lakhs Annually in Industrial AHU Operations",
+      "client": "Precision Auto & Semiconductor Assembly Plant",
+      "location": "Chakan Industrial Area, Pune",
+      "category": "industrial-filtration",
+      "categoryLabel": "Industrial Filtration",
+      "duration": "14 Days Turnkey Retrofit",
+      "area": "3,10,000 sq. ft. Shopfloor",
+      "image": "/images/showcase/commercial-hvac-ahu.jpg",
+      "beforeAqi": "240 Pa Static Pressure Loss",
+      "afterAqi": "<22 Pa Pressure Drop (MERV 15+)",
+      "headlineMetric": "₹18.5 Lakhs/Yr Saved & Zero Filter Landfill Waste",
+      "challenge": "Fine solder fumes, oil mist, and industrial dust choked conventional disposable MERV 14 bag filters every 25 days. The resulting 240 Pa pressure drop spiked AHU electricity bills and created tons of hazardous filter waste.",
+      "solution": "Installed CII–IGBC GreenPro Certified EAC Electronic Air Cleaners with washable aluminum electrostatic collector cells across all 24 industrial Air Handling Units.",
+      "results": [
+        "Eliminated 100% of recurring disposable filter purchases—saving ₹18.5 Lakhs per year",
+        "Reduced filter static pressure drop from 240 Pa to under 22 Pa, cutting AHU fan energy by 24%",
+        "Captured sub-micron 0.1–1.0 µm solder fumes and oil mist with MERV 15+ efficiency",
+        "Full ROI achieved in just 11 months of continuous 3-shift operation"
+      ],
+      "productsUsed": ["eac-filter", "iaq-sensor"],
+      "quote": {
+        "text": "Our maintenance team simply washes the aluminum collector cells every 60 days. We achieved cleaner shopfloor air while slashing both electricity and filter procurement budgets.",
+        "author": "General Manager – Plant Engineering & Sustainability"
+      }
+    },
+    {
+      "id": "horizon-executive-tower-mumbai",
+      "slug": "horizon-executive-tower-mumbai",
+      "title": "AI-Driven Demand-Controlled Ventilation & Bipolar Ionisation for Luxury Co-Working Suites",
+      "client": "Horizon Executive Towers",
+      "location": "BKC, Mumbai",
+      "category": "commercial-air-quality",
+      "categoryLabel": "Commercial Air Quality",
+      "duration": "2 Weeks",
+      "area": "1,60,000 sq. ft.",
+      "image": "/images/showcase/modern-boardroom-iaq.jpg",
+      "beforeAqi": "High Humidity VOCs & Mold",
+      "afterAqi": "14 AQI & Zero Mold Spores",
+      "headlineMetric": "22% Cooling Energy Saved & 99.9% Mold Elimination",
+      "challenge": "Coastal humidity in Mumbai triggered musty odors and mold spore growth inside HVAC ductwork, while fluctuating boardroom occupancy led to wasted cooling energy.",
+      "solution": "Deployed Active Bipolar Ionisation across supply ducts to neutralize mold spores and odors, synchronized with LoRaWAN IAQ sensors and the IntelliGreen Cloud AI Hub.",
+      "results": [
+        "100% elimination of musty coastal duct odors and airborne mold spores within 48 hours",
+        "22% savings in chiller and ventilation energy via real-time occupancy-based damper control",
+        "Seamless MODBUS TCP integration with the building's central Schneider BMS"
+      ],
+      "productsUsed": ["bipolar-ionisation", "iaq-sensor", "intelligreen-hub"],
+      "quote": {
+        "text": "The combination of Bipolar Ionisation and cloud telemetry eliminated coastal humidity odors completely while lowering our monthly power bill.",
+        "author": "Head of Asset Management"
+      }
+    },
+    {
+      "id": "national-bioresearch-diagnostics-bengaluru",
+      "slug": "national-bioresearch-diagnostics-bengaluru",
+      "title": "24/7 Cloud Telemetry & Multi-Parameter Compliance Across 60 Biosafety Laboratories",
+      "client": "National Bio-Research & Genomic Labs",
+      "location": "Electronic City, Bengaluru",
+      "category": "healthcare-sanitation",
+      "categoryLabel": "Healthcare Sanitation",
+      "duration": "1 Week",
+      "area": "60 Specialized Labs",
+      "image": "/images/showcase/iaq-cloud-dashboard.jpg",
+      "beforeAqi": "Manual Spot Checks Only",
+      "afterAqi": "24/7 AWS Cloud Audit Trail",
+      "headlineMetric": "100% Automated Regulatory Audit Compliance",
+      "challenge": "Manual handheld air quality logging across 60 laboratories was error-prone and failed to alert facility engineers during sudden TVOC or chemical vapor leaks at night.",
+      "solution": "Installed 60 multi-parameter IAQ Smart Sensor Stations with Wi-Fi & LoRaWAN redundancy connected to AWS Secured Cloud with automated threshold escalation.",
+      "results": [
+        "Real-time 60-second interval logging of PM2.5, PM10, CO₂, TVOC, Formaldehyde, Temp & RH",
+        "Instant SMS and email alerts to lab safety officers within 3 seconds of any TVOC threshold breach",
+        "One-click automated audit-ready PDF compliance reports for international accreditors"
+      ],
+      "productsUsed": ["iaq-sensor", "intelligreen-hub"],
+      "quote": {
+        "text": "Having all 60 laboratories on a single encrypted AWS cloud dashboard transformed our safety compliance from reactive to predictive.",
+        "author": "Chief Laboratory Biosafety Officer"
+      }
+    }
+  ],
+  "aqiGuide": {
+    "badge": "Air Quality Index Reference Guide",
+    "title": "Understanding Indoor Air Quality (IAQ) Standards",
+    "description": "Learn how particulate matter, carbon dioxide, and volatile organic compounds impact human health—and the exact targets IntelliGreen maintains inside your facility.",
+    "bands": [
+      {
+        "range": "0 – 50",
+        "level": "Good / Optimal",
+        "pm25": "0 – 12 µg/m³",
+        "color": "bg-emerald-500",
+        "badgeClass": "bg-emerald-100 text-emerald-800 border-emerald-200",
+        "impact": "Ideal indoor air quality. Zero respiratory irritation; maximum cognitive alertness and sleep quality. (IntelliGreen Target Zone)"
+      },
+      {
+        "range": "51 – 100",
+        "level": "Satisfactory / Moderate",
+        "pm25": "12.1 – 35.4 µg/m³",
+        "color": "bg-lime-500",
+        "badgeClass": "bg-lime-100 text-lime-800 border-lime-200",
+        "impact": "Acceptable for general public, though sensitive individuals with asthma may experience minor breathing discomfort over prolonged exposure."
+      },
+      {
+        "range": "101 – 200",
+        "level": "Moderately Polluted",
+        "pm25": "35.5 – 55.4 µg/m³",
+        "color": "bg-amber-500",
+        "badgeClass": "bg-amber-100 text-amber-800 border-amber-200",
+        "impact": "Reduces lung efficiency in children, seniors, and heart/lung patients. Active HEPA/Electrostatic filtration recommended."
+      },
+      {
+        "range": "201 – 300",
+        "level": "Poor / Unhealthy",
+        "pm25": "55.5 – 150.4 µg/m³",
+        "color": "bg-orange-500",
+        "badgeClass": "bg-orange-100 text-orange-800 border-orange-200",
+        "impact": "Breathing discomfort to most occupants on prolonged exposure; measurable drop in workplace productivity and student concentration."
+      },
+      {
+        "range": "301 – 500+",
+        "level": "Very Poor to Severe",
+        "pm25": "150.5 – 250+ µg/m³",
+        "color": "bg-rose-600",
+        "badgeClass": "bg-rose-100 text-rose-800 border-rose-200",
+        "impact": "Emergency health warning. Fine particles enter the bloodstream directly. Positive-pressure CTFA purification is critical."
+      }
+    ],
+    "keyParameters": [
+      {
+        "parameter": "PM2.5 (Fine Particulates)",
+        "safeLimit": "< 15 µg/m³ (WHO) / < 25 µg/m³",
+        "danger": "Combustion and smog particles 30x smaller than a human hair that bypass nasal filtration and enter the lungs and bloodstream.",
+        "solution": "Captured at 99.97% efficiency by Wall-Mounted CTFA (HEPA H13) & EAC Electronic Air Cleaners (MERV 15+)."
+      },
+      {
+        "parameter": "CO₂ (Carbon Dioxide)",
+        "safeLimit": "< 800 ppm (Optimal Cognitive Focus)",
+        "danger": "Exhaled by occupants in closed rooms. Levels above 1,200 ppm cause drowsiness, headaches, and a 21% drop in decision-making performance.",
+        "solution": "Diluted and flushed out via positive-pressure filtered fresh air intake from Wall-Mounted CTFA systems."
+      },
+      {
+        "parameter": "TVOC & Formaldehyde",
+        "safeLimit": "< 300 ppb (< 0.3 mg/m³)",
+        "danger": "Off-gassed from office furniture, carpets, paints, and cleaning chemicals—causing eye/throat irritation and long-term toxicity.",
+        "solution": "Neutralized by Active Bipolar Ionisation and adsorbed by High-Iodine Activated Carbon beds."
+      },
+      {
+        "parameter": "Airborne Pathogens (CFU)",
+        "safeLimit": "< 50 CFU/m³ (Healthcare Grade)",
+        "danger": "Viruses, influenza, bacteria, and mold spores circulating through indoor air and HVAC ductwork.",
+        "solution": "Inactivated mid-air and on surfaces at 99.97% efficiency by UL 2998 Ozone-Free Bipolar Ionisation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "badge": "Industry Solutions",
+  "title": "Engineered Clean Air Architectures for Every Sector",
+  "description": "Tailored indoor environmental intelligence, medical-grade sanitation, and low-resistance filtration built around the unique challenges of your facility.",
+  "items": [
+    {
+      "id": "commercial-air-quality",
+      "slug": "commercial-air-quality",
+      "title": "Commercial Air Quality",
+      "shortTitle": "Commercial Offices",
+      "badge": "Corporate & Enterprise Spaces",
+      "subtitle": "High-Performance Indoor Air Quality for Executive Offices, IT Parks & Co-Working Hubs",
+      "description": "Eliminate Sick Building Syndrome, reduce afternoon CO₂ fatigue, and lower HVAC energy consumption by up to 28% with AI-driven demand-controlled purification.",
+      "image": "/images/showcase/clean-office-wellness.jpg",
+      "secondaryImage": "/images/showcase/modern-boardroom-iaq.jpg",
+      "media": "/media/Video- (3).webm",
+      "icon": "Building2",
+      "stats": [
+        { "value": "28%", "label": "HVAC Energy Saved" },
+        { "value": "<15 µg/m³", "label": "Indoor PM2.5 Guaranteed" },
+        { "value": "+21%", "label": "Cognitive Productivity" },
+        { "value": "100%", "label": "LEED & WELL Ready" }
+      ],
+      "overview": "Modern glass-facade office buildings trap volatile organic compounds (VOCs), bio-effluents, and excess CO₂ while suffering from fine particulate (PM2.5) infiltration through entrances and HVAC ducts. IntelliGreen's Commercial Air Quality architecture integrates positive-pressure fresh air intake, MERV 15+ electrostatic AHU collection, and real-time AWS cloud analytics to transform workplaces into certified wellness hubs.",
+      "challenges": [
+        {
+          "title": "CO₂ Build-Up & Cognitive Fatigue",
+          "description": "High-density boardrooms and open offices rapidly exceed 1,200 ppm CO₂, causing drowsiness, headaches, and a 20%+ drop in decision-making speed."
+        },
+        {
+          "title": "Fine Smog (PM2.5) Infiltration",
+          "description": "Conventional AHU mechanical bag filters fail to block sub-micron combustion particles and choke airflow as they load with dust."
+        },
+        {
+          "title": "Unmonitored ESG & WELL Compliance",
+          "description": "Facility managers lack real-time zone telemetry and audit-ready air quality reporting required for green building ratings."
+        }
+      ],
+      "architecture": [
+        {
+          "step": "01",
+          "title": "Positive Fresh Air Pressurization",
+          "description": "Wall-Mounted CTFA and AHU modules introduce HEPA H13 + Carbon purified outdoor air, creating positive indoor pressure that blocks untreated air seepage."
+        },
+        {
+          "step": "02",
+          "title": "Multi-Zone IoT Sensor Mesh",
+          "description": "Smart IAQ Sensor Stations monitor PM2.5, PM10, CO₂, TVOC, Temperature, and Humidity across every floor via LoRaWAN/Wi-Fi."
+        },
+        {
+          "step": "03",
+          "title": "AI-Automated BMS Optimization",
+          "description": "The IntelliGreen Cloud AI Hub dynamically modulates fan speeds and fresh air dampers based on real-time occupancy and outdoor AQI."
+        }
+      ],
+      "deliverables": [
+        "Continuous Indoor AQI below 25 across all floor plates",
+        "Automated CO₂ management keeping conference rooms under 750 ppm",
+        "Public Lobby Smart TV Air Quality Display Dashboards",
+        "Automated Monthly ESG & WELL v2 Compliance PDF Reports",
+        "Seamless BACnet / MODBUS integration with existing Building Management Systems",
+        "Zero-downtime quarterly preventive maintenance by IntelliGreen engineers"
+      ],
+      "compliance": [
+        "IGBC Platinum & Gold Credits",
+        "LEED v4.1 Indoor Environmental Quality",
+        "WELL Building Standard v2 (Air Concept)",
+        "ASHRAE Standard 62.1 Compliant"
+      ],
+      "recommendedProducts": ["ctfa-wall", "iaq-sensor", "intelligreen-hub"],
+      "faqs": [
+        {
+          "question": "Can this be retrofitted into an operational office without shutting down work?",
+          "answer": "Yes. Both our Wall-Mounted CTFA units and AHU drop-in modules are installed after office hours or over a single weekend with zero disruption to daily operations."
+        },
+        {
+          "question": "Can we display live indoor vs. outdoor air quality in our reception lobby?",
+          "answer": "Absolutely. Our Cloud AI Hub includes a customizable TV kiosk mode that showcases real-time indoor purity versus outdoor pollution for employees and visitors."
+        }
+      ]
+    },
+    {
+      "id": "healthcare-sanitation",
+      "slug": "healthcare-sanitation",
+      "title": "Healthcare Sanitation",
+      "shortTitle": "Healthcare & Clinics",
+      "badge": "Medical-Grade Air Disinfection",
+      "subtitle": "Active Pathogen Neutralization & Sterile Air Control for Hospitals, ICUs & Diagnostic Labs",
+      "description": "Protect vulnerable patients and medical staff with active in-room bipolar ionisation and HEPA H13 positive-pressure filtration—certified 100% ozone-free.",
+      "image": "/images/showcase/hospital-clean-room.jpg",
+      "secondaryImage": "/images/showcase/plasma-air-clean.jpg",
+      "media": "/media/Video- (5).webm",
+      "icon": "HeartPulse",
+      "stats": [
+        { "value": "99.97%", "label": "Pathogen Inactivation" },
+        { "value": "0.00 ppm", "label": "Ozone Emission (UL 2998)" },
+        { "value": "<34 dB", "label": "Whisper-Quiet Ward Operation" },
+        { "value": "24/7", "label": "Active Surface & Air Defense" }
+      ],
+      "overview": "Healthcare environments demand far more than passive dust filtration. Airborne viruses, antibiotic-resistant bacteria, fungal spores, and surgical smoke pose immediate cross-infection risks in ICUs, neonatal wards, and outpatient waiting areas. IntelliGreen combines Active Bipolar Ionisation (which neutralizes pathogens mid-air in real time) with Hospital-Grade HEPA H13 positive pressure systems.",
+      "challenges": [
+        {
+          "title": "Hospital-Acquired Airborne Infections (HAIs)",
+          "description": "Aerosolized droplets from coughing or medical procedures remain suspended in ward air for hours before reaching passive return ducts."
+        },
+        {
+          "title": "Chemical Odors & Formaldehyde / VOCs",
+          "description": "Disinfectants, anesthetics, and laboratory reagents release toxic gaseous VOCs that standard particle filters cannot trap."
+        },
+        {
+          "title": "Strict Acoustic & Zero-Ozone Requirements",
+          "description": "Patient recovery wards require whisper-quiet acoustics and verified zero-ozone emission to safeguard respiratory patients."
+        }
+      ],
+      "architecture": [
+        {
+          "step": "01",
+          "title": "Active In-Room Bipolar Ionisation",
+          "description": "Releases >10 million balanced positive and negative ions/cm³ into the breathing zone, clustering and deactivating airborne viruses and bacteria immediately."
+        },
+        {
+          "step": "02",
+          "title": "HEPA H13 + Activated Carbon Scrubbing",
+          "description": "Captures 99.97% of 0.3-micron particulates while multi-bed carbon chambers adsorb chemical sterilant vapors and hospital odors."
+        },
+        {
+          "step": "03",
+          "title": "Differential Pressure & Telemetry Alerts",
+          "description": "Real-time clinical monitoring ensures sterile zones maintain positive pressure with instant SMS/email alerts if thresholds drift."
+        }
+      ],
+      "deliverables": [
+        "Active mid-air and surface pathogen neutralization across wards and waiting areas",
+        "UL 2998 verified zero-ozone operation safe for neonatal and pulmonary ICUs",
+        "Rapid elimination of formaldehyde, chemical sterilants, and bio-odors",
+        "Real-time nurse-station dashboard with room-by-room sterile status",
+        "NABH & JCI infection-control documentation and validation reports",
+        "Antimicrobial hardware enclosures resistant to clinical wipe-downs"
+      ],
+      "compliance": [
+        "UL 2998 Zero-Ozone Validated",
+        "NABH Air Conditioning & OT Guidelines",
+        "EN 1822 HEPA H13 Standard",
+        "ISO 14644 Cleanroom Compatible"
+      ],
+      "recommendedProducts": ["bipolar-ionisation", "ctfa-wall", "iaq-sensor"],
+      "faqs": [
+        {
+          "question": "Is Active Bipolar Ionisation safe around patients on oxygen or ventilators?",
+          "answer": "Yes. Our system is UL 2998 certified for zero ozone generation, producing only natural oxygen ions identical to clean mountain air."
+        },
+        {
+          "question": "Does it neutralize viruses in the air or only inside the duct?",
+          "answer": "Unlike UV-C or passive HEPA filters that only treat air passing through a duct, Bipolar Ionisation floods the entire room with active ions to neutralize pathogens right at the source."
+        }
+      ]
+    },
+    {
+      "id": "education-campuses",
+      "slug": "education-campuses",
+      "title": "Education & Campuses",
+      "shortTitle": "Schools & Universities",
+      "badge": "Student Health & Cognitive Focus",
+      "subtitle": "Safe, Oxygen-Rich Classrooms & Campus-Wide Environmental Protection",
+      "description": "Shield growing lungs from toxic PM2.5 smog, prevent classroom viral spread, and boost student concentration by keeping CO₂ below 800 ppm.",
+      "image": "/images/showcase/smart-school-iaq.jpg",
+      "secondaryImage": "/images/showcase/smart-iaq-sensor.jpg",
+      "media": "/media/intelligreen-product1.webm",
+      "icon": "GraduationCap",
+      "stats": [
+        { "value": "-34%", "label": "Seasonal Sick Absences" },
+        { "value": "<650 ppm", "label": "Classroom CO₂ Level" },
+        { "value": "34 dB(A)", "label": "Library-Quiet Acoustics" },
+        { "value": "850 sq.ft", "label": "Coverage Per Classroom Unit" }
+      ],
+      "overview": "Children breathe twice as much air per pound of body weight as adults, making them highly vulnerable to PM2.5 pollution and classroom allergens. Furthermore, closed classroom doors cause CO₂ levels to spike past 2,000 ppm within 40 minutes, impairing memory retention and focus. IntelliGreen equips K-12 schools and university campuses with whisper-quiet Wall-Mounted CTFA fresh air purifiers and parent-transparent live air quality dashboards.",
+      "challenges": [
+        {
+          "title": "Hazardous Winter & Seasonal Smog",
+          "description": "Outdoor AQI frequently exceeds 300–450 during school hours, seeping into classrooms through windows and corridors."
+        },
+        {
+          "title": "Closed-Window CO₂ Spikes (>2,000 ppm)",
+          "description": "Running traditional floor air purifiers with windows shut traps exhaled CO₂, causing student lethargy and headaches."
+        },
+        {
+          "title": "Parent Anxiety & Transparency",
+          "description": "Parents demand verifiable proof that school indoor air is safe during high-pollution alerts rather than vague assurances."
+        }
+      ],
+      "architecture": [
+        {
+          "step": "01",
+          "title": "Filtered Fresh Air Intake (No Stale Air)",
+          "description": "Each classroom Wall-Mounted CTFA draws outside air through HEPA H13 + Carbon filters, supplying oxygen-rich air while flushing out exhaled CO₂."
+        },
+        {
+          "step": "02",
+          "title": "Tamper-Proof Wall Mounting",
+          "description": "Elevated wall installation keeps units out of children's reach, frees up floor space, and operates at an ultra-silent 34 dB(A)."
+        },
+        {
+          "step": "03",
+          "title": "Parent & Principal Live IAQ Portal",
+          "description": "Campus sensors stream real-time classroom AQI to a web widget that schools can embed directly on their parent portal."
+        }
+      ],
+      "deliverables": [
+        "Wall-mounted child-safe enclosures with zero floor footprint",
+        "Dual-mode operation: Fresh Air Pressurization + Internal Recirculation",
+        "Whisper-quiet 34 dB operation that never interrupts teacher instruction",
+        "Shareable Parent Transparency Dashboard showing live campus vs. outdoor AQI",
+        "30%+ reduction in seasonal flu and allergy transmission among students",
+        "Annual filter maintenance scheduled during summer and winter school breaks"
+      ],
+      "compliance": [
+        "WHO Indoor Air Quality Guidelines for Schools",
+        "ASHRAE Classroom Ventilation Standards",
+        "CE & RoHS Child-Safe Electrical Compliance",
+        "IGBC Green Schools Rating Credits"
+      ],
+      "recommendedProducts": ["ctfa-wall", "iaq-sensor", "intelligreen-hub"],
+      "faqs": [
+        {
+          "question": "Why is a Wall-Mounted CTFA better than portable floor air purifiers for classrooms?",
+          "answer": "Portable purifiers only recirculate stale room air—meaning CO₂ still rises above 2,000 ppm and makes students sleepy. Our CTFA brings in purified outdoor fresh air to keep both PM2.5 and CO₂ low, while staying safely mounted on the wall."
+        },
+        {
+          "question": "How loud is the unit during exams or lectures?",
+          "answer": "In silent classroom mode, it operates at just 34 dB(A)—quieter than a library whisper."
+        }
+      ]
+    },
+    {
+      "id": "industrial-filtration",
+      "slug": "industrial-filtration",
+      "title": "Industrial Filtration",
+      "shortTitle": "Industrial & AHU",
+      "badge": "Heavy-Duty Electrostatic & AHU Systems",
+      "subtitle": "Zero-Waste MERV 15+ Electrostatic Precipitation for Plants, Warehouses & Commercial AHUs",
+      "description": "Capture sub-micron dust, smoke, oil mist, and fumes with CII–IGBC GreenPro Certified washable aluminum collector cells—delivering <25 Pa ultra-low pressure drop.",
+      "image": "/images/showcase/commercial-hvac-ahu.jpg",
+      "secondaryImage": "/images/hero/frame-5.png",
+      "media": "/media/Video- (6).webm",
+      "icon": "Factory",
+      "stats": [
+        { "value": "MERV 15+", "label": "Filtration Efficiency" },
+        { "value": "<25 Pa", "label": "Ultra-Low Pressure Drop" },
+        { "value": "₹0", "label": "Recurring Filter Waste" },
+        { "value": "GreenPro", "label": "CII–IGBC Certified" }
+      ],
+      "overview": "Industrial manufacturing floors, pharmaceutical packaging plants, commercial kitchens, and large central Air Handling Units (AHUs) suffer from massive filter replacement costs and heavy fan energy penalties caused by clogged mechanical filters. IntelliGreen's EAC Electronic Air Cleaner uses two-stage electrostatic precipitation to charge and trap sub-micron particulates onto washable metal collector plates with virtually zero airflow restriction.",
+      "challenges": [
+        {
+          "title": "Skyrocketing Filter Replacement Costs",
+          "description": "High-dust industrial environments choke disposable MERV 13/14 bag filters every few weeks, creating huge recurring procurement and landfill disposal expenses."
+        },
+        {
+          "title": "High Static Pressure HVAC Energy Penalty",
+          "description": "Dense mechanical filters impose 150–300 Pa of static resistance, forcing AHU blower motors to consume 20–35% more electricity."
+        },
+        {
+          "title": "Sub-Micron Smoke, Fumes & Oil Mist",
+          "description": "Welding fumes, diesel particulates, and aerosols pass right through standard mesh filters and foul cooling coils."
+        }
+      ],
+      "architecture": [
+        {
+          "step": "01",
+          "title": "Stage 1: High-Voltage Corona Ionization Field",
+          "description": "Incoming dust, smoke, and microbial particles pass through precision tungsten ionizing wires and receive a strong positive electrostatic charge."
+        },
+        {
+          "step": "02",
+          "title": "Stage 2: Grounded Aluminum Collector Plates",
+          "description": "Charged sub-micron particles are forcefully drawn onto parallel grounded aluminum plates with MERV 15+ efficiency at under 25 Pa resistance."
+        },
+        {
+          "step": "03",
+          "title": "Wash-and-Reuse Zero-Waste Lifecycle",
+          "description": "Collector cells slide out easily, rinse clean with water and mild detergent, and return to service for 10+ years with zero landfill waste."
+        }
+      ],
+      "deliverables": [
+        "CII–IGBC GreenPro Certified electrostatic air cleaner modules",
+        "Ultra-low <25 Pa static pressure drop that slashes AHU blower electricity bills",
+        "Permanent washable aluminum collector cells eliminating disposable filter purchases",
+        "Protects downstream HVAC chilled-water coils from fouling and bio-slime",
+        "Custom sizing for any central AHU, TFA, or industrial exhaust plenum",
+        "Integrated high-voltage safety interlocks and BMS fault status dry contacts"
+      ],
+      "compliance": [
+        "CII–IGBC GreenPro Certified",
+        "ASHRAE 52.2 MERV 15+ Equivalent",
+        "ISO 16890 ePM1 Filtration Class",
+        "CE & Industrial Safety Interlock Certified"
+      ],
+      "recommendedProducts": ["eac-filter", "bipolar-ionisation", "iaq-sensor"],
+      "faqs": [
+        {
+          "question": "How often do the aluminum collector cells need washing, and what does it cost?",
+          "answer": "Depending on ambient dust load, cells are rinsed with water every 1 to 3 months by your facility staff. There are zero replacement parts to buy, saving lakhs annually compared to disposable HEPA/bag filters."
+        },
+        {
+          "question": "Can the EAC Electronic Air Cleaner fit inside our existing AHU filter section?",
+          "answer": "Yes. Our modular cells are custom-fabricated in standard and bespoke dimensions to slide directly into existing AHU pre-filter or fine-filter tracks."
+        }
+      ]
+    }
+  ]
+}

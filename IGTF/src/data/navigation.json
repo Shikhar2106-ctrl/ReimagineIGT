@@ -2,7 +2,9 @@
   "main": [
     { "label": "Home", "path": "/" },
     { "label": "About", "path": "/about" },
+    { "label": "Solutions", "path": "/solutions" },
     { "label": "Products", "path": "/products" },
+    { "label": "Case Studies", "path": "/case-studies" },
     { "label": "Clients", "path": "/clients" },
     { "label": "Contact", "path": "/contact" }
   ],
@@ -10,10 +12,10 @@
     {
       "title": "Solutions",
       "links": [
-        { "label": "Commercial Air Quality", "path": "/products" },
-        { "label": "Healthcare Sanitation", "path": "/products" },
-        { "label": "Education & Campuses", "path": "/products" },
-        { "label": "Industrial Filtration", "path": "/products" }
+        { "label": "Commercial Air Quality", "path": "/solutions/commercial-air-quality" },
+        { "label": "Healthcare Sanitation", "path": "/solutions/healthcare-sanitation" },
+        { "label": "Education & Campuses", "path": "/solutions/education-campuses" },
+        { "label": "Industrial Filtration", "path": "/solutions/industrial-filtration" }
       ]
     },
     {
@@ -28,8 +30,8 @@
     {
       "title": "Resources",
       "links": [
-        { "label": "Case Studies", "path": "/clients" },
-        { "label": "Air Quality Index Guide", "path": "/products" },
+        { "label": "Case Studies", "path": "/case-studies" },
+        { "label": "Air Quality Index Guide", "path": "/case-studies#aqi-guide" },
         { "label": "Contact Support", "path": "/contact" }
       ]
     }

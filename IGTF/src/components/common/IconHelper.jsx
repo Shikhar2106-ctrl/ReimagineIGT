@@ -15,6 +15,12 @@ import {
   Phone,
   MapPin,
   Clock,
+  Building2,
+  HeartPulse,
+  GraduationCap,
+  Factory,
+  Layers,
+  Sparkles,
   HelpCircle,
 } from 'lucide-react';
 
@@ -34,6 +40,12 @@ const ICON_MAP = {
   Phone,
   MapPin,
   Clock,
+  Building2,
+  HeartPulse,
+  GraduationCap,
+  Factory,
+  Layers,
+  Sparkles,
   HelpCircle,
 };
 
