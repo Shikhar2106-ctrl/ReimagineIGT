@@ -37,10 +37,6 @@ export default function InteriorAnatomySection() {
         {/* Compact Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6">
           <div className="max-w-2xl space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-[11px] font-bold uppercase tracking-widest">
-              <Sparkles size={12} />
-              {anatomy.badge}
-            </div>
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
               {anatomy.title}
             </h2>

@@ -308,98 +308,58 @@ export default function CaseStudiesPage() {
                 })}
               </div>
 
-              {/* Case Studies Cards Grid */}
+              {/* Case Studies Cards Grid — Clean & Presentable */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {filteredStudies.map((study) => (
-                  <article
+                  <Link
                     key={study.id}
-                    className="bg-white rounded-3xl border border-slate-200/90 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                    to={`/case-studies/${study.slug}`}
+                    className="bg-white rounded-3xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group"
                   >
                     <div>
-                      {/* Image Header */}
-                      <div className="relative h-60 bg-slate-900 overflow-hidden">
+                      {/* Crisp Single Visual */}
+                      <div className="relative aspect-[16/9] bg-slate-900 overflow-hidden">
                         <img
                           src={getAssetUrl(study.image)}
                           alt={study.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                           loading="lazy"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent" />
-
-                        <div className="absolute top-4 left-4 right-4 flex items-center justify-between gap-2">
-                          <Link
-                            to={`/solutions/${study.category}`}
-                            className="bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow hover:bg-emerald-500 transition-colors"
-                          >
-                            {study.categoryLabel}
-                          </Link>
-                          <span className="bg-slate-950/75 backdrop-blur-md text-slate-200 text-[11px] font-semibold px-3 py-1 rounded-full border border-slate-700/70">
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-transparent" />
+                        <div className="absolute bottom-4 left-5 right-5 flex items-center justify-between text-white">
+                          <span className="text-xs font-bold text-emerald-400">
+                            {study.headlineMetric}
+                          </span>
+                          <span className="text-xs font-medium text-slate-300">
                             {study.location}
                           </span>
                         </div>
-
-                        <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-2 text-white">
-                          <div className="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
-                            <Sparkles size={14} />
-                            <span>{study.headlineMetric}</span>
-                          </div>
-                          <span className="text-[11px] text-slate-300 font-medium">
-                            {study.area}
-                          </span>
-                        </div>
                       </div>
 
-                      {/* Body */}
-                      <div className="p-6 sm:p-7 space-y-4">
-                        <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">
+                      {/* Clean Concise Body */}
+                      <div className="p-6 sm:p-8 space-y-3">
+                        <div className="text-xs font-bold text-emerald-700">
                           {study.client}
                         </div>
-                        <h3 className="text-xl font-extrabold text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                        <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
                           {study.title}
                         </h3>
-                        <p className="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-3">
+                        <p className="text-sm text-slate-600 leading-relaxed line-clamp-2">
                           {study.challenge}
                         </p>
-
-                        {/* Before / After Mini Pill Strip */}
-                        <div className="grid grid-cols-2 gap-3 pt-1">
-                          <div className="bg-rose-50/80 border border-rose-200/70 rounded-xl px-3 py-2">
-                            <div className="text-[9px] font-bold uppercase text-rose-600">
-                              Before
-                            </div>
-                            <div className="text-xs font-extrabold text-rose-900 truncate">
-                              {study.beforeAqi}
-                            </div>
-                          </div>
-                          <div className="bg-emerald-50/80 border border-emerald-200/70 rounded-xl px-3 py-2">
-                            <div className="text-[9px] font-bold uppercase text-emerald-700">
-                              After
-                            </div>
-                            <div className="text-xs font-extrabold text-emerald-900 truncate">
-                              {study.afterAqi}
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
 
-                    {/* Footer Action */}
-                    <div className="px-6 sm:px-7 py-4 bg-slate-50 border-t border-slate-200/80 flex items-center justify-between">
+                    {/* Clean Footer Action */}
+                    <div className="px-6 sm:px-8 py-4 bg-slate-50/70 border-t border-slate-100 flex items-center justify-between">
                       <span className="text-xs font-semibold text-slate-500">
-                        {study.duration}
+                        Protected Area: {study.area}
                       </span>
-                      <Link
-                        to={`/case-studies/${study.slug}`}
-                        className="inline-flex items-center gap-1.5 text-xs font-extrabold text-emerald-700 hover:text-emerald-600"
-                      >
-                        <span>Read Full Case Study</span>
-                        <ArrowRight
-                          size={14}
-                          className="group-hover:translate-x-1 transition-transform"
-                        />
-                      </Link>
+                      <span className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-emerald-600 group-hover:translate-x-1 transition-transform">
+                        Read Full Case Study <ArrowRight size={14} />
+                      </span>
                     </div>
-                  </article>
+                  </Link>
                 ))}
               </div>
             </div>
