@@ -3,9 +3,9 @@ import { useLocation } from 'react-router-dom';
 import { getAssetUrl } from '../../utils/assetHelper';
 
 export default function SEO({
-  title = 'IntelliGreen Technologies | CleanTech Air Purification, TFAS, ERV & Smart IAQ Systems',
-  description = 'IntelliGreen Technologies delivers intelligent air purification, Wall & Ceiling CTFA/TFAS units, Cross-Flow ERV energy recovery, UL 2998 Zero-Ozone Bipolar Ionisation, and AWS IoT IAQ monitoring.',
-  keywords = 'IntelliGreen Technologies, air purification, clean tech, indoor air quality, IAQ monitoring, Wall Mounted CTFA, ERV, bipolar ionisation, electronic air cleaner',
+  title = 'IntelliGreen Technologies | CleanTech Air Purification, CTFAs, ERV & Smart IAQ Systems',
+  description = 'IntelliGreen Technologies delivers intelligent air purification, Wall & Ceiling CTFAs units, Cross-Flow ERV energy recovery, UL 2998 Zero-Ozone Bipolar Ionisation, and AWS IoT IAQ monitoring.',
+  keywords = 'IntelliGreen Technologies, air purification, clean tech, indoor air quality, IAQ monitoring, Wall Mounted CTFA, CTFAs, ERV, bipolar ionisation, electronic air cleaner',
   image = '/media/intelligreen-logo.png',
   schemaData = null,
 }) {

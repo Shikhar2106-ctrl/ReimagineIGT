@@ -298,7 +298,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2.5">
                 <div className="text-xs font-extrabold text-white leading-snug">
-                  Active BPI &amp; Positive TFAS Technology
+                  Active BPI &amp; Positive CTFAs Technology
                 </div>
                 <ul className="space-y-2">
                   <TreeItem to="/products/bipolar-ionisation" label="UL 2998 Zero-Ozone" />
@@ -345,7 +345,7 @@ export default function Footer() {
                   <TreeItem to="/products/eac-filter" label="IG-EAC-2000 Collector" />
                   <TreeItem to="/products/tfas-erv-system" label="Cross-Flow ERV Core" />
                   <TreeItem to="/products/tfas-erv-system" label="IG-ERV-X1000 Series" />
-                  <TreeItem to="/products/ctfa-wall" label="Concealed Ceiling TFAS" />
+                  <TreeItem to="/products/ctfa-wall" label="Concealed Ceiling CTFAs" />
                   <TreeItem to="/products/bipolar-ionisation" label="Central AHU BPI Bars" />
                 </ul>
               </div>

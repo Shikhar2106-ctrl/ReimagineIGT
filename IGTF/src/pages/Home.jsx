@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="IntelliGreen | CleanTech Air Purification, TFAS, ERV & IAQ Solutions"
-        description="IntelliGreen delivers intelligent treated fresh air (TFAS), cross-flow ERV heat recovery, active needlepoint bi-polar ionisation, and real-time IAQ monitoring for modern spaces."
-        keywords="IntelliGreen, CleanTech, TFAS fresh air, ERV heat recovery, indoor air quality, IAQ sensor, HEPA filtration, bipolar ionisation, electronic air cleaner"
+        title="IntelliGreen | CleanTech Air Purification, CTFAs, ERV & IAQ Solutions"
+        description="IntelliGreen delivers intelligent treated fresh air (CTFAs), cross-flow ERV heat recovery, active needlepoint bi-polar ionisation, and real-time IAQ monitoring for modern spaces."
+        keywords="IntelliGreen, CleanTech, CTFAs fresh air, ERV heat recovery, indoor air quality, IAQ sensor, HEPA filtration, bipolar ionisation, electronic air cleaner"
       />
       
       {/* Hero section */}

@@ -1,9 +1,9 @@
 {
   "badge": "Engineering & Architecture Showcase",
   "title": "Smarter Buildings. Purest Breathing Zones.",
-  "description": "IntelliGreen unites concealed positive-pressure TFAS hardware, cross-flow ERV thermal recovery cores, needlepoint bi-polar ionization, and AWS IoT telemetry to transform modern indoor spaces.",
+  "description": "IntelliGreen unites concealed & wall-mounted positive-pressure CTFAs hardware, cross-flow ERV thermal recovery cores, needlepoint bi-polar ionization, and AWS IoT telemetry to transform modern indoor spaces.",
   "features": [
-    "Concealed False-Ceiling Positive Pressurization",
+    "Concealed & Wall-Mounted CTFAs Positive Pressurization",
     "78% Enthalpy Cross-Flow ERV Energy Recovery",
     "UL 2998 Zero-Ozone Needlepoint BPI Disinfection",
     "Real-Time LoRaWAN & AWS Cloud IAQ Telemetry"
@@ -17,7 +17,7 @@
     ],
     "columnTwo": [
       "/images/products/igt-erv-crossflow-core.webp",
-      "/images/showcase/false-ceiling-concealed.webp",
+      "/images/hero/frame-6.webp",
       "/images/products/igt-bpi-needlepoint.webp",
       "/images/showcase/iaq-cloud-dashboard.jpg"
     ],

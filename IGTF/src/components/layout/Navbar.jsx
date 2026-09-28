@@ -178,7 +178,7 @@ const MEGA_MENUS = {
         icon: Activity,
         featureTitle: 'Reference-Grade IoT Air Sensing.',
         featureDescription:
-          'Encrypted AWS Cloud telemetry with direct closed-loop speed control for TFAS, ERV, and AHU systems.',
+          'Encrypted AWS Cloud telemetry with direct closed-loop speed control for CTFAs, ERV, and AHU systems.',
         image: '/images/hero/frame-4.jpeg',
       },
       {
@@ -400,7 +400,7 @@ const MEGA_MENUS = {
         image: '/images/showcase/iaq-cloud-dashboard.jpg',
       },
       {
-        title: 'Request Custom HVAC & TFAS Sizing',
+        title: 'Request Custom HVAC & CTFAs Sizing',
         description:
           'Share your floorplan or AHU CFM schedule for custom CTFA, Cross-Flow ERV, and Active BPI sizing.',
         path: '/contact',

@@ -204,7 +204,7 @@
         "Nature's Air Purification Model Replicated",
         "Active In-Room Air & Surface Disinfection",
         "High Density Positive (H+) & Negative (O2-) Ions",
-        "Universal Central HVAC & TFAS Duct Integration",
+        "Universal Central HVAC & CTFAs Duct Integration",
         "UL 2998 Certified Zero-Ozone Standard",
         "Zero Consumable Filter Replacement Required"
       ],
@@ -265,7 +265,7 @@
         "Technology Principle": "Needlepoint Plasma Bipolar Ionization (Active In-Room Purifier)",
         "Ion Generation": "Balanced Positive (H+) and Negative (O2-) Ions",
         "Ozone Certification": "UL 2998 / UL 867 Zero Ozone (< 0.005 ppm)",
-        "System Integration": "AHUs, TFAS Units, Ductwork, VRF/VRV Units",
+        "System Integration": "AHUs, CTFAs Units, Ductwork, VRF/VRV Units",
         "Coverage Area": "1,500 sq. ft. per ioniser head",
         "Pathogens Inactivated": "Viruses, Bacteria, Mold Spores, VOCs & Odors",
         "Consumable Parts": "Zero Filter Replacement Required",
@@ -461,7 +461,7 @@
         "9-Parameter Real-Time Sensing (PM2.5, PM10, CO2, TVOC, Temp, RH)",
         "LoRaWAN, Wi-Fi, RS485 MODBUS RTU & 4G Cellular Telemetry",
         "AWS Secured Cloud Server Infrastructure",
-        "Direct Closed-Loop Trigger for IntelliGreen TFAS & ERV Units"
+        "Direct Closed-Loop Trigger for IntelliGreen CTFAs & ERV Units"
       ],
       "specs": {
         "Connectivity": "LoRaWAN / Wi-Fi / MODBUS",
@@ -481,7 +481,7 @@
           "image": "/images/showcase/iaq-cloud-dashboard.jpg"
         }
       ],
-      "overview": "You cannot manage what you do not measure. The IAQ Smart Sensor Station acts as the sensory nervous system for smart buildings—continuously sampling particulate matter, CO2 accumulation, and volatile organic compounds while automatically modulating IntelliGreen TFAS, ERV, and AHU purification hardware.",
+      "overview": "You cannot manage what you do not measure. The IAQ Smart Sensor Station acts as the sensory nervous system for smart buildings—continuously sampling particulate matter, CO2 accumulation, and volatile organic compounds while automatically modulating IntelliGreen CTFAs, ERV, and AHU purification hardware.",
       "applications": [
         "WELL v2 & LEED v4.1 Certified Commercial Buildings",
         "Corporate Smart Offices, Lobby Displays & Boardrooms",
@@ -501,7 +501,7 @@
         },
         {
           "step": "03",
-          "title": "Autonomous TFAS & ERV Speed Modulation",
+          "title": "Autonomous CTFAs & ERV Speed Modulation",
           "description": "Automatically ramps up fresh-air intake and ionization output whenever indoor CO2 or PM2.5 crosses safe thresholds."
         }
       ],
@@ -516,8 +516,8 @@
       },
       "faqs": [
         {
-          "question": "Can the IAQ Sensor automatically control the Wall/Ceiling TFAS and ERV units?",
-          "answer": "Yes! Through RS485 MODBUS or cloud automation rules, the sensor automatically increases TFAS/ERV fan speed when room CO2 rises above 800 ppm and drops to silent eco-mode when the room is unoccupied."
+          "question": "Can the IAQ Sensor automatically control the Wall/Ceiling CTFAs and ERV units?",
+          "answer": "Yes! Through RS485 MODBUS or cloud automation rules, the sensor automatically increases CTFAs/ERV fan speed when room CO2 rises above 800 ppm and drops to silent eco-mode when the room is unoccupied."
         }
       ]
     },
@@ -553,7 +553,7 @@
         },
         {
           "title": "Hardware-to-Cloud Closed-Loop Ecosystem",
-          "caption": "Seamless integration with IntelliGreen TFAS, ERV, EAC, and BPI hardware units.",
+          "caption": "Seamless integration with IntelliGreen CTFAs, ERV, EAC, and BPI hardware units.",
           "image": "/images/products/igt-transparent-chassis.webp"
         }
       ],
@@ -573,7 +573,7 @@
         {
           "step": "02",
           "title": "AI Predictive Ventilation Control",
-          "description": "Balances fresh-air ERV/TFAS intake against chiller energy load using occupancy and outdoor AQI forecasts."
+          "description": "Balances fresh-air ERV/CTFAs intake against chiller energy load using occupancy and outdoor AQI forecasts."
         },
         {
           "step": "03",

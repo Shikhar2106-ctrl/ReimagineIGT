@@ -38,7 +38,7 @@ const SCENARIOS = {
   protected: {
     id: 'protected',
     tabLabel: 'IntelliGreen Protected Zone',
-    badge: 'Positive-Pressure Concealed TFAS + ERV Shield',
+    badge: 'Positive-Pressure Concealed CTFAs + ERV Shield',
     statusColor: 'emerald',
     aqi: '11',
     aqiStatus: 'WHO Pure Sanctuary',
@@ -46,9 +46,9 @@ const SCENARIOS = {
     co2Status: 'Crisp Mountain Oxygen',
     pressure: '+8.5 Pa',
     pressureStatus: 'Positive Air Shield',
-    title: 'Invisible Positive-Pressure Shield Above Your False Ceiling',
+    title: 'Invisible Positive-Pressure Shield With IntelliGreen CTFAs',
     description:
-      'Concealed IntelliGreen TFAS & ERV units continuously pump medical HEPA H13 + Carbon purified air into your space—creating slight positive barometric pressure that physically pushes outdoor smog away from windows.',
+      'Concealed & wall-mounted IntelliGreen CTFAs and ERV units continuously pump medical HEPA H13 + Carbon purified air into your space—creating slight positive barometric pressure that physically pushes outdoor smog away from windows.',
     bullets: [
       'Positive pressure (+8.5 Pa) blocks 99.97% of outdoor smog & dust seepage',
       'Continuous treated fresh air keeps indoor CO₂ below 600 ppm 24/7',
@@ -141,13 +141,13 @@ export default function UrbanAirRealitySection() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-950 border border-emerald-200 shadow-md group">
                       <img
-                        src={getAssetUrl('/images/showcase/false-ceiling-concealed.webp')}
-                        alt="Concealed False Ceiling TFAS Unit"
+                        src={getAssetUrl('/images/products/igt-cutaway-intake.webp')}
+                        alt="Concealed & Wall Mounted CTFAs Unit"
                         loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute bottom-2.5 left-2.5 right-2.5 px-3 py-1.5 rounded-xl bg-slate-950/85 backdrop-blur-md text-white text-[11px] font-bold flex items-center justify-between">
-                        <span>01. Concealed Ceiling TFAS</span>
+                        <span>01. Concealed &amp; Wall CTFAs</span>
                         <span className="text-emerald-400">+8.5 Pa</span>
                       </div>
                     </div>
