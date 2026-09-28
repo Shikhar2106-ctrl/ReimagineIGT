@@ -3,7 +3,6 @@ import SEO from '../components/common/SEO';
 import HeroSection from '../components/sections/HeroSection';
 import UrbanAirRealitySection from '../components/sections/UrbanAirRealitySection';
 import InteriorAnatomySection from '../components/sections/InteriorAnatomySection';
-import ProductsSection from '../components/sections/ProductsSection';
 import LatestCarouselSection from '../components/sections/LatestCarouselSection';
 import ClientsSection from '../components/sections/ClientsSection';
 import ScrollReveal from '../components/common/ScrollReveal';
@@ -30,12 +29,7 @@ export default function Home() {
         <InteriorAnatomySection />
       </ScrollReveal>
 
-      {/* Product Ecosystem Grid */}
       <ScrollReveal delay={0.1}>
-        <ProductsSection />
-      </ScrollReveal>
-
-      <ScrollReveal delay={0.12}>
         <LatestCarouselSection />
       </ScrollReveal>
 
