@@ -16,7 +16,7 @@ import {
   Play,
 } from 'lucide-react';
 
-const STAGE_ICONS = [Layers, Wind, ShieldCheck, Cpu, Wind, Zap];
+const STAGE_ICONS = [Layers, Wind, ShieldCheck, Cpu, Zap];
 
 export default function InteriorAnatomySection() {
   const anatomy = productsData.anatomyShowcase;
@@ -65,7 +65,7 @@ export default function InteriorAnatomySection() {
         </div>
 
         {/* Single-Row Touch-Scrollable Stage Selector Ribbon (Mobile & Desktop) */}
-        <div className="flex lg:grid lg:grid-cols-6 overflow-x-auto no-scrollbar snap-x snap-mandatory gap-2.5 -mx-4 px-4 lg:mx-0 lg:px-0 pb-1">
+        <div className="flex lg:grid lg:grid-cols-5 overflow-x-auto no-scrollbar snap-x snap-mandatory gap-2.5 -mx-4 px-4 lg:mx-0 lg:px-0 pb-1">
           {anatomy.layers.map((layer, idx) => {
             const IconComp = STAGE_ICONS[idx % STAGE_ICONS.length];
             const isActive = idx === activeIndex;

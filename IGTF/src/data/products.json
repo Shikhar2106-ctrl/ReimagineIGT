@@ -5,7 +5,7 @@
   "anatomyShowcase": {
     "badge": "Interactive 3D Hardware Anatomy",
     "title": "Inside the IntelliGreen Purification Engine",
-    "subtitle": "Tap any stage or hotspot below to inspect the 6-stage internal hardware assembly and live fluid-dynamics airflow.",
+    "subtitle": "Tap any stage or hotspot below to inspect the 5-stage internal hardware assembly and live fluid-dynamics airflow.",
     "video": "/media/intelligreen-anatomy-showcase.webm",
     "layers": [
       {
@@ -20,7 +20,7 @@
         "video": "/media/stage01-sealed-chassis.webm",
         "metric": "0.8mm GI Steel",
         "metricLabel": "Acoustic Insulated",
-        "hotspot": { "x": "18%", "y": "52%" }
+        "hotspot": { "x": "20%", "y": "52%" }
       },
       {
         "id": "stage-prefilter",
@@ -34,7 +34,7 @@
         "video": "/media/stage02-g4-prefilter.webm",
         "metric": "95% @ >5μm",
         "metricLabel": "Washable Primary Stage",
-        "hotspot": { "x": "34%", "y": "48%" }
+        "hotspot": { "x": "38%", "y": "48%" }
       },
       {
         "id": "stage-hepa-carbon",
@@ -48,39 +48,25 @@
         "video": "/media/stage03-hepa-h13-carbon.webm",
         "metric": "99.97% @ 0.3μm",
         "metricLabel": "HEPA H13 + Carbon",
-        "hotspot": { "x": "50%", "y": "45%" }
+        "hotspot": { "x": "55%", "y": "45%" }
       },
       {
-        "id": "stage-erv-core",
+        "id": "stage-bldc-motor",
         "code": "04",
-        "shortLabel": "ERV Heat Core",
-        "title": "Cross-Flow Enthalpy Heat & Energy Recovery Core",
-        "subtitle": "Thermal Exchange Without Air Cross-Contamination",
-        "description": "Diamond-matrix counter-crossflow heat exchanger transfers up to 78% of sensible and latent thermal energy between outgoing conditioned room air and incoming outdoor air—slashing chiller & HVAC electrical loads.",
-        "image": "/images/products/igt-erv-crossflow-core.webp",
-        "secondaryImage": "/images/products/igt-cutaway-intake.webp",
-        "video": "/media/stage04-erv-heat-recovery.webm",
-        "metric": "Up to 78%",
-        "metricLabel": "Thermal Recovery",
-        "hotspot": { "x": "64%", "y": "50%" }
-      },
-      {
-        "id": "stage-ec-impeller",
-        "code": "05",
-        "shortLabel": "EC Impeller",
-        "title": "Brushless EC Centrifugal Impeller & Vortex Plenum",
+        "shortLabel": "BLDC Motor",
+        "title": "Brushless BLDC Centrifugal Motor & Vortex Plenum",
         "subtitle": "Whisper-Quiet High-Static Laminar Propulsion",
-        "description": "Aerodynamically balanced backward-curved EC motorized impeller delivers constant CFM airflow across varying duct static pressures while operating below 34 dB(A) with 50% lower wattage.",
+        "description": "Aerodynamically balanced backward-curved BLDC motorized impeller delivers constant CFM airflow across varying duct static pressures while operating below 34 dB(A) with 50% lower wattage.",
         "image": "/images/products/stage05-ec-impeller.webp",
         "secondaryImage": "/images/products/igt-silent-duct-outlet.webp",
         "video": "/media/stage05-ec-impeller.webm",
         "metric": "<34 dB(A)",
-        "metricLabel": "Silent EC Motor",
-        "hotspot": { "x": "76%", "y": "46%" }
+        "metricLabel": "Silent BLDC Motor",
+        "hotspot": { "x": "72%", "y": "46%" }
       },
       {
         "id": "stage-bpi-module",
-        "code": "06",
+        "code": "05",
         "shortLabel": "Active BPI",
         "title": "Active Needlepoint Bi-Polar Ionization (BPI) Emitter",
         "subtitle": "UL 2998 Zero-Ozone Active In-Room Disinfection",
@@ -111,7 +97,7 @@
         "Fresh Air Intake & Positive Pressurization Mode",
         "Hospital Grade HEPA H13 + Honeycomb Carbon Filtration",
         "Sleek Wall-Mount & Concealed False-Ceiling Options",
-        "Ultra-Low Energy Consumption (<45W EC Motor)"
+        "Ultra-Low Energy Consumption (<45W BLDC Motor)"
       ],
       "specs": {
         "Coverage": "Up to 850 sq. ft.",
@@ -131,8 +117,8 @@
           "image": "/images/products/igt-filter-exploded.webp"
         },
         {
-          "title": "EC Centrifugal Vortex Impeller",
-          "caption": "High-efficiency brushless EC motor maintains laminar positive pressure airflow at whisper-quiet acoustic levels (<34 dB).",
+          "title": "BLDC Centrifugal Vortex Motor",
+          "caption": "High-efficiency brushless BLDC motor maintains laminar positive pressure airflow at whisper-quiet acoustic levels (<34 dB).",
           "image": "/images/products/igt-ec-impeller-vortex.webp"
         },
         {
