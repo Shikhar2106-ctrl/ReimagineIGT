@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Container from '../common/Container';
 import Button from '../common/Button';
@@ -88,39 +88,78 @@ function TypingText({ phrases = [] }) {
 
 export default function HeroSection() {
   const trackRef = useRef(null);
-  const [scrollStage, setScrollStage] = useState(0);
-
-  const updateScrollProgress = useCallback(() => {
-    const el = trackRef.current;
-    if (!el) return;
-
-    const rect = el.getBoundingClientRect();
-    const totalScrollable = Math.max(1, el.offsetHeight - window.innerHeight);
-    const scrolled = Math.min(Math.max(0, -rect.top), totalScrollable);
-    const normalized = scrolled / totalScrollable;
-    const stageFloat = normalized * (HERO_OLED_SCENES.length - 1);
-    setScrollStage(stageFloat);
-  }, []);
+  const slideRefs = useRef([]);
 
   useEffect(() => {
-    updateScrollProgress();
-    window.addEventListener('scroll', updateScrollProgress, { passive: true });
-    window.addEventListener('resize', updateScrollProgress, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', updateScrollProgress);
-      window.removeEventListener('resize', updateScrollProgress);
-    };
-  }, [updateScrollProgress]);
+    let rafId = null;
 
-  const activeIndex = Math.min(
-    HERO_OLED_SCENES.length - 1,
-    Math.max(0, Math.round(scrollStage))
-  );
+    const applySlideTransforms = () => {
+      rafId = null;
+      const el = trackRef.current;
+      if (!el) return;
+
+      const rect = el.getBoundingClientRect();
+      const totalScrollable = Math.max(1, el.offsetHeight - window.innerHeight);
+      const scrolled = Math.min(Math.max(0, -rect.top), totalScrollable);
+      const stageFloat = (scrolled / totalScrollable) * (HERO_OLED_SCENES.length - 1);
+
+      const isMobile = window.innerWidth < 640;
+
+      for (let idx = 0; idx < HERO_OLED_SCENES.length; idx += 1) {
+        const node = slideRefs.current[idx];
+        if (!node) continue;
+
+        const delta = idx - stageFloat;
+        const absDelta = Math.abs(delta);
+
+        // Cull off-screen slides so mobile GPU only composites the 2 active layers
+        if (absDelta > 1.2) {
+          if (node.style.display !== 'none') {
+            node.style.display = 'none';
+          }
+          continue;
+        }
+
+        if (node.style.display !== 'block') {
+          node.style.display = 'block';
+        }
+
+        const translateYPercent = delta * (isMobile ? 62 : 68);
+        const rotateXDeg = delta * (isMobile ? -16 : -24);
+        const scaleVal = Math.max(0.86, 1 - absDelta * 0.1);
+        const opacityVal = Math.max(
+          0,
+          Math.min(1, 1 - Math.pow(absDelta, 1.35) * 0.92)
+        );
+
+        node.style.opacity = opacityVal.toFixed(3);
+        node.style.transformOrigin = delta >= 0 ? 'center top' : 'center bottom';
+        node.style.zIndex = String(Math.round(20 - absDelta * 10));
+        node.style.transform = `translate3d(0, ${translateYPercent.toFixed(2)}%, 0) scale(${scaleVal.toFixed(3)}) rotateX(${rotateXDeg.toFixed(2)}deg)`;
+      }
+    };
+
+    const onScrollOrResize = () => {
+      if (rafId === null) {
+        rafId = requestAnimationFrame(applySlideTransforms);
+      }
+    };
+
+    applySlideTransforms();
+    window.addEventListener('scroll', onScrollOrResize, { passive: true });
+    window.addEventListener('resize', onScrollOrResize, { passive: true });
+
+    return () => {
+      if (rafId !== null) cancelAnimationFrame(rafId);
+      window.removeEventListener('scroll', onScrollOrResize);
+      window.removeEventListener('resize', onScrollOrResize);
+    };
+  }, []);
 
   return (
     <section
       ref={trackRef}
-      className="relative h-[340vh] sm:h-[380vh] select-none"
+      className="relative h-[300vh] sm:h-[360vh] select-none"
     >
       {/* Preload first desktop & mobile Hero image for instant LCP */}
       <link
@@ -145,58 +184,44 @@ export default function HeroSection() {
             style={{ perspective: '1400px' }}
             className="relative w-full h-[calc(100vh-5.25rem)] max-h-[560px] sm:max-h-[580px] min-h-[460px] rounded-3xl overflow-hidden bg-black border border-white/15 ring-1 ring-emerald-500/20 shadow-[0_28px_70px_-12px_rgba(0,0,0,0.85)]"
           >
-            {/* 3D Leonardo.ai-Style Scroll-Driven Rolling Stage */}
+            {/* 3D Leonardo.ai-Style Scroll-Driven Rolling Stage (Direct GPU DOM mutations — 0 React re-renders) */}
             <div
               className="relative w-full h-full bg-black overflow-hidden"
               style={{ transformStyle: 'preserve-3d' }}
             >
-              {HERO_OLED_SCENES.map((scene, idx) => {
-                const delta = idx - scrollStage;
-                const absDelta = Math.abs(delta);
-                const isVisible = absDelta < 1.35;
-
-                const translateYPercent = delta * 68;
-                const rotateXDeg = delta * -24;
-                const scaleVal = Math.max(0.85, 1 - absDelta * 0.11);
-                const opacityVal = Math.max(
-                  0,
-                  Math.min(1, 1 - Math.pow(absDelta, 1.35) * 0.92)
-                );
-
-                return (
-                  <div
-                    key={scene.id}
-                    aria-hidden={idx !== activeIndex}
-                    style={{
-                      opacity: isVisible ? opacityVal : 0,
-                      transform: `translate3d(0, ${translateYPercent}%, 0) scale(${scaleVal}) rotateX(${rotateXDeg}deg)`,
-                      transformOrigin:
-                        delta >= 0 ? 'center top' : 'center bottom',
-                      zIndex: Math.round(20 - absDelta * 10),
-                      willChange: 'transform, opacity',
-                      backfaceVisibility: 'hidden',
-                    }}
-                    className="absolute inset-0 w-full h-full bg-black"
-                  >
-                    {/* Dedicated 9:16 Vertical Mobile Image (<640px) + 16:9 Desktop Image (>=640px) — 100% Full-Bleed Fit */}
-                    <picture className="block w-full h-full">
-                      <source
-                        media="(max-width: 639px)"
-                        srcSet={getAssetUrl(scene.mobileImage)}
-                        type="image/webp"
-                      />
-                      <img
-                        src={getAssetUrl(scene.image)}
-                        alt={scene.title}
-                        fetchPriority={idx === 0 ? 'high' : 'auto'}
-                        decoding="sync"
-                        draggable={false}
-                        className="w-full h-full object-cover object-center"
-                      />
-                    </picture>
-                  </div>
-                );
-              })}
+              {HERO_OLED_SCENES.map((scene, idx) => (
+                <div
+                  key={scene.id}
+                  ref={(el) => {
+                    slideRefs.current[idx] = el;
+                  }}
+                  style={{
+                    display: idx <= 1 ? 'block' : 'none',
+                    opacity: idx === 0 ? 1 : 0,
+                    zIndex: 20 - idx,
+                    willChange: 'transform, opacity',
+                    backfaceVisibility: 'hidden',
+                  }}
+                  className="absolute inset-0 w-full h-full bg-black"
+                >
+                  <picture className="block w-full h-full">
+                    <source
+                      media="(max-width: 639px)"
+                      srcSet={getAssetUrl(scene.mobileImage)}
+                      type="image/webp"
+                    />
+                    <img
+                      src={getAssetUrl(scene.image)}
+                      alt={scene.title}
+                      fetchPriority={idx === 0 ? 'high' : 'auto'}
+                      loading="eager"
+                      decoding="async"
+                      draggable={false}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </picture>
+                </div>
+              ))}
             </div>
 
             {/* Localized Bottom & Left Text Protection Scrim ONLY */}
