@@ -10,31 +10,37 @@ const HERO_OLED_SCENES = [
     id: 'urban-buildings',
     title: 'Urban High-Rise Buildings & City Air Reality',
     image: '/images/hero/hero-oled-story-01-buildings.webp',
+    mobileImage: '/images/hero/hero-mobile-01-buildings.webp',
   },
   {
     id: 'luxury-family-home',
     title: 'Luxury Residence Protected by IntelliGreen Clean Air',
     image: '/images/hero/hero-oled-story-02-luxury-home.webp',
+    mobileImage: '/images/hero/hero-mobile-02-luxury-home.webp',
   },
   {
     id: 'family-fresh-air-faces',
     title: 'Pure Oxygen-Rich Freshness for Every Breath',
     image: '/images/hero/hero-oled-story-03-fresh-faces.webp',
+    mobileImage: '/images/hero/hero-mobile-03-fresh-faces.webp',
   },
   {
     id: 'twoway-ctfa',
     title: 'Two-Way CTFA & ERV Fresh Air Unit',
     image: '/images/hero/hero-oled-twoway-ctfa.webp',
+    mobileImage: '/images/hero/hero-mobile-04-twoway-ctfa.webp',
   },
   {
     id: 'wall-ctfa',
     title: 'Wall Mounted CTFA Medical H13 Purifier',
     image: '/images/hero/hero-oled-wall-ctfa.webp',
+    mobileImage: '/images/hero/hero-mobile-05-wall-ctfa.webp',
   },
   {
     id: 'iaq-sensor',
     title: 'IAQ Smart Sensor & AirSense OS Telemetry',
     image: '/images/hero/hero-oled-iaq-sensor.webp',
+    mobileImage: '/images/hero/hero-mobile-06-iaq-sensor.webp',
   },
 ];
 
@@ -116,23 +122,28 @@ export default function HeroSection() {
       ref={trackRef}
       className="relative h-[340vh] sm:h-[380vh] select-none"
     >
-      {/* Preload all 6 OLED studio masters for instant zero-latency rolling */}
-      {HERO_OLED_SCENES.map((scene) => (
-        <link
-          key={scene.id}
-          rel="preload"
-          as="image"
-          href={getAssetUrl(scene.image)}
-          type="image/webp"
-        />
-      ))}
+      {/* Preload first desktop & mobile Hero image for instant LCP */}
+      <link
+        rel="preload"
+        as="image"
+        href={getAssetUrl(HERO_OLED_SCENES[0].image)}
+        media="(min-width: 640px)"
+        type="image/webp"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href={getAssetUrl(HERO_OLED_SCENES[0].mobileImage)}
+        media="(max-width: 639px)"
+        type="image/webp"
+      />
 
       {/* Sticky Viewport that pins while the 6 OLED scenes roll on scroll */}
       <div className="sticky top-16 sm:top-20 py-2 sm:py-3 px-3 sm:px-6">
         <Container className="p-0 max-w-7xl">
           <div
             style={{ perspective: '1400px' }}
-            className="relative w-full h-[calc(100vh-5.5rem)] max-h-[510px] sm:max-h-[575px] min-h-[430px] rounded-3xl overflow-hidden bg-black border border-white/15 ring-1 ring-emerald-500/20 shadow-[0_28px_70px_-12px_rgba(0,0,0,0.85)]"
+            className="relative w-full h-[calc(100vh-5.25rem)] max-h-[560px] sm:max-h-[580px] min-h-[460px] rounded-3xl overflow-hidden bg-black border border-white/15 ring-1 ring-emerald-500/20 shadow-[0_28px_70px_-12px_rgba(0,0,0,0.85)]"
           >
             {/* 3D Leonardo.ai-Style Scroll-Driven Rolling Stage */}
             <div
@@ -165,24 +176,31 @@ export default function HeroSection() {
                       willChange: 'transform, opacity',
                       backfaceVisibility: 'hidden',
                     }}
-                    className="absolute inset-0 w-full h-full bg-black flex items-start sm:items-center justify-center pt-3 sm:pt-0"
+                    className="absolute inset-0 w-full h-full bg-black"
                   >
-                    {/* Mobile: fits full uncropped 16:9 frame in upper 60% of #000000 OLED canvas; Desktop: full cover */}
-                    <img
-                      src={getAssetUrl(scene.image)}
-                      alt={scene.title}
-                      fetchPriority={idx === 0 ? 'high' : 'auto'}
-                      decoding="sync"
-                      draggable={false}
-                      className="w-full h-[60%] sm:h-full object-contain sm:object-cover object-center"
-                    />
+                    {/* Dedicated 9:16 Vertical Mobile Image (<640px) + 16:9 Desktop Image (>=640px) — 100% Full-Bleed Fit */}
+                    <picture className="block w-full h-full">
+                      <source
+                        media="(max-width: 639px)"
+                        srcSet={getAssetUrl(scene.mobileImage)}
+                        type="image/webp"
+                      />
+                      <img
+                        src={getAssetUrl(scene.image)}
+                        alt={scene.title}
+                        fetchPriority={idx === 0 ? 'high' : 'auto'}
+                        decoding="sync"
+                        draggable={false}
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </picture>
                   </div>
                 );
               })}
             </div>
 
             {/* Localized Bottom & Left Text Protection Scrim ONLY */}
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[54%] bg-gradient-to-t from-black via-black/65 sm:via-black/40 to-transparent z-20" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[48%] bg-gradient-to-t from-black/90 via-black/50 to-transparent z-20" />
             <div className="pointer-events-none hidden sm:block absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-black/65 via-black/20 to-transparent z-20" />
 
             {/* Bottom Left Content (Clean & Tag-Free) */}
