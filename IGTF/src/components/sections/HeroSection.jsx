@@ -7,6 +7,21 @@ import heroData from '../../data/hero.json';
 
 const HERO_OLED_SCENES = [
   {
+    id: 'urban-buildings',
+    title: 'Urban High-Rise Buildings & City Air Reality',
+    image: '/images/hero/hero-oled-story-01-buildings.webp',
+  },
+  {
+    id: 'luxury-family-home',
+    title: 'Luxury Residence Protected by IntelliGreen Clean Air',
+    image: '/images/hero/hero-oled-story-02-luxury-home.webp',
+  },
+  {
+    id: 'family-fresh-air-faces',
+    title: 'Pure Oxygen-Rich Freshness for Every Breath',
+    image: '/images/hero/hero-oled-story-03-fresh-faces.webp',
+  },
+  {
     id: 'twoway-ctfa',
     title: 'Two-Way CTFA & ERV Fresh Air Unit',
     image: '/images/hero/hero-oled-twoway-ctfa.webp',
@@ -99,9 +114,9 @@ export default function HeroSection() {
   return (
     <section
       ref={trackRef}
-      className="relative h-[235vh] sm:h-[255vh] select-none"
+      className="relative h-[340vh] sm:h-[380vh] select-none"
     >
-      {/* Preload all 3 OLED studio masters for instant zero-latency rolling */}
+      {/* Preload all 6 OLED studio masters for instant zero-latency rolling */}
       {HERO_OLED_SCENES.map((scene) => (
         <link
           key={scene.id}
@@ -112,7 +127,7 @@ export default function HeroSection() {
         />
       ))}
 
-      {/* Sticky Viewport that pins while the 3 OLED product scenes roll on scroll */}
+      {/* Sticky Viewport that pins while the 6 OLED scenes roll on scroll */}
       <div className="sticky top-16 sm:top-20 py-2 sm:py-3 px-3 sm:px-6">
         <Container className="p-0 max-w-7xl">
           <div
@@ -152,7 +167,7 @@ export default function HeroSection() {
                     }}
                     className="absolute inset-0 w-full h-full bg-black flex items-start sm:items-center justify-center pt-3 sm:pt-0"
                   >
-                    {/* Mobile: fits full uncropped 16:9 product in upper 62% of #000000 OLED canvas; Desktop: full cover */}
+                    {/* Mobile: fits full uncropped 16:9 frame in upper 60% of #000000 OLED canvas; Desktop: full cover */}
                     <img
                       src={getAssetUrl(scene.image)}
                       alt={scene.title}
