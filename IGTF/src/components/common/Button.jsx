@@ -19,6 +19,8 @@ export default function Button({
       'bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm shadow-emerald-900/15 hover:shadow-md hover:-translate-y-0.5',
     secondary:
       'bg-white hover:bg-emerald-50/80 text-slate-800 hover:text-emerald-700 border border-slate-200/90 hover:border-emerald-400 shadow-2xs hover:-translate-y-0.5',
+    glass:
+      'bg-slate-900/85 hover:bg-slate-800 text-white border border-white/25 hover:border-emerald-400/60 backdrop-blur-md shadow-md hover:-translate-y-0.5',
     cyan:
       'bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-semibold shadow-sm hover:-translate-y-0.5',
     outline:

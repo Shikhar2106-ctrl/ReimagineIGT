@@ -157,7 +157,7 @@ export default function HeroSection() {
                 {heroData.primaryCTA.label}
                 <ArrowRight size={16} />
               </Button>
-              <Button to={heroData.secondaryCTA.path} size="md" variant="secondary" className="bg-slate-900/80 border-slate-700 text-white hover:bg-slate-800">
+              <Button to={heroData.secondaryCTA.path} size="md" variant="glass">
                 {heroData.secondaryCTA.label}
               </Button>
             </div>
