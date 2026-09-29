@@ -4,7 +4,6 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import ScrollToTop from '../common/ScrollToTop';
 import SmoothScroll from '../common/SmoothScroll';
-import ChatbotWidget from '../common/ChatbotWidget';
 
 export default function Layout() {
   return (
@@ -16,7 +15,6 @@ export default function Layout() {
           <Outlet />
         </main>
         <Footer />
-        <ChatbotWidget />
       </div>
     </SmoothScroll>
   );
