@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '../components/common/SEO';
 import AboutHeroSection from '../components/sections/AboutHeroSection';
+import BlueprintToFreshAirSection from '../components/sections/BlueprintToFreshAirSection';
 import OurStorySection from '../components/sections/OurStorySection';
 import CoreValuesSection from '../components/sections/CoreValuesSection';
 import TimelineSection from '../components/sections/TimelineSection';
@@ -15,6 +16,7 @@ export default function About() {
         keywords="About IntelliGreen, CleanTech company, environmental engineering, clean air vision, leadership team"
       />
       <AboutHeroSection />
+      <BlueprintToFreshAirSection />
       <OurStorySection />
       <CoreValuesSection />
       <TimelineSection />

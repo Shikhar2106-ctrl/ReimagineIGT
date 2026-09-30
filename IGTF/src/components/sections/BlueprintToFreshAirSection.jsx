@@ -139,15 +139,40 @@ export default function BlueprintToFreshAirSection() {
     <section
       ref={sectionRef}
       id="blueprint-to-fresh-air"
-      className="relative w-full h-[420vh] bg-[#0b1015] select-none"
+      className="relative w-full h-[420vh] bg-[#0a0f13] select-none"
     >
-      <div className="sticky top-0 left-0 w-full h-screen overflow-hidden bg-[#0b1015] flex items-center justify-center">
-        <canvas
-          ref={canvasRef}
-          width={1280}
-          height={720}
-          className="w-full h-full object-contain sm:object-cover block"
+      <div
+        className="sticky top-0 left-0 w-full h-screen overflow-hidden flex items-center justify-center"
+        style={{
+          background:
+            'radial-gradient(ellipse 75% 70% at 50% 50%, #131b21 0%, #0d1318 48%, #080c10 100%)',
+        }}
+      >
+        {/* Seamless Full-Screen Black Outer-Space Backdrop Matching the 3D Render Space */}
+        <img
+          src={getAssetUrl('/images/blueprint-scroll/frame-000.webp')}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-90"
         />
+
+        {/* Zoomed-Out Product Canvas Feathered Seamlessly Into the Outer-Space Background */}
+        <div
+          className="relative z-10 w-[86%] sm:w-[68%] lg:w-[54%] max-w-[780px] aspect-video flex items-center justify-center"
+          style={{
+            WebkitMaskImage:
+              'radial-gradient(ellipse 84% 82% at 50% 50%, #000 60%, rgba(0,0,0,0.65) 78%, transparent 100%)',
+            maskImage:
+              'radial-gradient(ellipse 84% 82% at 50% 50%, #000 60%, rgba(0,0,0,0.65) 78%, transparent 100%)',
+          }}
+        >
+          <canvas
+            ref={canvasRef}
+            width={1280}
+            height={720}
+            className="w-full h-full object-contain block"
+          />
+        </div>
       </div>
     </section>
   );
