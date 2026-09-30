@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '../components/common/SEO';
 import HeroSection from '../components/sections/HeroSection';
+import BlueprintToFreshAirSection from '../components/sections/BlueprintToFreshAirSection';
 import UrbanAirRealitySection from '../components/sections/UrbanAirRealitySection';
 import InteriorAnatomySection from '../components/sections/InteriorAnatomySection';
 import LatestCarouselSection from '../components/sections/LatestCarouselSection';
@@ -18,6 +19,9 @@ export default function Home() {
       
       {/* Hero section */}
       <HeroSection />
+
+      {/* Scroll-Driven 3D Blueprint -> Solid Product -> Dirty Air Filtration -> Fresh Air Output */}
+      <BlueprintToFreshAirSection />
 
       {/* Modern Urban Air Reality Comparison (Smog Infiltration vs Positive Pressure) */}
       <ScrollReveal>
