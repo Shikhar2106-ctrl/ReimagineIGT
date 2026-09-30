@@ -19,28 +19,22 @@ const HERO_OLED_SCENES = [
     mobileImage: '/images/hero/hero-mobile-02-luxury-home.webp',
   },
   {
-    id: 'family-fresh-air-faces',
-    title: 'Pure Oxygen-Rich Freshness for Every Breath',
-    image: '/images/hero/hero-oled-story-03-fresh-faces.webp',
-    mobileImage: '/images/hero/hero-mobile-03-fresh-faces.webp',
+    id: 'luxury-commercial-buildings',
+    title: 'Grade-A Luxury Commercial Towers & Corporate Boardrooms',
+    image: '/images/hero/hero-oled-story-03-commercial.webp',
+    mobileImage: '/images/hero/hero-mobile-03-commercial.webp',
   },
   {
-    id: 'twoway-ctfa',
-    title: 'Two-Way CTFA & ERV Fresh Air Unit',
-    image: '/images/hero/hero-oled-twoway-ctfa.webp',
-    mobileImage: '/images/hero/hero-mobile-04-twoway-ctfa.webp',
+    id: 'industrial-clean-air',
+    title: 'Industrial Manufacturing & Cleanroom Filtration Systems',
+    image: '/images/hero/hero-oled-story-04-industrial.webp',
+    mobileImage: '/images/hero/hero-mobile-04-industrial.webp',
   },
   {
-    id: 'wall-ctfa',
-    title: 'Wall Mounted CTFA Medical H13 Purifier',
-    image: '/images/hero/hero-oled-wall-ctfa.webp',
-    mobileImage: '/images/hero/hero-mobile-05-wall-ctfa.webp',
-  },
-  {
-    id: 'iaq-sensor',
-    title: 'IAQ Smart Sensor & AirSense OS Telemetry',
-    image: '/images/hero/hero-oled-iaq-sensor.webp',
-    mobileImage: '/images/hero/hero-mobile-06-iaq-sensor.webp',
+    id: 'trusted-professionals-slices',
+    title: 'Trusted by Engineers, Doctors & Corporate Leaders',
+    image: '/images/hero/hero-oled-story-05-trust-slices.webp',
+    mobileImage: '/images/hero/hero-mobile-05-trust-slices.webp',
   },
 ];
 
@@ -101,7 +95,8 @@ export default function HeroSection() {
       const rect = el.getBoundingClientRect();
       const totalScrollable = Math.max(1, el.offsetHeight - window.innerHeight);
       const scrolled = Math.min(Math.max(0, -rect.top), totalScrollable);
-      const stageFloat = (scrolled / totalScrollable) * (HERO_OLED_SCENES.length - 1);
+      const stageFloat =
+        (scrolled / totalScrollable) * (HERO_OLED_SCENES.length - 1);
 
       const isMobile = window.innerWidth < 640;
 
@@ -133,7 +128,8 @@ export default function HeroSection() {
         );
 
         node.style.opacity = opacityVal.toFixed(3);
-        node.style.transformOrigin = delta >= 0 ? 'center top' : 'center bottom';
+        node.style.transformOrigin =
+          delta >= 0 ? 'center top' : 'center bottom';
         node.style.zIndex = String(Math.round(20 - absDelta * 10));
         node.style.transform = `translate3d(0, ${translateYPercent.toFixed(2)}%, 0) scale(${scaleVal.toFixed(3)}) rotateX(${rotateXDeg.toFixed(2)}deg)`;
       }
@@ -159,7 +155,7 @@ export default function HeroSection() {
   return (
     <section
       ref={trackRef}
-      className="relative h-[300vh] sm:h-[360vh] select-none"
+      className="relative h-[280vh] sm:h-[330vh] select-none"
     >
       {/* Preload first desktop & mobile Hero image for instant LCP */}
       <link
@@ -177,14 +173,14 @@ export default function HeroSection() {
         type="image/webp"
       />
 
-      {/* Sticky Viewport that pins while the 6 OLED scenes roll on scroll */}
+      {/* Sticky Viewport that pins while the 5 OLED scenes roll on scroll */}
       <div className="sticky top-16 sm:top-20 py-2 sm:py-3 px-3 sm:px-6">
         <Container className="p-0 max-w-7xl">
           <div
             style={{ perspective: '1400px' }}
             className="relative w-full h-[calc(100vh-5.25rem)] max-h-[560px] sm:max-h-[580px] min-h-[460px] rounded-3xl overflow-hidden bg-black border border-white/15 ring-1 ring-emerald-500/20 shadow-[0_28px_70px_-12px_rgba(0,0,0,0.85)]"
           >
-            {/* 3D Leonardo.ai-Style Scroll-Driven Rolling Stage (Direct GPU DOM mutations — 0 React re-renders) */}
+            {/* 3D Leonardo.ai-Style Scroll-Driven Rolling Stage */}
             <div
               className="relative w-full h-full bg-black overflow-hidden"
               style={{ transformStyle: 'preserve-3d' }}
@@ -226,7 +222,7 @@ export default function HeroSection() {
 
             {/* Localized Bottom & Left Text Protection Scrim ONLY */}
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[48%] bg-gradient-to-t from-black/90 via-black/50 to-transparent z-20" />
-            <div className="pointer-events-none hidden sm:block absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-black/65 via-black/20 to-transparent z-20" />
+            <div className="pointer-events-none hidden sm:block absolute inset-y-0 left-0 w-[42%] bg-gradient-to-r from-black/75 via-black/30 to-transparent z-20" />
 
             {/* Bottom Left Content (Clean & Tag-Free) */}
             <div className="absolute bottom-5 left-5 right-5 sm:bottom-8 sm:left-8 max-w-xl z-30 space-y-2.5 sm:space-y-3.5">

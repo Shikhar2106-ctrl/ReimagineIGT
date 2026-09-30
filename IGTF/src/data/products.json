@@ -91,7 +91,7 @@
       "seoTitle": "WALL MOUNTED CTFA Fresh Air Purifier | IntelliGreen CleanTech",
       "seoDescription": "Discover the WALL MOUNTED CTFA fresh air purifier. Dual-mode HEPA & carbon filtration for HVAC and non-HVAC commercial premises.",
       "media": "/media/intelligreen-product1.webm",
-      "image": "/images/hero/hero-slide-04.webp",
+      "image": "/images/hero/hero-oled-wall-ctfa.webp",
       "icon": "Wind",
       "features": [
         "Fresh Air Intake & Positive Pressurization Mode",
@@ -107,9 +107,9 @@
       },
       "interiorGallery": [
         {
-          "title": "3D Cutaway Intake & Multi-Filter Chamber",
-          "caption": "Outdoor air enters through the acoustic-sealed collar and passes sequentially through G4, Honeycomb Carbon, and HEPA H13 stages.",
-          "image": "/images/products/igt-cutaway-intake.webp"
+          "title": "OLED Studio Cutaway & Multi-Filter Chamber",
+          "caption": "Outdoor air enters through the acoustic-sealed collar and passes sequentially through G4 Pre-Filter, HEPA H13, and Activated Carbon stages.",
+          "image": "/images/hero/hero-oled-wall-ctfa.webp"
         },
         {
           "title": "Exploded Filtration Assembly",
@@ -278,7 +278,7 @@
       "seoTitle": "Cross-Flow ERV Energy Recovery Ventilator | IntelliGreen CleanTech",
       "seoDescription": "IntelliGreen Cross-Flow ERV system with dual EC blowers, enthalpy heat exchanger core, HEPA H13 filtration, and 78% HVAC energy recovery.",
       "media": "/media/stage04-erv-heat-recovery.webm",
-      "image": "/images/products/igt-erv-crossflow-core.webp",
+      "image": "/images/hero/hero-oled-twoway-ctfa.webp",
       "icon": "Layers",
       "features": [
         "Diamond Cross-Flow Enthalpy Heat & Humidity Recovery Core",
@@ -294,9 +294,9 @@
       },
       "interiorGallery": [
         {
-          "title": "Diamond Cross-Flow Enthalpy Exchange Core",
-          "caption": "Stale conditioned indoor air (yellow stream) transfers thermal energy to incoming outdoor air (cyan stream) through nano-membrane plates without mixing.",
-          "image": "/images/products/igt-erv-crossflow-core.webp"
+          "title": "Two-Way CTFA & ERV Twin-Collar Laminar Discharge",
+          "caption": "Dual-stream matte-black galvanized steel enclosure with twin circular supply/exhaust collars and 78% thermal recovery core.",
+          "image": "/images/hero/hero-oled-twoway-ctfa.webp"
         },
         {
           "title": "Multi-Stage Supply Air Filtration Bank",
@@ -441,7 +441,7 @@
       "seoTitle": "IAQ Smart Sensor Station | LoRaWAN & AWS Cloud | IntelliGreen",
       "seoDescription": "Customizable IAQ Smart Sensor Station featuring LoRaWAN, Wi-Fi, MODBUS & AWS Secured Cloud. Real-time AQI display and automated HVAC demand control.",
       "media": "/media/intelligreen-product4.webm",
-      "image": "/images/hero/hero-slide-02.jpeg",
+      "image": "/images/hero/hero-oled-iaq-sensor.webp",
       "icon": "Activity",
       "features": [
         "9-Parameter Real-Time Sensing (PM2.5, PM10, CO2, TVOC, Temp, RH)",
@@ -459,7 +459,7 @@
         {
           "title": "Precision Laser Scattering & NDIR Sensor Array",
           "caption": "Individually calibrated optical particle counters and dual-beam NDIR CO2 waveguides deliver reference-grade telemetry.",
-          "image": "/images/hero/hero-slide-02.jpeg"
+          "image": "/images/hero/hero-oled-iaq-sensor.webp"
         },
         {
           "title": "Cloud AI Telemetry Dashboard Integration",
